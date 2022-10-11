@@ -11,22 +11,22 @@
 
 
 
-<div class="grid-3-columns grid grid-cols-3">
+<div class="grid-3-columns grid grid-cols-12">
           <div class="column-1">
                 <div>
                     <img 
                         src="/Image/Logo(3).svg"
-                        class="hover:bg-mörkblå h-37.5 pt-6 pb-56 pl-14">  <!-- Hover over Logo? -->
+                        class="hover:bg-mörkblå h-37.5 mt-6 mb-56 ml-14">  <!-- Hover over Logo? -->
                 </div>
                 <div>
                     <img 
                         src="/Image/blob-left.png"
-                        class="hover:bg-mörkblå h-96">  <!-- Hover over Logo? -->
+                        class="hover:bg-mörkblå">  <!-- Hover over Logo? -->
                 </div>
           </div> 
      
 
-          <div class="column-2 pt-80">
+          <div class="column-2 col-start-4 col-end-9 mt-80 hover:bg-mörkblå">
                 <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
                     Svensk mästare i TP?
                 </h1>
@@ -37,10 +37,10 @@
                 </div>
           </div>
 
-          <div class="column-3">
+          <div class="column-3 col-start-10 col-end-12">
                 <img 
                   src="/Image/blob-right.png"
-                  class="hover:bg-mörkblå h-96 pt-20">  <!-- Hover over Logo? -->
+                  class="hover:bg-mörkblå h-2/3 w-60 mt-20">  <!-- Hover over Logo? -->
           </div>
 
 </div>
