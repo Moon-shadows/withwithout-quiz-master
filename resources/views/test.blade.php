@@ -1,54 +1,32 @@
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Donkeyquiz - boilerplate</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
-    </head>
-    <body >
+<!DOCTYPE html>
+<html>
+<style>
+.democlass {
+  color: red;
+}
+</style>
 
+<body>
+<h1 id="myH1">The Element Object</h1>
+<h2>The setAttribute() Method</h2>
 
+<p>Click "Add Class" to add a class attribute to the h1 element:</p>
 
-<div class="grid-3-columns grid grid-cols-3">
-          <div class="column-1">
-                <div>
-                    <img 
-                        src="/Image/Logo(3).svg"
-                        class="hover:bg-mörkblå h-37.5 pt-6 pb-56 pl-14">  <!-- Hover over Logo? -->
-                </div>
-                <div>
-                    <img 
-                        src="/Image/blob-left.png"
-                        class="hover:bg-mörkblå h-96">  <!-- Hover over Logo? -->
-                </div>
-          </div> 
-     
+<button onclick="myFunction()">Add Class</button>
 
-          <div class="column-2 pt-80">
-                <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
-                    Svensk mästare i TP?
-                </h1>
-                <p class="text-20 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
-                    Svara på 35 samtida frågor i 7 olika kategorier. </p>
-                <div class="button-container w-63 text-center">
-                    <button class="py-8 px-3 rounded-full bg-white text-ljusblå border-2 border-ljusblå" onclick="myFunction()">Klicka här för att starta</button>
-                </div>
-          </div>
+<script>
+function myFunction() {
+  document.getElementById("myH1").setAttribute("class", "democlass"); 
+}
+</script>
 
-          <div class="column-3">
-                <img 
-                  src="/Image/blob-right.png"
-                  class="hover:bg-mörkblå h-96 pt-20">  <!-- Hover over Logo? -->
-          </div>
-
-</div>
-
-            <!-- Detta ska va kvar-->
-        <script type="module" crossorigin src="http://localhost:3000/@@vite/client"></script>
-        <script type="module" crossorigin src="http://localhost:3000/resources/js/app.js"></script>
-        </section>
-    
-    </body>
+</body>
 </html>
+
+Resultat:
+The Element Object
+The setAttribute() Method
+
+Click "Add Class" to add a class attribute to the h1 element:
+
+Add class (button)   Rubriken (The Element Object blir röd när man trycker på knappen)
