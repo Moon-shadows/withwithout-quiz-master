@@ -14,36 +14,33 @@ import '../css/app.css'
 
  
 
- /* Ex. code  setAttribute() is used to set attributes on a an element.
+ /*  **JAVASCRIPT**
+  Ex. code  setAttribute() is used to set attributes on a an element.
   Syntax: setAttribute(name, value) (name of the attribute and its value) 
   (same syntax for getAtribute() and RenoveAttribute().
-
-html 
+html: 
 <button>Hello World</button>
 
-
-javascript
-
+javascript:
 const button = document.querySelector("button");
 button.setAttribute("name", "helloButton"); change the name attibutes value to "helloButton"
 button.setAttribute("disabled", "");
+_________________________________________________________
 
-Lägg in id-attribute före tailwin class
+Lägg in id-attribute före tailwind class
 <p id="hello" class="text-48"> Fråga 2 av 35</p>*/
+/*
+_________________________________________________________
 
-
-
-/*<body>
+html:
 <p>Execute a function when a user clicks on a button:</p>
-
 <button id="myBtn">Try it</button>
-
+html:
 <p id="demo">*/
-
-
-const element = document.getElementById("myBtn");
+const element = document.getElementById("btn-page-two");
 element.addEventListener("click", myFunction);
 
 function myFunction() {
   document.getElementById("demo").innerHTML = "Hello World";
 }
+_________________________________________________________

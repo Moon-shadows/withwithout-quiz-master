@@ -5,7 +5,8 @@
   color: red;
 }
 </style>
-
+<a href="#" class="block px-4 py-2 text-sm text-gray-700" role="menuitem" 
+tabindex="-1" id="user-menu-item-1">Settings</a>
 <body>
 <h1 id="myH1">The Element Object</h1>
 <h2>The setAttribute() Method</h2>

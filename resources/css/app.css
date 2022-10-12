@@ -13,6 +13,11 @@
     tailwind classer och vanlig css för att använda vanliga css klasser.*/
 }
 
+.grid-3-columns{
+    width: 1440px;
+    height: 900px;
+}
+
 .btn-page-one{
     width: 220px;
     height: 52px;
@@ -38,13 +43,62 @@
     border-radius: 1000px;
     color: #7678ED;
     border: 2px solid #7678ED;
-
-
-text-align: center;
-
-
+    text-align: center;
 }
 
+#btn-progress{
+    position: absolute;
+    width: 116px;
+    height: 14px;
+    left: 0px;
+    top: 0px;
+    background: #000064;
+    border-radius: 10px;
+}
+
+.btn-page-third-yes{
+    width: 84px;
+    height: 52px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 14px, 32px, 14px, 32px;
+    border-radius: 1000px;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+    margin-right: 24px;
+}
+
+.btn-page-third-no{
+    width: 84px;
+    height: 52px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    padding: 14px, 32px, 14px, 32px;
+    border-radius: 1000px;
+    color: white;
+    border: 2px solid white;
+    text-align: center;
+}
+
+
+
+.devider{
+    position: absolute;
+    width: 620px;
+    height: 0px;
+    left: 36px;
+    top: 7px;
+
+    /* Brand/Ljusblå */
+    border: 2px solid #7678ED;
+}
 
 
 
