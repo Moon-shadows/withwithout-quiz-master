@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
     </head>
     <body >
-
+<div class="container mx-auto">
 <!-- First Page -->
 <!-- Grid Container Start (grid-3-columns) -->
       <div class="grid-3-columns grid grid-cols-12">
@@ -27,7 +27,7 @@
      
 
           
-          <div class="column-2 col-start-4 col-end-9 mt-80"> <!-- Column 2 Start -->
+          <div class="column-2 mx-auto col-start-4 col-end-9 mt-80"> <!-- Column 2 Start -->
                 <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
                     Svensk mästare i TP?
                 </h1>
@@ -74,7 +74,7 @@
 
 
    
-    <div class="column-2 col-start-4 col-end-9 mt-80 mb-44"> <!-- Column 2 Start -->
+    <div class="column-2 mx-auto col-start-4 col-end-9 mt-80 mb-44"> <!-- Column 2 Start -->
           <p class="text-20 text-center mb-10">Tv & film </p>
           <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
             I vilken amerikansk delstat utspelar sig den populära Netflixserien Stranger Things?
@@ -127,7 +127,7 @@
 
 
 
-    <div class="column-2 col-start-4 col-end-9 mt-80"> <!-- Column 2 Start -->
+    <div class="column-2 mx-auto col-start-4 col-end-9 mt-80"> <!-- Column 2 Start -->
         <p class="text-20 text-center text-white mb-10">Rätt svar: </p>
           <h1 class="text-green font-poppins text-48 font-semibold text-center mb-8"> 
               Indiana
@@ -173,15 +173,79 @@
 
 
 
-    <div class="column-2 col-start-4 col-end-9 mt-80"> <!-- Column 2 Start -->
+    <div class="column-2 mx-auto col-start-4 col-end-9 mt-80"> <!-- Column 2 Start -->
         <p class="text-20 text-center mb-10">Ditt resultat</p>
           <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
             21 av 35 rätt
           </h1>
-          <p class="text-20 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
-              Svara på 35 samtida frågor i 7 olika kategorier. </p>
-          <div class="w-63 text-center">
-              <button class="btn-page-one border-2 border-ljusblå" onclick="myFunction()">Klicka här för att starta</button>
+
+        <div class="buttons flex items-center gap-y-16 gap-x-2.5">
+            <div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-green"></div>
+                <div class="btn-page-fourth-green"></div>
+                <div class="btn-page-fourth-green"></div>
+                <p>Film & TV</p>
+            </div>
+
+            <div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-green"></div>
+                <div class="btn-page-fourth-green"></div>
+                <div class="btn-page-fourth-green"></div>
+                <div class="btn-page-fourth-green"></div>
+                <p>Geografi</p>
+            </div>
+
+            <div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-green"></div>
+                <div class="btn-page-fourth-green"></div>
+                <p>Historia</p>
+            </div>
+
+            <div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-green"></div>
+                <div class="btn-page-fourth-green"></div>
+                <div class="btn-page-fourth-green"></div>
+                <p>Musik</p>
+            </div>
+
+            <div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-green"></div>
+                <p>Övrigt</p>
+            </div>
+
+            <div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-green"></div>
+                <div class="btn-page-fourth-green"></div>
+                <div class="btn-page-fourth-green"></div>
+                <p>Vetenskap</p>
+            </div>
+
+            <div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-gray"></div>
+                <div class="btn-page-fourth-green"></div>
+                <div class="btn-page-fourth-green"></div>
+                <p>Sport</p>
+            </div>
+        </div>
+          
+          <div class="w-63 mt-16 text-center">
+              <button class="btn-page-fourth border-2 border-ljusblå" onclick="myFunction()">En runda till</button>
           </div>
     </div> <!-- Column 2 End --> 
 
@@ -197,8 +261,7 @@
 <!-- Grid Container End (grid-3-columns) -->
 <!-- Fourth page end -->
 
-
-
+</div>
 
 
 

@@ -27,11 +27,9 @@ module.exports = {
       red: '#881337',
       mörkblå: '#000064',
       ljusblå: '#7678ED',
-      green: '#00FFC4'
-      
-
-  
-    },
+      green: '#00FFC4',
+      gray: '#EEEEEE'
+      },
 
     fontFamily: {
       'poppins': ["Poppins", 'sans-serif'],
