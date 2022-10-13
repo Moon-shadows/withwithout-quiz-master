@@ -27,7 +27,7 @@
      
 
           
-          <div class="column-2 mx-auto col-start-4 col-end-9 mt-80"> <!-- Column 2 Start -->
+          <div class="column-2 mx-auto col-start-4 col-end-9 mt-[337px] mb-[327] h-[236]"> <!-- Column 2 Start -->
                 <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
                     Svensk mästare i TP?
                 </h1>
