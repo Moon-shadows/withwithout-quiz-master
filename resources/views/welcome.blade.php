@@ -8,7 +8,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
     </head>
     <body >
-<div class="container mx-auto">
+
 <!-- First Page -->
 <!-- Grid Container Start (grid-3-columns) -->
       <div class="grid-3-columns grid grid-cols-12 relative">
@@ -16,12 +16,12 @@
                 <div>
                     <img 
                         src="/Image/Logo(3).svg"
-                        class="hover:bg-mörkblå h-37.5 mt-6 mb-56 ml-14">  <!-- Hover over Logo? -->
+                        class=" h-[150px] mt-[30px] mb-[228px] ml-14">  <!-- Hover over Logo? -->
                 </div>
                 <div>
                     <img 
                         src="/Image/blob-left.png"
-                        class="hover:bg-mörkblå">  <!-- Hover over Logo? -->
+                        class=" h-[415px] mb-[77px]">  <!-- Hover over Logo? -->
                 </div>
           </div><!-- Column 1 End --> 
      
@@ -44,7 +44,7 @@
           <div class="column-3 col-start-10 col-end-12"> <!-- Column 3 Start -->
                 <img 
                   src="/Image/blob-right.png"
-                  class="hover:bg-mörkblå h-2/3 w-60 mt-20" absolute right-0>  <!-- Hover over Logo? -->
+                  class="hover:bg-mörkblå h-2/3 w-60 mt-20 absolute right-0" >  <!-- Hover over Logo? -->
           </div> <!-- Column 3 End --> 
       </div>
 <!-- Grid Container End (grid-3-columns) -->
@@ -60,16 +60,16 @@
 <!-- Grid Container Start (grid-3-columns) -->
 <div id="grid-3-columns" class="grid-3-columns grid grid-cols-12 relative">
     <div class="column-1"> <!-- Column 1 Start -->
-          <div>
-              <img 
-                  src="/Image/Logo(3).svg"
-                  class="hover:bg-mörkblå h-37.5 mt-6 mb-56 ml-14">  <!-- Hover over Logo? -->
-          </div>
-            <div>
-              <img 
-                  src="/Image/blob-left.png"
-                  class="hover:bg-mörkblå">  <!-- Hover over Logo? -->
-          </div>
+        <div>
+            <img 
+                src="/Image/Logo(3).svg"
+                class=" h-[150px] mt-[30px] mb-[228px] ml-14">  <!-- Hover over Logo? -->
+        </div>
+        <div>
+            <img 
+                src="/Image/blob-left.png"
+                class=" h-[415px] mb-[77px]">  <!-- Hover over Logo? -->
+        </div>
     </div><!-- Column 1 End --> 
 
 
@@ -80,12 +80,17 @@
             I vilken amerikansk delstat utspelar sig den populära Netflixserien Stranger Things?
           </h1>
           
-          <div class="w-63 text-center mb-12">
+          <div class="w-63 text-center mb-24">
                 <button id="btn-page-two" class="border-2 border-ljusblå">Se svaret</button>
                 <p id="demo">
           </div>
 
-          <div class="text-center">
+          <div class="progress-bar">
+                <div class="progress-line"></div>
+                <div class="progress-button"></div>
+        </div>
+
+          <div class="text-center mt">
                 <p>Fråga 3 av 35</p>
           </div> 
     </div> <!-- Column 2 End --> 
@@ -111,18 +116,17 @@
 <!-- Grid Container Start (grid-3-columns) -->
 <div class="grid-3-columns bg-ljusblå grid grid-cols-12 relative">
     <div class="column-1"> <!-- Column 1 Start -->
-          <div>
-              <img 
-                  src="/Image/Logo(4).svg"
-                  class="hover:bg-mörkblå h-37.5 mt-6 mb-56 ml-14">  <!-- Hover over Logo? -->
-          </div>
-          <div>
-              <img 
-                  src="/Image/blob-left-white.png"
-                  class="hover:bg-mörkblå">  <!-- Hover over Logo? -->
-          </div>
-    </div><!-- Column 1 End -->
-
+        <div>
+            <img 
+                src="/Image/Logo(4).svg"
+                class=" h-[150px] mt-[30px] mb-[228px] ml-14">  <!-- Hover over Logo? -->
+        </div>
+        <div>
+            <img 
+                src="/Image/blob-left-white.png"
+                class=" h-[415px] mb-[77px]">  <!-- Hover over Logo? -->
+        </div>
+  </div><!-- Column 1 End --> 
 
 
     <div class="column-2 mx-auto col-start-4 col-end-9 mt-80"> <!-- Column 2 Start -->
@@ -157,18 +161,17 @@
 <!-- Grid Container Start (grid-3-columns) -->
 <div class="grid-3-columns grid grid-cols-12 relative">
     <div class="column-1"> <!-- Column 1 Start -->
-          <div>
-              <img 
-                  src="/Image/Logo(3).svg"
-                  class="hover:bg-mörkblå h-37.5 mt-6 mb-56 ml-14">  <!-- Hover over Logo? -->
-          </div>
-          <div>
-              <img 
-                  src="/Image/blob-left.png"
-                  class="hover:bg-mörkblå">  <!-- Hover over Logo? -->
-          </div>
-    </div><!-- Column 1 End --> 
-
+        <div>
+            <img 
+                src="/Image/Logo(3).svg"
+                class=" h-[150px] mt-[30px] mb-[228px] ml-14">  <!-- Hover over Logo? -->
+        </div>
+        <div>
+            <img 
+                src="/Image/blob-left.png"
+                class=" h-[415px] mb-[77px]">  <!-- Hover over Logo? -->
+        </div>
+  </div><!-- Column 1 End --> 
 
 
     <div class="column-2 mx-auto col-start-4 col-end-9 mt-56 mb-36"> <!-- Column 2 Start -->
@@ -259,7 +262,7 @@
 <!-- Grid Container End (grid-3-columns) -->
 <!-- Fourth page end -->
 
-</div>
+
 
 
 
