@@ -11,7 +11,7 @@
 <div class="container mx-auto">
 <!-- First Page -->
 <!-- Grid Container Start (grid-3-columns) -->
-      <div class="grid-3-columns grid grid-cols-12">
+      <div class="grid-3-columns grid grid-cols-12 relative">
           <div class="column-1"> <!-- Column 1 Start -->
                 <div>
                     <img 
@@ -44,7 +44,7 @@
           <div class="column-3 col-start-10 col-end-12"> <!-- Column 3 Start -->
                 <img 
                   src="/Image/blob-right.png"
-                  class="hover:bg-mörkblå h-2/3 w-60 mt-20">  <!-- Hover over Logo? -->
+                  class="hover:bg-mörkblå h-2/3 w-60 mt-20" absolute right-0>  <!-- Hover over Logo? -->
           </div> <!-- Column 3 End --> 
       </div>
 <!-- Grid Container End (grid-3-columns) -->
@@ -58,7 +58,7 @@
 
 <!-- Second page start -->
 <!-- Grid Container Start (grid-3-columns) -->
-<div id="grid-3-columns" class="grid-3-columns grid grid-cols-12">
+<div id="grid-3-columns" class="grid-3-columns grid grid-cols-12 relative">
     <div class="column-1"> <!-- Column 1 Start -->
           <div>
               <img 
@@ -80,15 +80,13 @@
             I vilken amerikansk delstat utspelar sig den populära Netflixserien Stranger Things?
           </h1>
           
-          <div class="w-63 text-center pb-40">
+          <div class="w-63 text-center mb-12">
                 <button id="btn-page-two" class="border-2 border-ljusblå">Se svaret</button>
                 <p id="demo">
           </div>
 
-          <div class="progressbar w-63 text-center relative">
-                <div class="devider"></div>
-                <button id="btn-progress"></button> 
-                <p>Fråga 2 av 35</p>
+          <div class="text-center">
+                <p>Fråga 3 av 35</p>
           </div> 
     </div> <!-- Column 2 End --> 
 
@@ -97,7 +95,7 @@
     <div class="column-3 col-start-10 col-end-12"> <!-- Column 3 Start -->
           <img 
             src="/Image/blob-right.png"
-            class="hover:bg-mörkblå h-2/3 w-60 mt-20">  
+            class="hover:bg-mörkblå h-2/3 w-60 mt-20 absolute right-0">  
     </div> <!-- Column 3 End --> 
 </div>
 <!-- Grid Container End (grid-3-columns) -->
@@ -111,7 +109,7 @@
 
 <!-- Third Page -->
 <!-- Grid Container Start (grid-3-columns) -->
-<div class="grid-3-columns bg-ljusblå grid grid-cols-12">
+<div class="grid-3-columns bg-ljusblå grid grid-cols-12 relative">
     <div class="column-1"> <!-- Column 1 Start -->
           <div>
               <img 
@@ -135,7 +133,7 @@
           <p class="text-20 text-center text-white mb-10">Svarade du rätt? </p>
           <div class="w-63 text-center">
               <button class="btn-page-third-yes border-2 border-white" onclick="myFunction()">Ja</button>
-              <button class="btn-page-third-no border-2 border-white" onclick="myFunction()">Ja</button>
+              <button class="btn-page-third-no border-2 border-white" onclick="myFunction()">Nej</button>
             </div>
     </div> <!-- Column 2 End -->
     
@@ -144,7 +142,7 @@
     <div class="column-3 col-start-10 col-end-12"> <!-- Column 3 Start -->
           <img 
             src="/Image/blob-right-white.png"
-            class="hover:bg-mörkblå h-2/3 w-60 mt-20">  <!-- Hover over Logo? -->
+            class="hover:bg-mörkblå h-2/3 w-60 mt-20 absolute right-0">  <!-- Hover over Logo? -->
     </div> <!-- Column 3 End --> 
 </div>
 <!-- Grid Container End (grid-3-columns) -->
@@ -157,7 +155,7 @@
 
 <!-- Fourth Page -->
 <!-- Grid Container Start (grid-3-columns) -->
-<div class="grid-3-columns grid grid-cols-12">
+<div class="grid-3-columns grid grid-cols-12 relative">
     <div class="column-1"> <!-- Column 1 Start -->
           <div>
               <img 
@@ -173,20 +171,20 @@
 
 
 
-    <div class="column-2 mx-auto col-start-4 col-end-9 mt-80"> <!-- Column 2 Start -->
+    <div class="column-2 mx-auto col-start-4 col-end-9 mt-56 mb-36"> <!-- Column 2 Start -->
         <p class="text-20 text-center mb-10">Ditt resultat</p>
           <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
             21 av 35 rätt
           </h1>
 
-        <div class="buttons flex items-center gap-y-16 gap-x-2.5">
+        <div class="buttons flex items-center gap-2.5 gap-x-16">
             <div>
                 <div class="btn-page-fourth-gray"></div>
                 <div class="btn-page-fourth-gray"></div>
                 <div class="btn-page-fourth-green"></div>
                 <div class="btn-page-fourth-green"></div>
                 <div class="btn-page-fourth-green"></div>
-                <p>Film & TV</p>
+                <p class="mt-1">Film & TV</p>
             </div>
 
             <div>
@@ -195,7 +193,7 @@
                 <div class="btn-page-fourth-green"></div>
                 <div class="btn-page-fourth-green"></div>
                 <div class="btn-page-fourth-green"></div>
-                <p>Geografi</p>
+                <p class="mt-1">Geografi</p>
             </div>
 
             <div>
@@ -204,7 +202,7 @@
                 <div class="btn-page-fourth-gray"></div>
                 <div class="btn-page-fourth-green"></div>
                 <div class="btn-page-fourth-green"></div>
-                <p>Historia</p>
+                <p class="mt-1">Historia</p>
             </div>
 
             <div>
@@ -213,7 +211,7 @@
                 <div class="btn-page-fourth-green"></div>
                 <div class="btn-page-fourth-green"></div>
                 <div class="btn-page-fourth-green"></div>
-                <p>Musik</p>
+                <p class="mt-1">Musik</p>
             </div>
 
             <div>
@@ -222,7 +220,7 @@
                 <div class="btn-page-fourth-gray"></div>
                 <div class="btn-page-fourth-gray"></div>
                 <div class="btn-page-fourth-green"></div>
-                <p>Övrigt</p>
+                <p class="mt-1">Övrigt</p>
             </div>
 
             <div>
@@ -231,7 +229,7 @@
                 <div class="btn-page-fourth-green"></div>
                 <div class="btn-page-fourth-green"></div>
                 <div class="btn-page-fourth-green"></div>
-                <p>Vetenskap</p>
+                <p class="mt-1">Vetenskap</p>
             </div>
 
             <div>
@@ -240,7 +238,7 @@
                 <div class="btn-page-fourth-gray"></div>
                 <div class="btn-page-fourth-green"></div>
                 <div class="btn-page-fourth-green"></div>
-                <p>Sport</p>
+                <p class="mt-1">Sport</p>
             </div>
         </div>
           
@@ -255,7 +253,7 @@
     <div class="column-3 col-start-10 col-end-12"> <!-- Column 3 Start -->
           <img 
             src="/Image/blob-right.png"
-            class="hover:bg-mörkblå h-2/3 w-60 mt-20">  <!-- Hover over Logo? -->
+            class="hover:bg-mörkblå h-2/3 w-60 mt-20 absolute right-0">  <!-- Hover over Logo? -->
     </div> <!-- Column 3 End --> 
 </div>
 <!-- Grid Container End (grid-3-columns) -->

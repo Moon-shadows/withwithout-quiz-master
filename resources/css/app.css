@@ -16,7 +16,8 @@
 .grid-3-columns{
     max-width: 1440px;
     max-height: 900px;
-}
+    margin:auto;
+   }
 
 .btn-page-one{
     width: 220px;
