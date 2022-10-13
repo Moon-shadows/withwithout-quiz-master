@@ -74,7 +74,7 @@
 
 
    
-    <div class="column-2 mx-auto col-start-4 col-end-9 mt-80 mb-44"> <!-- Column 2 Start -->
+    <div class="column-2 mx-auto col-start-4 col-end-9 mt-[268px] mb-[268px] h-[364px]"> <!-- Column 2 Start -->
           <p class="text-20 text-center mb-10">Tv & film </p>
           <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
             I vilken amerikansk delstat utspelar sig den populära Netflixserien Stranger Things?
