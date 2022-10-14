@@ -106,19 +106,13 @@
 
 
 
-    .btn-progress{
-        position: absolute;
-        width: 116px;
-        height: 14px;
-        left: 0px;
-        top: 0px;
-        background: #000064;
-        border-radius: 10px;
-    }
+   
     
+.progress-slide{
+    position: absolute;
+}
 
-
-.devider{
+.progress-line{
     position: absolute;
     width: 620px;
     height: 0px;
@@ -127,6 +121,38 @@
 
     /* Brand/Ljusblå */
     border: 2px solid #7678ED;
+}
+progress-slide{
+    position: absolute;
+}
+
+.progress-line-white{
+    position: absolute;
+    width: 620px;
+    height: 0px;
+    left: 36px;
+    top: 7px;
+
+    /* Brand/Ljusblå */
+    border: 2px solid white;
+}
+.progress-button{
+    position: absolute;
+    width: 116px;
+    height: 14px;
+    left: 0px;
+    top: 0px;
+    background: #000064;
+    border-radius: 10px;
+}
+.progress-button-white{
+    position: absolute;
+    width: 116px;
+    height: 14px;
+    left: 0px;
+    top: 0px;
+    background: white;
+    border-radius: 10px;
 }
 
 
