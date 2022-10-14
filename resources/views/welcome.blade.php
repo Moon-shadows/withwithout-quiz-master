@@ -9,10 +9,11 @@
     </head>
     <body >
 
-<!-- First Page -->
+<!-- Page1 -->
 <!-- Grid Container Start (grid-3-columns) -->
+<!-- Page1/Column 1 Start -->
       <div id="startPage" class="grid-3-columns grid grid-cols-12 relative">
-          <div class="column-1"> <!-- Column 1 Start -->
+          <div class="column-1"> 
                 <div>
                     <img 
                         src="/Image/Logo(3).svg"
@@ -23,11 +24,12 @@
                         src="/Image/blob-left.png"
                         class=" h-[415px] mb-[77px]">  <!-- Hover over Logo? -->
                 </div>
-          </div><!-- Column 1 End --> 
+          </div>
+<!-- Page1/Column 1 End --> 
      
 
-          
-          <div class="column-2 mx-auto col-start-4 col-end-9 mt-[337px] mb-[327] h-[236]"> <!-- Column 2 Start -->
+<!-- Page1/Column 2 Start -->          
+          <div class="column-2 mx-auto col-start-4 col-end-9 mt-[337px] mb-[327] h-[236]"> 
                 <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
                     Svensk mästare i TP?
                 </h1>
@@ -36,19 +38,21 @@
                 <div class="w-63 text-center">
                     <button class="btn-page-one border-2 border-ljusblå" onclick="myFunction()">Klicka här för att starta</button>
                 </div>
-          </div> <!-- Column 2 End --> 
+          </div> 
+<!-- Page1/Column 2 End --> 
 
          
          
-         
-          <div class="column-3 col-start-10 col-end-12"> <!-- Column 3 Start -->
+<!-- Page1/Column 3 Start -->
+          <div class="column-3 col-start-10 col-end-12"> 
                 <img 
                   src="/Image/blob-right.png"
                   class=" h-[573px] mt-[80px] absolute right-0" >  <!-- Hover over Logo? -->
-          </div> <!-- Column 3 End --> 
+          </div> 
       </div>
+<!-- Page1/Column 3 End --> 
 <!-- Grid Container End (grid-3-columns) -->
-<!-- First page end -->
+<!-- Page1 end -->
 
 
 
@@ -56,10 +60,11 @@
 
 
 
-<!-- Second page start -->
+<!-- Page2 start -->
 <!-- Grid Container Start (grid-3-columns) -->
+<!-- Page2/Column 1 Start -->
 <div id="guestionPage" class="grid-3-columns grid grid-cols-12 relative">
-    <div class="column-1"> <!-- Column 1 Start -->
+    <div class="column-1"> 
         <div>
             <img 
                 src="/Image/Logo(3).svg"
@@ -70,11 +75,12 @@
                 src="/Image/blob-left.png"
                 class=" h-[415px] mb-[77px]">  <!-- Hover over Logo? -->
         </div>
-    </div><!-- Column 1 End --> 
+    </div>
+<!-- Page2/Column 1 End --> 
 
 
-   
-    <div class="column-2 mx-auto col-start-4 col-end-9 mt-[268px] mb-[165px] h-[364px]"> <!-- Column 2 Start -->
+<!-- Page2/Column 2 Start -->   
+    <div class="column-2 mx-auto col-start-4 col-end-9 mt-[268px] mb-[165px] h-[364px]"> 
           <p class="text-20 text-center mb-10">Tv & film </p>
           <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
             I vilken amerikansk delstat utspelar sig den populära Netflixserien Stranger Things?
@@ -86,7 +92,7 @@
           </div>
   
 
-          <div class="progress-bar mx-auto mb-[55px] h-[48px] max-w-[620px]">
+          <div class="progress-bar mx-auto mb-[55px] h-[48px] max-w-[656px]">
                 <div class="progress-slide"> 
                     <div class="progress-line"></div>
                     <div class="progress-button"></div>
@@ -96,18 +102,20 @@
                     <p>Fråga 2 av 35</p>
                 </div>
           </div> 
-    </div> <!-- Column 2 End --> 
+    </div> 
+<!-- Page2/Column 2 End --> 
 
     
-    
-    <div class="column-3 col-start-10 col-end-12"> <!-- Column 3 Start -->
+<!-- Page2/Column 3 Start -->   
+    <div class="column-3 col-start-10 col-end-12"> 
           <img 
           src="/Image/blob-right.png"
           class=" h-[573px] mt-[80px] absolute right-0" >
-    </div> <!-- Column 3 End --> 
+    </div> 
 </div>
+<!-- Page2/Column 3 End --> 
 <!-- Grid Container End (grid-3-columns) -->
-<!-- Second page end -->
+<!-- Page2 end -->
 
 
 
@@ -115,10 +123,11 @@
 
 
 
-<!-- Third Page -->
+<!-- Page3 -->
 <!-- Grid Container Start (grid-3-columns) -->
+<!-- Page3/Column 1 Start -->
 <div  id="answerPage" class="grid-3-columns bg-ljusblå grid grid-cols-12 relative">
-    <div class="column-1"> <!-- Column 1 Start -->
+    <div class="column-1"> 
         <div>
             <img 
                 src="/Image/Logo(4).svg"
@@ -129,52 +138,58 @@
                 src="/Image/blob-left-white.png"
                 class=" h-[415px] mb-[77px]">  <!-- Hover over Logo? -->
         </div>
-  </div><!-- Column 1 End --> 
+  </div>
+<!-- Page3/Column 1 End -->
+  
+  
 
-
-    <div class="column-2 mx-auto col-start-4 col-end-9 mt-80"> <!-- Column 2 Start -->
+<!-- Page3/Column 2 Start -->
+    <div class="column-2 mx-auto col-start-4 col-end-9  mx-4 mt-[346px] mb-[179px] h-[272px]"> 
         <p class="text-20 text-center text-white mb-10">Rätt svar: </p>
-          <h1 class="text-green font-poppins text-48 font-semibold text-center mb-8"> 
+        <h1 class="text-green font-poppins text-48 font-semibold text-center mb-8"> 
               Indiana
-          </h1>
-          <p class="text-20 text-center text-white mb-10">Svarade du rätt? </p>
-          <div class="w-63 text-center">
-              <button class="btn-page-third-yes border-2 border-white" onclick="myFunction()">Ja</button>
-              <button class="btn-page-third-no border-2 border-white" onclick="myFunction()">Nej</button>
+        </h1>
+        <p class="text-20 text-center text-white mb-10">Svarade du rätt? </p>
+        <div class="w-63 text-center mb-24">
+            <button class="btn-page-third-yes border-2 border-white" onclick="myFunction()">Ja</button>
+            <button class="btn-page-third-no border-2 border-white" onclick="myFunction()">Nej</button>
+        </div>
+
+        <div class="progress-bar mx-auto mb-[55px] h-[48px] max-w-[656px]">
+            <div class="progress-slide"> 
+                <div class="progress-line-white"></div>
+                <div class="progress-button-white"></div>
             </div>
 
-            <div class="progress-bar mx-auto mb-[55px] h-[48px] max-w-[620px]">
-                <div class="progress-slide"> 
-                    <div class="progress-line-white"></div>
-                    <div class="progress-button-white"></div>
-                </div>
-
-                <div class="text-center pt-3.5">
-                    <p>Fråga 2 av 35</p>
-                </div>
-          </div>  
-    </div> <!-- Column 2 End -->
+            <div class="text-center pt-3.5">
+                <p>Fråga 2 av 35</p>
+            </div>
+        </div>  
+    </div> 
+<!-- Page3/Column 2 End -->
     
     
-
-    <div class="column-3 col-start-10 col-end-12"> <!-- Column 3 Start -->
+<!-- Page3/Column 3 Start -->
+    <div class="column-3 col-start-10 col-end-12"> 
           <img 
           src="/Image/blob-right-white.png"
           class=" h-[573px] mt-[80px] absolute right-0" >
-    </div> <!-- Column 3 End --> 
+    </div> 
 </div>
+<!-- Page3/Column 3 End --> 
 <!-- Grid Container End (grid-3-columns) -->
-<!-- Third page end -->
+<!-- Page3 end -->
 
 
 
 
 
 
-<!-- Fourth Page -->
+<!-- Page4 -->
 <!-- Grid Container Start (grid-3-columns) -->
+<!-- Page4/Column 1 Start -->
 <div   id="resultPage" class="grid-3-columns grid grid-cols-12 relative">
-    <div class="column-1"> <!-- Column 1 Start -->
+    <div class="column-1"> 
         <div>
             <img 
                 src="/Image/Logo(3).svg"
@@ -185,14 +200,16 @@
                 src="/Image/blob-left.png"
                 class=" h-[415px] mb-[77px]">  <!-- Hover over Logo? -->
         </div>
-  </div><!-- Column 1 End --> 
+  </div>
+<!-- Page4/Column 1 End --> 
 
 
-    <div class="column-2 mx-auto col-start-4 col-end-9 mt-56 mb-36"> <!-- Column 2 Start -->
+<!-- Page4/ Column 2 Start -->
+    <div class="column-2 mx-auto col-start-4 col-end-9 mt-56 mb-36"> 
         <p class="text-20 text-center mb-10">Ditt resultat</p>
-          <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
+        <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
             21 av 35 rätt
-          </h1>
+        </h1>
 
         <div class="buttons flex items-center gap-2.5 gap-x-16">
             <div>
@@ -262,19 +279,21 @@
           <div class="w-63 mt-16 text-center">
               <button class="btn-page-fourth border-2 border-ljusblå" onclick="myFunction()">En runda till</button>
           </div>
-    </div> <!-- Column 2 End --> 
+    </div> 
+<!-- Page4/Column 2 End --> 
 
 
 
-
-    <div class="column-3 col-start-10 col-end-12"> <!-- Column 3 Start -->
+<!-- Page4/Column 3 Start -->
+    <div class="column-3 col-start-10 col-end-12"> 
           <img 
           src="/Image/blob-right.png"
           class=" h-[573px] mt-[80px] absolute right-0" >
-    </div> <!-- Column 3 End --> 
+    </div>
 </div>
+<!-- Page4/Column 3 End --> 
 <!-- Grid Container End (grid-3-columns) -->
-<!-- Fourth page end -->
+<!-- Page4 end -->
 
 
 
