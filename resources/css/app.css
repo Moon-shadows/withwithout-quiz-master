@@ -13,10 +13,13 @@
     tailwind classer och vanlig css för att använda vanliga css klasser.*/
 }
 
-.grid-3-columns{
-    max-width: 100%;
-    max-height: 100%;
-  }
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 656px 1fr;
+    grid-template-rows: 900px 900px 900px 900px;
+}
+
+  
 
 .btn-page-one{
     width: 220px;
@@ -31,7 +34,7 @@
     border-radius: 1000px;
     }
 
-#btn-page-two{
+#questionButton{
     width: 156px;
     height: 50px;
     font-family: 'Poppins';
