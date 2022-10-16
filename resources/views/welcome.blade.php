@@ -13,7 +13,7 @@
 <!-- Grid Container Start (grid-3-columns) -->
 <!-- Page1/Column 1 Start -->
       <div class="grid-container">
-          <div class="column-1 bg-red"> 
+          <div class="column-1"> 
                 <div>
                     <img 
                         src="/Image/Logo(3).svg"
@@ -29,7 +29,7 @@
      
 
 <!-- Page1/Column 2 Start -->          
-          <div class="column-2 bg-ljusblå mt-[337px] mb-[327] w-full"> 
+          <div class="column-2 mt-[337px] mb-[327] w-full"> 
                 <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
                     Svensk mästare i TP?
                 </h1>
@@ -44,7 +44,7 @@
          
          
 <!-- Page1/Column 3 Start -->
-          <div class="column-3 bg-green "> 
+          <div class="column-3 bg"> 
                 <img 
                   src="/Image/blob-right.svg"
                   class=" w-[245px] mt-[80px] float-right">  
@@ -106,7 +106,7 @@
 
     
 <!-- Page2/Column 3 Start -->   
-                <div class="column-3 bg-green "> 
+                <div class="column-3"> 
                     <img 
                     src="/Image/blob-right.svg"
                     class=" w-[245px] mt-[80px] float-right">  
@@ -138,11 +138,14 @@
                 </div>
             </div>
 <!-- Page3/Column 1 End -->
-  
+
+
+
   
 
 <!-- Page3/Column 2 Start -->
-            <div class="column-2 mx-auto  mt-[346px] mb-[179px] w-full> 
+  <div class="bg-ljusblå">
+            <div id="answerPage" class="column-2 mt-[346px] mb-[179px] w-full"> 
                 <p class="text-20 text-center text-white mb-10">Rätt svar: </p>
                 <h1 class="text-green font-poppins text-48 font-semibold text-center mb-8"> 
                     Indiana
@@ -153,7 +156,7 @@
                     <button id="answerButtonNo"  class="btn-page-third-no border-2 border-white" onclick="myFunction()">Nej</button>
                 </div>
 
-                <div class="progress-bar mx-auto mb-[55px] h-[48px] max-w-[620px]">
+                <div class="progress-bar mt-[179px] h-[48px] w-full">
                     <div class="progress-slide"> 
                         <div class="progress-line-white"></div>
                         <div class="progress-button-white"></div>
@@ -163,12 +166,13 @@
                         <p id="questionNumber"></p>
                     </div>
                 </div>  
-            </div> 
+            </div>
+    </div>
 <!-- Page3/Column 2 End -->
     
     
 <!-- Page3/Column 3 Start -->
-            <div class="column-3 bg-green "> 
+            <div class="column-3 bg-ljusblå"> 
                 <img 
                 src="/Image/blob-right-white.svg"
                 class=" w-[245px] mt-[80px] float-right">  
@@ -201,14 +205,14 @@
 
 
 <!-- Page4/ Column 2 Start -->
-            <div  id="resultPage"  class="column-2 mt-56 mb-36 w-full"> 
+            <div  id="resultPage" class="column-2 mt-56 mb-36 w-full"> 
                 <p class="text-20 text-center mb-10">Ditt resultat</p>
                 <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
                     21 av 35 rätt
                 </h1>
 
                 <div class="buttons flex items-center gap-2.5 gap-x-16">
-                    <div class="flex  gap-y-2">
+                    <div class="flex flex-col gap-y-2">
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-green"></div>
@@ -217,7 +221,7 @@
                         <p class="mt-1">Film & TV</p>
                     </div>
 
-                    <div>
+                    <div class="flex flex-col gap-y-2">
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-green"></div>
                         <div class="btn-page-fourth-green"></div>
@@ -226,7 +230,7 @@
                         <p class="mt-1">Geografi</p>
                     </div>
 
-                    <div>
+                    <div class="flex flex-col gap-y-2">
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-gray"></div>
@@ -235,7 +239,7 @@
                         <p class="mt-1">Historia</p>
                     </div>
 
-                    <div>
+                    <div class="flex flex-col gap-y-2">
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-green"></div>
@@ -244,7 +248,7 @@
                         <p class="mt-1">Musik</p>
                     </div>
 
-                    <div>
+                    <div class="flex flex-col gap-y-2">
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-gray"></div>
@@ -253,7 +257,7 @@
                         <p class="mt-1">Övrigt</p>
                     </div>
 
-                    <div>
+                    <div class="flex flex-col gap-y-2">
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-green"></div>
@@ -262,7 +266,7 @@
                         <p class="mt-1">Vetenskap</p>
                     </div>
 
-                    <div>
+                    <div class="flex flex-col gap-y-2">
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-gray"></div>
@@ -281,12 +285,12 @@
 
 
     <!-- Page4/Column 3 Start -->
-                    <div class="column-3 bg-green "> 
-                        <img 
+            <div class="column-3"> 
+                <img 
                         src="/Image/blob-right.svg"
                         class=" w-[245px] mt-[80px] float-right">  
-                    </div>  
-                </div>
+            </div>  
+        </div>
     <!-- Page4/Column 3 End --> 
     <!-- Grid Container End (grid-3-columns) -->
     <!-- Page4 end -->
