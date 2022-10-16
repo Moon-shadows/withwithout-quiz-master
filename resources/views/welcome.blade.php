@@ -30,7 +30,7 @@
 
 <!-- Page1/Column 2 Start -->          
           <div class="column-2 mt-[337px] mb-[327] w-full"> 
-                <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
+                <h1 class="text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                     Svensk mästare i TP?
                 </h1>
                 <p class="text-20 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
@@ -81,7 +81,7 @@
         <!-- Page2/Column 2 Start -->   
             <div id="guestionPage" class="column-2  mt-[268px] mb-[165px] w-full"> 
                 <p class="text-20 text-center mb-10">Tv & film </p>
-                <h1 id="question" class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
+                <h1 id="question" class="text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                     I vilken amerikansk delstat utspelar sig den populära Netflixserien Stranger Things?
                 </h1>
                 
