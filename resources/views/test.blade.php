@@ -355,3 +355,15 @@
     }
   }
   
+
+
+  /***StartPage***/
+const startButton = document.getElementById("start-btn");
+startButton.addEventListener("click", changeStartPage);
+function changeStartPage(){
+startPage[0].style.display = "none";
+questionPage[0].style.display = "block";
+document.getElementById('questionCounter').innerHTML = `Fråga + ${questionCounter}  av ${maxQuestions}`;
+progressbar.style.width = (questionCounter/maxQuestions) * 100 + "%";
+progressbar.style.width = (questionCounter/maxQuestions) * 100 + "%";
+}

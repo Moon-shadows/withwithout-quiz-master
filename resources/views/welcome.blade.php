@@ -33,7 +33,7 @@
                 <h1 class=" text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                     Svensk mästare i TP?
                 </h1>
-                <p class="mytext">klkl</p>
+               
                 <p  id="startText"  class="popper text-20 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
                     Svara på 35 samtida frågor i 7 olika kategorier. </p>
                 <div class="w-63 text-center">
@@ -87,17 +87,17 @@
                 </h1>
                 
                 <div class="w-63 text-center mb-24">
-                        <button id="answerButton" class=" questionPage border-2 border-ljusblå">Se svaret</button>
+                        <button id="answerButton" class="questionPage border-2 border-ljusblå">Se svaret</button>
                 </div>
         
 
              
                         <div class="questionPage progress-bar"> 
                             <div class="progress-line absolute w-56 h-[2px] bg-ljusblå tablet:w-[420px] xl:w-[620px]"></div>
-                            <div class="progress-button"></div>
+                            <div id="progressButton" class="progress-button"></div>
                        
 
-                        <div id="questionCounter" class=" questionPage text-center text-darkblue pt-3.5">
+                        <div id="questionCounter" class="questionPage text-center text-darkblue pt-3.5">
                             <p>Fråga 2 av 35</p>
                         </div>
                 </div> 
@@ -159,7 +159,7 @@
                 <div class="progress-bar mt-[179px] h-[48px] w-full">
                     <div class="progress-slide"> 
                         <div class="progress-line-white absolute w-56 h-[2px] bg-white tablet:w-[420px] xl:w-[620px]"></div>
-                        <div class="progress-button-white"></div>
+                        <div id="progressButtonWhite"  class="progress-button-white"></div>
                     </div>
 
                     <div class="text-center pt-3.5">
