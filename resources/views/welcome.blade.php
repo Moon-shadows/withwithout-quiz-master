@@ -33,11 +33,11 @@
                 <h1 class=" text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                     Svensk mästare i TP?
                 </h1>
-                <p class="mytext">Klicka här!!!</p>
+                <p class="mytext">klkl</p>
                 <p  id="startText"  class="popper text-20 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
                     Svara på 35 samtida frågor i 7 olika kategorier. </p>
                 <div class="w-63 text-center">
-                    <button id="start-btn" class="btn-page-one border-2 border-ljusblå" onclick="myFunction()">Klicka här för att starta</button>
+                    <button id="start-btn" class="btn-page-one border-2 border-ljusblå">Klicka här för att starta</button>
                 </div>
           </div> 
 <!-- Page1/Column 2 End --> 

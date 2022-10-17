@@ -25,16 +25,13 @@ const resultPage = document.getElementsByClassName("answerPage");
 
 
 
-const element = document.getElementById("start-btn");
-element.addEventListener("click", changeText);
-
-function myFunction() {
-  document.getElementsByClassName("popper").style.backgroundColor ="red";
-}
+const startButton = document.getElementById("start-btn");
+startButton.addEventListener("click", changeStartPage);
 
 
-function changeText(){
+function changeStartPage(){
 startPage[0].style.display = "none";
+questionPage[0].style.display = "block";
 }
 
 
