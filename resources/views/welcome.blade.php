@@ -33,7 +33,8 @@
                 <h1 class=" text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                     Svensk mästare i TP?
                 </h1>
-                <p class="text-20 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
+                <p class="mytext">Klicka här!!!</p>
+                <p  id="startText"  class="popper text-20 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
                     Svara på 35 samtida frågor i 7 olika kategorier. </p>
                 <div class="w-63 text-center">
                     <button id="start-btn" class="btn-page-one border-2 border-ljusblå" onclick="myFunction()">Klicka här för att starta</button>
@@ -67,12 +68,12 @@
                 <div>
                     <img 
                         src="/Image/Logo(3).svg"
-                        class=" guestionPage h-[150px] mt-[30px] mb-[228px] ml-14">  
+                        class=" questionPage h-[150px] mt-[30px] mb-[228px] ml-14">  
                 </div>
                 <div>
                     <img 
                         src="/Image/blob-left.svg"
-                        class=" guestionPage  h-[415px] mb-[77px]">  
+                        class=" questionPage  h-[415px] mb-[77px]">  
                 </div>
             </div>
         <!-- Page2/Column 1 End --> 
@@ -80,23 +81,23 @@
 
         <!-- Page2/Column 2 Start -->   
             <div class="column-2  mt-[268px] mb-[165px] w-full"> 
-                <p class="guestionPage text-20 text-center mb-10">Tv & film </p>
-                <h1 id="question" class=" guestionPage text-mörkblå font-poppins text-20  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
+                <p class="questionPage text-20 text-center mb-10">Tv & film </p>
+                <h1 id="question" class=" questionPage text-mörkblå font-poppins text-20  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                     I vilken amerikansk delstat utspelar sig den populära Netflixserien Stranger Things?
                 </h1>
                 
                 <div class="w-63 text-center mb-24">
-                        <button id="answerButton" class=" guestionPage border-2 border-ljusblå">Se svaret</button>
+                        <button id="answerButton" class=" questionPage border-2 border-ljusblå">Se svaret</button>
                 </div>
         
 
              
-                        <div class=" guestionPage progress-bar"> 
+                        <div class="questionPage progress-bar"> 
                             <div class="progress-line absolute w-56 h-[2px] bg-ljusblå tablet:w-[420px] xl:w-[620px]"></div>
                             <div class="progress-button"></div>
                        
 
-                        <div id="questionCounter" class=" guestionPage text-center text-darkblue pt-3.5">
+                        <div id="questionCounter" class=" questionPage text-center text-darkblue pt-3.5">
                             <p>Fråga 2 av 35</p>
                         </div>
                 </div> 
@@ -108,7 +109,7 @@
                 <div class="column-3"> 
                     <img 
                     src="/Image/blob-right.svg"
-                    class=" guestionPage  w-[245px] mt-[80px] float-right">  
+                    class=" questionPage  w-[245px] mt-[80px] float-right">  
                 </div>  
 <!-- Page2/Column 3 End --> 
 <!-- Grid Container End (grid-3-columns) -->

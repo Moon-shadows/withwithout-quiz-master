@@ -342,3 +342,16 @@
 <div class="relative w-56 h-[2px] bg-ljusblå tablet:w-[420px] xl:w-[620px]">
     <div id="progressbar" class="absolute h-3 w-[30%] center-y bg-mörkblå rounded-full"></div>
 </div>
+
+
+
+
+  
+
+  function changeText(){
+    let startPage = document.getElementsByClassName('startPage');
+    for(var i = 0; i < startPage.length; i++){  
+    startPage[i].style.backgroundColor = "blue";
+    }
+  }
+  

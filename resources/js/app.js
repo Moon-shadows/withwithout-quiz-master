@@ -17,24 +17,56 @@ import { countBy } from 'lodash';
 
 
 
-const startPage = document.querySelector("startPage");
-const guestionPage = document.querySelector("guestionPage");
+const startPage = document.getElementsByClassName("startPage");
+const questionPage = document.getElementsByClassName("questionPage");
+const answerPage = document.getElementsByClassName("answerPage");
+const resultPage = document.getElementsByClassName("answerPage");
 
-let questionCounter = document.getElementById("questionCounter");
 
 
-document.getElementById("start-btn").onclick = function() {
-  startPage.style.display = "none";
-  questionPage.style.display = "block";
- };
+
+const element = document.getElementById("start-btn");
+element.addEventListener("click", changeText);
+
+function myFunction() {
+  document.getElementsByClassName("popper").style.backgroundColor ="red";
+}
+
+
+function changeText(){
+startPage[0].style.display = "none";
+}
+
+
+
 
 
 
  /**
   * 
+  * 
+  document.getElementById('start-btn').onclick = function() {
+  startPage.style.display = "none";
+  questionPage.style.display = "block";
+ };
+
+  * 
+  * html:
+<button id="myBtn">Try it</button>
+<p id="demo">
+js:
+const element = document.getElementById("myBtn");
+element.addEventListener("click", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = "Hello World";
+}
+  * 
   *  questionNumber.innerHTML = "Fråga" + count.length + "av" + numberOfQuestions;
   * 
   * 
+let questionCounter = document.getElementById("questionCounter");
+
  let count =[1];
  let correctMovie =[];
  let correctGeografi =[];
@@ -46,8 +78,7 @@ document.getElementById("start-btn").onclick = function() {
  
 
  
- const answerPage = document.getElementById("answerPage");
- const resultPage = document.getElementById("resultPage");
+ 
 
 
 document.getElementById("questionButton").onclick = function() {
@@ -70,30 +101,24 @@ document.getElementById("answerButtonYes").onclick = function() {
 
  
 
- /*  **Testing JAVASCRIPT**
-  Ex. code  setAttribute() is used to set attributes on a an element.
-  Syntax: setAttribute(name, value) (name of the attribute and its value) 
-  (same syntax for getAtribute() and RenoveAttribute().
+ 
 html: 
 <button>Hello World</button>
-
-javascript:
+js:
 const button = document.querySelector("button");
 button.setAttribute("name", "helloButton"); change the name attibutes value to "helloButton"
-button.setAttribute("disabled", "");
+
 _________________________________________________________
 
-Lägg in id-attribute före tailwind class
-<p id="hello" class="text-48"> Fråga 2 av 35</p>*/
-/*
-_________________________________________________________
+_______________________________________________________
+***Examples****
+Execute a function when a user clicks on a button
 
 html:
-<p>Execute a function when a user clicks on a button:</p>
 <button id="myBtn">Try it</button>
-html:
 <p id="demo">
-const element = document.getElementById("btn-page-two");
+js:
+const element = document.getElementById("myBtn");
 element.addEventListener("click", myFunction);
 
 function myFunction() {
