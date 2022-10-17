@@ -16,7 +16,7 @@
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 656px 1fr;
-    grid-template-rows: 900px 900px 900px 900px;
+    grid-template-rows: 900px 900px 900px auto;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -28,9 +28,10 @@
 } 
 @media only screen and (max-width: 640px) {
 
-    .column-2{
-        padding-left: 200px;
-        padding-right: 200px;
+    .grid-container{
+        display: grid;
+        grid-template-columns: 1fr 556px 1fr;
+        grid-template-rows: 900px 900px 900px auto;
     }
 } 
 
@@ -121,37 +122,10 @@
     }
 
 
-
-   
-    
-.progress-slide{
-    position: absolute;
+.progress-bar{
+    position: relative;
 }
 
-.progress-line{
-    position: absolute;
-    width: 620px;
-    height: 0px;
-    left: 36px;
-    top: 7px;
-
-    /* Brand/Ljusblå */
-    border: 2px solid #7678ED;
-}
-progress-slide{
-    position: absolute;
-}
-
-.progress-line-white{
-    position: absolute;
-    width: 620px;
-    height: 0px;
-    left: 36px;
-    top: 7px;
-
-    /* Brand/Ljusblå */
-    border: 2px solid white;
-}
 .progress-button{
     position: absolute;
     width: 116px;
@@ -161,6 +135,8 @@ progress-slide{
     background: #000064;
     border-radius: 10px;
 }
+
+
 .progress-button-white{
     position: absolute;
     width: 116px;
@@ -172,10 +148,7 @@ progress-slide{
 }
 
 
+.guestionPage{
+    display: none;
+}
 
-
-#hello{
-    
-    background-color: aqua;
-  
-  }

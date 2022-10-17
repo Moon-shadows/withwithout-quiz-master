@@ -13,6 +13,28 @@ import { countBy } from 'lodash';
 
  window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
+
+
+
+
+const startPage = document.querySelector("startPage");
+const guestionPage = document.querySelector("guestionPage");
+
+let questionCounter = document.getElementById("questionCounter");
+
+
+document.getElementById("start-btn").onclick = function() {
+  startPage.style.display = "none";
+  questionPage.style.display = "block";
+ };
+
+
+
+ /**
+  * 
+  *  questionNumber.innerHTML = "Fråga" + count.length + "av" + numberOfQuestions;
+  * 
+  * 
  let count =[1];
  let correctMovie =[];
  let correctGeografi =[];
@@ -23,16 +45,11 @@ import { countBy } from 'lodash';
  let correctSport =[];
  
 
- const startPage = document.getElementById("startPage");
- const questionPage = document.getElementById("questionPage");
+ 
  const answerPage = document.getElementById("answerPage");
  const resultPage = document.getElementById("resultPage");
 
- document.getElementById("startButton").onclick = function() {
-  startPage.style.display = "none";
-  questionPage.style.display = "block";
-  questionNumber.innerHTML = "Fråga" + count.length + "av" + numberOfQuestions;
-}
+
 document.getElementById("questionButton").onclick = function() {
   questionPage.style.display = "none";
   answerPage.style.display = "none";

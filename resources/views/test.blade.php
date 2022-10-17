@@ -288,3 +288,57 @@
     
     </body>
 </html>
+
+
+
+.progress-bar{
+    position: relative;
+}
+
+.progress-slide{
+    position: absolute;
+}
+.progress-line{
+    position: absolute;
+    width: 620px;
+    height: 0px;
+    left: 36px;
+    top: 7px;
+    border: 2px solid #7678ED;
+}
+.progress-button{
+    position: absolute;
+    width: 116px;
+    height: 14px;
+    left: 0px;
+    top: 0px;
+    background: #000064;
+    border-radius: 10px;
+}
+
+.progress-line-white{
+    position: absolute;
+    width: 620px;
+    height: 0px;
+    left: 36px;
+    top: 7px;
+
+    /* Brand/Ljusblå */
+    border: 2px solid white;
+}
+
+.progress-button-white{
+    position: absolute;
+    width: 116px;
+    height: 14px;
+    left: 0px;
+    top: 0px;
+    background: white;
+    border-radius: 10px;
+}
+
+
+
+<div class="relative w-56 h-[2px] bg-ljusblå tablet:w-[420px] xl:w-[620px]">
+    <div id="progressbar" class="absolute h-3 w-[30%] center-y bg-mörkblå rounded-full"></div>
+</div>

@@ -28,7 +28,8 @@ module.exports = {
       mörkblå: '#000064',
       ljusblå: '#7678ED',
       green: '#00FFC4',
-      gray: '#EEEEEE'
+      gray: '#EEEEEE',
+      darkblue: '#202E55'
       },
 
     fontFamily: {

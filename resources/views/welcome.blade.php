@@ -17,26 +17,26 @@
                 <div>
                     <img 
                         src="/Image/Logo(3).svg"
-                        class=" h-[150px] mt-[30px] mb-[228px] ml-14">  <!-- Hover over Logo? -->
+                        class="class="startPage h-[150px] mt-[30px] mb-[228px] ml-14">  
                 </div>
                 <div>
                     <img 
                         src="/Image/blob-left.svg"
-                        class=" h-[415px] mb-[77px]">  <!-- Hover over Logo? -->
+                        class=" startPage h-[415px] mb-[77px]">  
                 </div>
           </div>
 <!-- Page1/Column 1 End --> 
      
 
 <!-- Page1/Column 2 Start -->          
-          <div class="column-2 mt-[337px] mb-[327] w-full"> 
-                <h1 class="text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
+          <div id="startpage" class=" startPage column-2 mt-[337px] mb-[327] w-full"> 
+                <h1 class=" text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                     Svensk mästare i TP?
                 </h1>
                 <p class="text-20 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
                     Svara på 35 samtida frågor i 7 olika kategorier. </p>
                 <div class="w-63 text-center">
-                    <button id="startButton" class="btn-page-one border-2 border-ljusblå" onclick="myFunction()">Klicka här för att starta</button>
+                    <button id="start-btn" class="btn-page-one border-2 border-ljusblå" onclick="myFunction()">Klicka här för att starta</button>
                 </div>
           </div> 
 <!-- Page1/Column 2 End --> 
@@ -47,7 +47,7 @@
           <div class="column-3 bg"> 
                 <img 
                   src="/Image/blob-right.svg"
-                  class=" w-[245px] mt-[80px] float-right">  
+                  class="startPage w-[245px] mt-[80px] float-right">  
           </div>  
       
 <!-- Page1/Column 3 End --> 
@@ -67,37 +67,36 @@
                 <div>
                     <img 
                         src="/Image/Logo(3).svg"
-                        class=" h-[150px] mt-[30px] mb-[228px] ml-14">  
+                        class=" guestionPage h-[150px] mt-[30px] mb-[228px] ml-14">  
                 </div>
                 <div>
                     <img 
                         src="/Image/blob-left.svg"
-                        class=" h-[415px] mb-[77px]">  
+                        class=" guestionPage  h-[415px] mb-[77px]">  
                 </div>
             </div>
         <!-- Page2/Column 1 End --> 
 
 
         <!-- Page2/Column 2 Start -->   
-            <div id="guestionPage" class="column-2  mt-[268px] mb-[165px] w-full"> 
-                <p class="text-20 text-center mb-10">Tv & film </p>
-                <h1 id="question" class="text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
+            <div class="column-2  mt-[268px] mb-[165px] w-full"> 
+                <p class="guestionPage text-20 text-center mb-10">Tv & film </p>
+                <h1 id="question" class=" guestionPage text-mörkblå font-poppins text-20  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                     I vilken amerikansk delstat utspelar sig den populära Netflixserien Stranger Things?
                 </h1>
                 
                 <div class="w-63 text-center mb-24">
-                        <button id="questionButton" class="border-2 border-ljusblå">Se svaret</button>
-                        <p id="demo">
+                        <button id="answerButton" class=" guestionPage border-2 border-ljusblå">Se svaret</button>
                 </div>
         
 
-                <div class="progress-bar mb-[55px] h-[48px] w-full">
-                        <div class="progress-slide"> 
-                            <div class="progress-line"></div>
+             
+                        <div class=" guestionPage progress-bar"> 
+                            <div class="progress-line absolute w-56 h-[2px] bg-ljusblå tablet:w-[420px] xl:w-[620px]"></div>
                             <div class="progress-button"></div>
-                        </div>
+                       
 
-                        <div class="text-center pt-3.5">
+                        <div id="questionCounter" class=" guestionPage text-center text-darkblue pt-3.5">
                             <p>Fråga 2 av 35</p>
                         </div>
                 </div> 
@@ -109,7 +108,7 @@
                 <div class="column-3"> 
                     <img 
                     src="/Image/blob-right.svg"
-                    class=" w-[245px] mt-[80px] float-right">  
+                    class=" guestionPage  w-[245px] mt-[80px] float-right">  
                 </div>  
 <!-- Page2/Column 3 End --> 
 <!-- Grid Container End (grid-3-columns) -->
@@ -158,7 +157,7 @@
 
                 <div class="progress-bar mt-[179px] h-[48px] w-full">
                     <div class="progress-slide"> 
-                        <div class="progress-line-white"></div>
+                        <div class="progress-line-white absolute w-56 h-[2px] bg-white tablet:w-[420px] xl:w-[620px]"></div>
                         <div class="progress-button-white"></div>
                     </div>
 
@@ -212,7 +211,7 @@
                 </h1>
 
                 <div class="buttons flex items-center gap-2.5 gap-x-16">
-                    <div class="flex flex-col gap-y-2">
+                    <div class="flex flex-col gap-y-2 flex-wrap lg:w-3/5">
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-green"></div>
