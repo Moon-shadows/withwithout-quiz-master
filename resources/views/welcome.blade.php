@@ -17,7 +17,7 @@
                 <div>
                     <img 
                         src="/Image/Logo(3).svg"
-                        class="class="startPage h-[150px] mt-[30px] mb-[228px] ml-14">  
+                        class="class= startPage h-[150px] mt-[30px] mb-[228px] ml-14">  
                 </div>
                 <div>
                     <img 
