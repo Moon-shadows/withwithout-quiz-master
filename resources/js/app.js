@@ -14,7 +14,7 @@ import { countBy } from 'lodash';
  window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 
-
+const questionpage = document.getElementById("question-page")
 const startPage = document.getElementsByClassName("startPage");
 const questionPage = document.getElementsByClassName("questionPage");
 const answerPage = document.getElementsByClassName("answerPage");
@@ -37,7 +37,7 @@ startButton.addEventListener("click", changeStartPage);
 
 function changeStartPage(){
 startPage[0].style.display = "none";
-questionPage[5].style.display = "block";
+questionpage.style.visibility = "visibility";
 body.style.backgroundColor = "#7678ED";
 questionCounter.innerHTML = `Fråga + ${questionCounter} av ${maxQuestions}`;
 questionCounter++;

@@ -80,26 +80,22 @@
 
 
         <!-- Page2/Column 2 Start -->   
-            <div class="column-2  mt-[268px] mb-[165px] w-full"> 
+            <div id="questionpage" class="question-page-column-2 mt-[268px] mb-[165px] w-full"> 
                 <p class="questionPage text-20 text-center mb-10">Tv & film </p>
                 <h1 id="question" class=" questionPage text-mörkblå font-poppins text-20  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
-                    I vilken amerikansk delstat utspelar sig den populära Netflixserien Stranger Things?
-                </h1>
+                    I vilken amerikansk delstat utspelar sig den populära Netflixserien Stranger Things?</h1>
                 
                 <div class="w-63 text-center mb-24">
                         <button id="answerButton" class="questionPage border-2 border-ljusblå">Se svaret</button>
                 </div>
         
-
-             
-                        <div class="questionPage progress-bar"> 
-                            <div class="progress-line absolute w-56 h-[2px] bg-ljusblå tablet:w-[420px] xl:w-[620px]"></div>
-                            <div id="progressButton" class="progress-button"></div>
+                 <div class="questionPage progress-bar"> 
+                    <div class="progress-line absolute w-56 h-[2px] bg-ljusblå tablet:w-[420px] xl:w-[620px]"></div>
+                    <div id="progressButton" class="progress-button center-y"></div>
                        
-
-                        <div id="questionCounter" class="questionPage text-center text-darkblue pt-3.5">
-                            <p>Fråga 2 av 35</p>
-                        </div>
+                    <div id="questionCounter" class="questionPage text-center text-darkblue pt-3.5">
+                        <p>Fråga 2 av 35</p>
+                    </div>
                 </div> 
             </div> 
     <!-- Page2/Column 2 End --> 
@@ -156,11 +152,9 @@
                     <button id="answerButtonNo"  class="btn-page-third-no border-2 border-white" onclick="myFunction()">Nej</button>
                 </div>
 
-                <div class="progress-bar mt-[179px] h-[48px] w-full">
-                    <div class="progress-slide"> 
-                        <div class="progress-line-white absolute w-56 h-[2px] bg-white tablet:w-[420px] xl:w-[620px]"></div>
-                        <div id="progressButtonWhite"  class="progress-button-white"></div>
-                    </div>
+                <div class="questionPage progress-bar"> 
+                    <div class="progress-line absolute w-56 h-[2px] bg-white tablet:w-[420px] xl:w-[620px]"></div>
+                    <div id="progressButton" class="progress-button-white center-y"></div>
 
                     <div class="text-center pt-3.5">
                         <p id="questionNumber"></p>

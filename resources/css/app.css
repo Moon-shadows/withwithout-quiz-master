@@ -147,8 +147,11 @@
     border-radius: 10px;
 }
 
-
-.questionPage{
-    display: none;
+.center-y{
+    bottom: 50%;
+    transform: translateY(-50%);
 }
 
+#questionpage{
+    visibility: hidden;
+}
