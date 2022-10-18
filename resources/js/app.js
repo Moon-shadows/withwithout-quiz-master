@@ -29,6 +29,7 @@ const maxQuestions = 5;
 let count = 0;
 let correct =0;
 
+
 /***StartPage***/
 const startButton = document.getElementById("start-btn");
 startButton.onclick= function(){
@@ -37,12 +38,11 @@ startButton.onclick= function(){
     p2.classList.add("grid-container")
     p2.classList.remove("hidden")
     count++
-/*     body.style.backgroundColor = "#7678ED";
-    questionCounter.innerHTML = `Fråga + ${questionCounter} av ${maxQuestions}`;
-    questionCounter++;
-    questionCounter.innerHTML = `Fråga + ${questionCounter} av ${maxQuestions}`;
-    progressButton.style.width = (questionCounter/maxQuestions) * 100 + "%";
-    progressButtonWhite.style.width = (questionCounter/maxQuestions) * 100 + "%"; */
+    
+    questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;
+    
+    progressButton.style.width = (count/maxQuestions) * 100 + "%";
+    progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
 }
 
 /***QuestionPage***/
@@ -69,8 +69,10 @@ answerButtonYes.onclick= function(){
       p4.classList.add("grid-container")  
       p4.classList.remove("hidden")    
 }
+ 
   count++     
-  correct++  
+  correct++
+  questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
 
 }
 
@@ -88,7 +90,8 @@ answerButtonNo.onclick= function(){
       p4.classList.add("grid-container")  
       p4.classList.remove("hidden")    
 }
-  count++                                     
+  count++
+  questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;                                     
 }
 
 const playAgainButton = document.getElementById("playAgainButton");
