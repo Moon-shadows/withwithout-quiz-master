@@ -280,7 +280,7 @@
                 </div>
             
                 <div class="w-63 mt-16 text-center">
-                    <button class="btn-page-fourth border-2 border-ljusblå" onclick="myFunction()">En runda till</button>
+                    <button id="playAgainButton" class="btn-page-fourth border-2 border-ljusblå" onclick="myFunction()">En runda till</button>
                 </div>
             </div> 
     <!-- Page4/Column 2 End --> 

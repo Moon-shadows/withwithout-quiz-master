@@ -69,8 +69,6 @@ answerButtonYes.onclick= function(){
       p4.classList.add("grid-container")  
       p4.classList.remove("hidden")    
 }
-
-    
   count++     
   correct++  
 
@@ -92,6 +90,18 @@ answerButtonNo.onclick= function(){
 }
   count++                                     
 }
+
+const playAgainButton = document.getElementById("playAgainButton");
+playAgainButton.onclick= function(){
+    p4.classList.add("hidden")
+    p4.classList.remove("grid-container")
+    p1.classList.add("grid-container")
+    p1.classList.remove("hidden")
+    count = 0;
+    correct =0;
+}
+
+
 
 /***QuestionPage***/
 
