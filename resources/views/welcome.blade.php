@@ -12,24 +12,26 @@
 <!-- Start-page -->
 <!-- Grid Container Start (grid-3-columns) -->
 <!-- Page1/Column 1 Start -->
-      <div class="grid-container">
-          <div class="column-1"> 
+      <div id="p1" class="grid-container">
+
+
+          <div class="column-1 startpage"> 
                 <div>
                     <img 
                         src="/Image/Logo(3).svg"
-                        class="class= startPage h-[150px] mt-[30px] mb-[228px] ml-14">  
+                        class="class= h-[150px] mt-[30px] mb-[228px] ml-14">  
                 </div>
                 <div>
                     <img 
                         src="/Image/blob-left.svg"
-                        class=" startPage h-[415px] mb-[77px]">  
+                        class=" h-[415px] mb-[77px]">  
                 </div>
           </div>
 <!-- Page1/Column 1 End --> 
      
 
 <!-- Page1/Column 2 Start -->          
-          <div id="startpage" class=" startPage column-2 mt-[337px] mb-[327] w-full"> 
+          <div class=" startpage column-2 mt-[337px] mb-[327] w-full"> 
                 <h1 class=" text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                     Svensk mästare i TP?
                 </h1>
@@ -45,11 +47,12 @@
          
          
 <!-- Page1/Column 3 Start -->
-          <div class="column-3 bg"> 
+          <div class="column-3 startpage"> 
                 <img 
                   src="/Image/blob-right.svg"
-                  class="startPage w-[245px] mt-[80px] float-right">  
+                  class=" w-[245px] mt-[80px] float-right">  
           </div>  
+      </div>
       
 <!-- Page1/Column 3 End --> 
 <!-- Grid Container End (grid-3-columns) -->
@@ -64,7 +67,8 @@
 <!-- Page2 start -->
 <!-- Grid Container Start (grid-3-columns) -->
 <!-- Page2/Column 1 Start -->
-            <div class="column-1"> 
+<div id="p2" class="hidden">
+            <div class=" questionpage column-1"> 
                 <div>
                     <img 
                         src="/Image/Logo(3).svg"
@@ -80,18 +84,20 @@
 
 
         <!-- Page2/Column 2 Start -->   
-            <div id="questionpage" class="question-page-column-2 mt-[268px] mb-[165px] w-full"> 
+            <div id="questionpage" class="questionpage mt-[268px] mb-[165px] w-full"> 
                 <p class="questionPage text-20 text-center mb-10">Tv & film </p>
                 <h1 id="question" class=" questionPage text-mörkblå font-poppins text-20  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                     I vilken amerikansk delstat utspelar sig den populära Netflixserien Stranger Things?</h1>
                 
                 <div class="w-63 text-center mb-24">
-                        <button id="answerButton" class="questionPage border-2 border-ljusblå">Se svaret</button>
+                        <button id="questionButton" class="questionPage border-2 border-ljusblå">Se svaret</button>
                 </div>
         
-                 <div class="questionPage progress-bar"> 
-                    <div class="progress-line absolute w-56 h-[2px] bg-ljusblå tablet:w-[420px] xl:w-[620px]"></div>
-                    <div id="progressButton" class="progress-button center-y"></div>
+                 <div class=" progress-bar flex justify-center"> 
+                    <div class="progress-line absolute w-56 h-[2px] bg-ljusblå md:w-[420px] xl:w-[620px]">
+
+                        <div id="progressButton" class="progress-button center-y"></div>
+                    </div>
                        
                     <div id="questionCounter" class="questionPage text-center text-darkblue pt-3.5">
                         <p>Fråga 2 av 35</p>
@@ -102,11 +108,12 @@
 
     
 <!-- Page2/Column 3 Start -->   
-                <div class="column-3"> 
+                <div class="questionpage column-3"> 
                     <img 
                     src="/Image/blob-right.svg"
                     class=" questionPage  w-[245px] mt-[80px] float-right">  
                 </div>  
+</div>
 <!-- Page2/Column 3 End --> 
 <!-- Grid Container End (grid-3-columns) -->
 <!-- Page2 end -->
@@ -121,7 +128,7 @@
 <!-- Grid Container Start (grid-3-columns) -->
 <!-- Page3/Column 1 Start -->
 
-            <div class="column-1 bg-ljusblå"> 
+            <div class="column-1 hidden bg-ljusblå"> 
                 <div>
                     <img 
                         src="/Image/Logo(4).svg"
@@ -140,8 +147,8 @@
   
 
 <!-- Page3/Column 2 Start -->
-  <div class="bg-ljusblå">
-            <div id="answerPage" class="column-2 mt-[346px] mb-[179px] w-full"> 
+  <div class="bg-ljusblå hidden">
+            <div id="answerPage" class="column-2  mt-[346px] mb-[179px] w-full"> 
                 <p class="text-20 text-center text-white mb-10">Rätt svar: </p>
                 <h1 class="text-green font-poppins text-48 font-semibold text-center mb-8"> 
                     Indiana
@@ -166,7 +173,7 @@
     
     
 <!-- Page3/Column 3 Start -->
-            <div class="column-3 bg-ljusblå"> 
+            <div class="column-3 hidden bg-ljusblå"> 
                 <img 
                 src="/Image/blob-right-white.svg"
                 class=" w-[245px] mt-[80px] float-right">  
@@ -183,7 +190,7 @@
 <!-- Page4 -->
 <!-- Grid Container Start (grid-3-columns) -->
 <!-- Page4/Column 1 Start -->
-            <div class="column-1"> 
+            <div class="column-1 hidden"> 
                 <div>
                     <img 
                         src="/Image/Logo(3).svg"
@@ -199,7 +206,7 @@
 
 
 <!-- Page4/ Column 2 Start -->
-            <div  id="resultPage" class="column-2 mt-56 mb-36 w-full"> 
+            <div  id="resultPage" class="column-2 hidden mt-56 mb-36 w-full"> 
                 <p class="text-20 text-center mb-10">Ditt resultat</p>
                 <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
                     21 av 35 rätt
@@ -279,7 +286,7 @@
 
 
     <!-- Page4/Column 3 Start -->
-            <div class="column-3"> 
+            <div class="column-3 hidden"> 
                 <img 
                         src="/Image/blob-right.svg"
                         class=" w-[245px] mt-[80px] float-right">  

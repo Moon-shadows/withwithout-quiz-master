@@ -14,13 +14,9 @@ import { countBy } from 'lodash';
  window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 
-const questionpage = document.getElementById("question-page")
-const startPage = document.getElementsByClassName("startPage");
-const questionPage = document.getElementsByClassName("questionPage");
-const answerPage = document.getElementsByClassName("answerPage");
-const resultPage = document.getElementsByClassName("resultPage");
 const body = document.getElementsByTagName("body");
-
+const p1= document.getElementById("p1");
+const p2= document.getElementById("p2");
 
 let progressButton = document.getElementById("progressButton");
 let progressButtonWhite = document.getElementById("progressButtonWhite");
@@ -30,21 +26,21 @@ const maxQuestions = 5;
 questionCounter = 0;
 let correctAnswer = 0;
 
-
 /***StartPage***/
 const startButton = document.getElementById("start-btn");
-startButton.addEventListener("click", changeStartPage);
-
-function changeStartPage(){
-startPage[0].style.display = "none";
-questionpage.style.visibility = "visibility";
-body.style.backgroundColor = "#7678ED";
-questionCounter.innerHTML = `Fråga + ${questionCounter} av ${maxQuestions}`;
-questionCounter++;
-questionCounter.innerHTML = `Fråga + ${questionCounter} av ${maxQuestions}`;
-progressButton.style.width = (questionCounter/maxQuestions) * 100 + "%";
-progressButtonWhite.style.width = (questionCounter/maxQuestions) * 100 + "%";
+startButton.onclick= function(){
+    p1.style.display = "none";
+    p2.classList.add("grid-container")
+/*     body.style.backgroundColor = "#7678ED";
+    questionCounter.innerHTML = `Fråga + ${questionCounter} av ${maxQuestions}`;
+    questionCounter++;
+    questionCounter.innerHTML = `Fråga + ${questionCounter} av ${maxQuestions}`;
+    progressButton.style.width = (questionCounter/maxQuestions) * 100 + "%";
+    progressButtonWhite.style.width = (questionCounter/maxQuestions) * 100 + "%"; */
 }
+
+
+
 
 
 /***QuestionPage***/
@@ -99,4 +95,3 @@ element.addEventListener("click", myFunction);
 function myFunction() {
   document.getElementById("demo").innerHTML = "Hello World";
 }*/
-_________________________________________________________
