@@ -33,10 +33,10 @@ while (count($questions) < 35){
 
 
     //kolla efter dubbletter
-
-    if(in_array($randomQuestion, $questions)){
+if(in_array($randomQuestion, $questions)){
         continue;
 }
+
 if($category ==='Film & TV' && count($countCategories['Film & TV']) < 5){
         array_push($countCategories["Film & TV"],1);
 }
@@ -79,9 +79,5 @@ if($category ==='Sport' && count($countCategories['Sport']) < 5){
 elseif($category ==='Sport' && count($countCategories['Sport']) === 5){
 continue;
 }
-
-
+}
 });
-
-
-
