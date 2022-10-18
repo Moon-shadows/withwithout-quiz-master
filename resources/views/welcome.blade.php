@@ -104,7 +104,7 @@
                     </div>
                 </div> 
             </div> 
-    <!-- Page2/Column 2 End --> 
+<!-- Page2/Column 2 End --> 
 
     
 <!-- Page2/Column 3 Start -->   
@@ -127,8 +127,8 @@
 <!-- Page3 -->
 <!-- Grid Container Start (grid-3-columns) -->
 <!-- Page3/Column 1 Start -->
-
-            <div class="column-1 hidden bg-ljusblå"> 
+<div id="p3" class="hidden">
+            <div class="column-1 bg-ljusblå"> 
                 <div>
                     <img 
                         src="/Image/Logo(4).svg"
@@ -147,7 +147,7 @@
   
 
 <!-- Page3/Column 2 Start -->
-  <div class="bg-ljusblå hidden">
+  <div class="bg-ljusblå">
             <div id="answerPage" class="column-2  mt-[346px] mb-[179px] w-full"> 
                 <p class="text-20 text-center text-white mb-10">Rätt svar: </p>
                 <h1 class="text-green font-poppins text-48 font-semibold text-center mb-8"> 
@@ -173,11 +173,12 @@
     
     
 <!-- Page3/Column 3 Start -->
-            <div class="column-3 hidden bg-ljusblå"> 
+            <div class="column-3 bg-ljusblå"> 
                 <img 
                 src="/Image/blob-right-white.svg"
                 class=" w-[245px] mt-[80px] float-right">  
-            </div>  
+            </div>
+</div>             
 <!-- Page3/Column 3 End --> 
 <!-- Grid Container End (grid-3-columns) -->
 <!-- Page3 end -->
@@ -190,7 +191,8 @@
 <!-- Page4 -->
 <!-- Grid Container Start (grid-3-columns) -->
 <!-- Page4/Column 1 Start -->
-            <div class="column-1 hidden"> 
+<div id="p4" class="hidden">
+            <div class="column-1"> 
                 <div>
                     <img 
                         src="/Image/Logo(3).svg"
@@ -206,7 +208,7 @@
 
 
 <!-- Page4/ Column 2 Start -->
-            <div  id="resultPage" class="column-2 hidden mt-56 mb-36 w-full"> 
+            <div  id="resultPage" class="column-2 mt-56 mb-36 w-full"> 
                 <p class="text-20 text-center mb-10">Ditt resultat</p>
                 <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
                     21 av 35 rätt
@@ -286,12 +288,13 @@
 
 
     <!-- Page4/Column 3 Start -->
-            <div class="column-3 hidden"> 
+            <div class="column-3"> 
                 <img 
                         src="/Image/blob-right.svg"
                         class=" w-[245px] mt-[80px] float-right">  
             </div>  
         </div>
+</div>
     <!-- Page4/Column 3 End --> 
     <!-- Grid Container End (grid-3-columns) -->
     <!-- Page4 end -->

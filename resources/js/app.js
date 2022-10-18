@@ -17,20 +17,26 @@ import { countBy } from 'lodash';
 const body = document.getElementsByTagName("body");
 const p1= document.getElementById("p1");
 const p2= document.getElementById("p2");
+const p3= document.getElementById("p3");
+const p4= document.getElementById("p4");
+
 
 let progressButton = document.getElementById("progressButton");
 let progressButtonWhite = document.getElementById("progressButtonWhite");
 let questionCounter = document.getElementById("questionCounter");
 
 const maxQuestions = 5;
-questionCounter = 0;
-let correctAnswer = 0;
+let count = 0;
+let correct =0;
 
 /***StartPage***/
 const startButton = document.getElementById("start-btn");
 startButton.onclick= function(){
-    p1.style.display = "none";
+    p1.classList.add("hidden")
+    p1.classList.remove("grid-container")
     p2.classList.add("grid-container")
+    p2.classList.remove("hidden")
+    count++
 /*     body.style.backgroundColor = "#7678ED";
     questionCounter.innerHTML = `Fråga + ${questionCounter} av ${maxQuestions}`;
     questionCounter++;
@@ -39,17 +45,61 @@ startButton.onclick= function(){
     progressButtonWhite.style.width = (questionCounter/maxQuestions) * 100 + "%"; */
 }
 
+/***QuestionPage***/
+const questionButton = document.getElementById("questionButton");
+questionButton.onclick= function(){
+    p2.classList.add("hidden") 
+    p2.classList.remove("grid-container")  
+    p3.classList.add("grid-container")  //blir samma som display: block eftersom grid-containern 
+    p3.classList.remove("hidden")  
+                                             //tar över och häver upp hidden
+}
+/***AnswerPageYes***/
+const answerButtonYes = document.getElementById("answerButtonYes");
+answerButtonYes.onclick= function(){
+  if(count<maxQuestions){
+    p3.classList.add("hidden") 
+    p3.classList.remove("grid-container")  
+    p2.classList.add("grid-container")  
+    p2.classList.remove("hidden") 
 
+  }else if(count===maxQuestions){
+      p3.classList.add("hidden") 
+      p3.classList.remove("grid-container")  
+      p4.classList.add("grid-container")  
+      p4.classList.remove("hidden")    
+}
 
+    
+  count++     
+  correct++  
 
+}
+
+const answerButtonNo = document.getElementById("answerButtonNo");
+answerButtonNo.onclick= function(){
+  if(count<maxQuestions){
+    p3.classList.add("hidden") 
+    p3.classList.remove("grid-container")  
+    p2.classList.add("grid-container")  
+    p2.classList.remove("hidden") 
+
+  }else if(count===maxQuestions){
+      p3.classList.add("hidden") 
+      p3.classList.remove("grid-container")  
+      p4.classList.add("grid-container")  
+      p4.classList.remove("hidden")    
+}
+  count++                                     
+}
 
 /***QuestionPage***/
 
 
 /***AnswerPage***/
-document.getElementById("answerButtonYes").onclick = function() {
-  count.push(1);
-}
+
+ 
+
 
 /***ResultPage***/
  
