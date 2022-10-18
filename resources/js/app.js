@@ -24,6 +24,7 @@ const p4= document.getElementById("p4");
 let progressButton = document.getElementById("progressButton");
 let progressButtonWhite = document.getElementById("progressButtonWhite");
 let questionCounter = document.getElementById("questionCounter");
+let questions = [];
 
 const maxQuestions = 5;
 let count = 0;
@@ -37,6 +38,12 @@ startButton.onclick= function(){
     p1.classList.remove("grid-container")
     p2.classList.add("grid-container")
     p2.classList.remove("hidden")
+    const xhttp = new XMLHttpRequest();
+    xhttp.onload = function() {
+        questions.push(...JSON.parse(this.responseText));
+    }
+    xhttp.open('GET', 'questions');
+    xhttp.send();
     count++
     
     questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;
