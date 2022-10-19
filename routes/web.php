@@ -79,5 +79,8 @@ if($category ==='Sport' && count($countCategories['Sport']) < 5){
 elseif($category ==='Sport' && count($countCategories['Sport']) === 5){
 continue;
 }
+array_push($questions,$randomQuestion);
 }
+//dd($questions,$randomNumber,$randomQuestion);
+return response()->json($questions);
 });

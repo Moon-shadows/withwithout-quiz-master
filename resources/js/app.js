@@ -19,6 +19,10 @@ const p1= document.getElementById("p1");
 const p2= document.getElementById("p2");
 const p3= document.getElementById("p3");
 const p4= document.getElementById("p4");
+const category = document.getElementById("category");
+const question = document.getElementById("question");
+const answer = document.getElementById("answer");
+
 
 
 let progressButton = document.getElementById("progressButton");
@@ -33,23 +37,29 @@ let correct =0;
 
 /***StartPage***/
 const startButton = document.getElementById("start-btn");
-startButton.onclick= function(){
+startButton.onclick = function(){
+  axios.get("/questions").then(response=> {
+questions=response.data
+
+ 
     p1.classList.add("hidden")
     p1.classList.remove("grid-container")
     p2.classList.add("grid-container")
     p2.classList.remove("hidden")
-    const xhttp = new XMLHttpRequest();
-    xhttp.onload = function() {
-        questions.push(...JSON.parse(this.responseText));
-    }
-    xhttp.open('GET', 'questions');
-    xhttp.send();
-    count++
     
+    count++
+
+    category.innerHTML=questions[count-1]["category"]
+    question.innerHTML=questions[count-1]["question"]
+    answer.innerHTML=questions[count-1]["answer"]
+    
+    
+
     questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;
     
     progressButton.style.width = (count/maxQuestions) * 100 + "%";
     progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
+  })
 }
 
 /***QuestionPage***/
@@ -57,18 +67,27 @@ const questionButton = document.getElementById("questionButton");
 questionButton.onclick= function(){
     p2.classList.add("hidden") 
     p2.classList.remove("grid-container")  
-    p3.classList.add("grid-container")  //blir samma som display: block eftersom grid-containern 
+    p3.classList.add("grid-container")  //blir samma som display: block eftersom grid-containern, tar över och häver upp hidden
     p3.classList.remove("hidden")  
-                                             //tar över och häver upp hidden
 }
 /***AnswerPageYes***/
 const answerButtonYes = document.getElementById("answerButtonYes");
 answerButtonYes.onclick= function(){
+  count++     
+  correct++
+  questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
   if(count<maxQuestions){
     p3.classList.add("hidden") 
     p3.classList.remove("grid-container")  
     p2.classList.add("grid-container")  
-    p2.classList.remove("hidden") 
+    p2.classList.remove("hidden")
+    progressButton.style.width = (count/maxQuestions) * 100 + "%";
+    progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
+
+    category.innerHTML=questions[count-1]["category"]
+    question.innerHTML=questions[count-1]["question"]
+    answer.innerHTML=questions[count-1]["answer"]
+ 
 
   }else if(count===maxQuestions){
       p3.classList.add("hidden") 
@@ -77,19 +96,25 @@ answerButtonYes.onclick= function(){
       p4.classList.remove("hidden")    
 }
  
-  count++     
-  correct++
-  questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
+ 
 
 }
 
 const answerButtonNo = document.getElementById("answerButtonNo");
 answerButtonNo.onclick= function(){
+  count++
+  questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
   if(count<maxQuestions){
     p3.classList.add("hidden") 
     p3.classList.remove("grid-container")  
     p2.classList.add("grid-container")  
     p2.classList.remove("hidden") 
+    progressButton.style.width = (count/maxQuestions) * 100 + "%";
+    progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
+
+    category.innerHTML=questions[count-1]["category"]
+    question.innerHTML=questions[count-1]["question"]
+    answer.innerHTML=questions[count-1]["answer"]
 
   }else if(count===maxQuestions){
       p3.classList.add("hidden") 
@@ -97,8 +122,7 @@ answerButtonNo.onclick= function(){
       p4.classList.add("grid-container")  
       p4.classList.remove("hidden")    
 }
-  count++
-  questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;                                     
+                                     
 }
 
 const playAgainButton = document.getElementById("playAgainButton");
