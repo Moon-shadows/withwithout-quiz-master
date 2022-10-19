@@ -30,7 +30,7 @@ let progressButtonWhite = document.getElementById("progressButtonWhite");
 let questionCounter = document.getElementById("questionCounter");
 let questions = [];
 
-const maxQuestions = 5;
+const maxQuestions = 35;
 let count = 0;
 let correct =0;
 
@@ -70,7 +70,7 @@ questionButton.onclick= function(){
     p3.classList.add("grid-container")  //blir samma som display: block eftersom grid-containern, tar över och häver upp hidden
     p3.classList.remove("hidden")  
 }
-/***AnswerPageYes***/
+/***AnswerButtonYes***/
 const answerButtonYes = document.getElementById("answerButtonYes");
 answerButtonYes.onclick= function(){
   count++     
@@ -84,7 +84,7 @@ answerButtonYes.onclick= function(){
     progressButton.style.width = (count/maxQuestions) * 100 + "%";
     progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
 
-    category.innerHTML=questions[count-1]["category"]
+    category.innerHTML=questions[count-1]["category"] // Inuti diven i html med id=category skriver jag in: questions[count-1]["category"] dvs. category (i arrayen för frågorna) minskar count med 1 (-1) eftersom jag ökade count med 1, 
     question.innerHTML=questions[count-1]["question"]
     answer.innerHTML=questions[count-1]["answer"]
  
@@ -94,12 +94,10 @@ answerButtonYes.onclick= function(){
       p3.classList.remove("grid-container")  
       p4.classList.add("grid-container")  
       p4.classList.remove("hidden")    
-}
- 
- 
-
+  }
 }
 
+/***AnswerButtonNo***/
 const answerButtonNo = document.getElementById("answerButtonNo");
 answerButtonNo.onclick= function(){
   count++
@@ -122,9 +120,9 @@ answerButtonNo.onclick= function(){
       p4.classList.add("grid-container")  
       p4.classList.remove("hidden")    
 }
-                                     
 }
 
+/***PlayAgainButton***/
 const playAgainButton = document.getElementById("playAgainButton");
 playAgainButton.onclick= function(){
     p4.classList.add("hidden")
@@ -148,18 +146,7 @@ playAgainButton.onclick= function(){
 /***ResultPage***/
  
 
-/**
- questionNumber.innerHTML = "Fråga" + count.length + "av" + numberOfQuestions;
-  * 
- let count =[1];
- let correctMovie =[];
- let correctGeografi =[];
- let correctHistory =[];
- let correctMusic =[];
- let correctOther =[];
- let correctSciense =[];
- let correctSport =[];
- 
+
 
  
  
@@ -176,16 +163,3 @@ playAgainButton.onclick= function(){
 _________________________________________________________
 
 _______________________________________________________
-***Examples****
-Execute a function when a user clicks on a button
-
-html:
-<button id="myBtn">Try it</button>
-<p id="demo">
-js:
-const element = document.getElementById("myBtn");
-element.addEventListener("click", myFunction);
-
-function myFunction() {
-  document.getElementById("demo").innerHTML = "Hello World";
-}*/

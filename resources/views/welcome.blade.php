@@ -7,7 +7,7 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
     </head>
-    <body >
+    <body class="font-poppins">
 
 <!-- Start-page -->
 <!-- Grid Container Start (grid-3-columns) -->
@@ -113,7 +113,7 @@
             <div class="column-1 bg-ljusblå"> 
                 <div>
                     <img 
-                        src="/Image/Logo(4).svg"
+                        src="/Image/Logo(white).svg"
                         class=" h-[150px] mt-[30px] mb-[228px] ml-14"> 
                 </div>
                 <div>
@@ -174,12 +174,12 @@
                 <div>
                     <img 
                         src="/Image/Logo(3).svg"
-                        class=" h-[150px] mt-[30px] mb-[228px] ml-14">  <!-- Hover over Logo? -->
+                        class=" h-[150px] mt-[30px] mb-[228px] ml-14">  
                 </div>
                 <div>
                     <img 
                         src="/Image/blob-left.svg"
-                        class=" h-[415px] mb-[77px]">  <!-- Hover over Logo? -->
+                        class=" h-[415px] mb-[77px]">  
                 </div>
             </div>
 <!-- Page4/Column 1 End --> 
@@ -187,19 +187,19 @@
 
 <!-- Page4/ Column 2 Start -->
             <div  id="resultPage" class="column-2 mt-56 mb-36 w-full"> 
-                <p class="text-20 text-center mb-10">Ditt resultat</p>
+                <p class="text-14 text-mörkblå text-center mb-10">Ditt resultat</p>
                 <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
                     21 av 35 rätt
                 </h1>
 
                 <div class="buttons flex items-center gap-2.5 gap-x-16">
-                    <div class="flex flex-col gap-y-2 flex-wrap lg:w-3/5">
+                    <div class="flex flex-col gap-y-2 flex-wrap">
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-green"></div>
                         <div class="btn-page-fourth-green"></div>
                         <div class="btn-page-fourth-green"></div>
-                        <p class="mt-1">Film & TV</p>
+                        <p class="mt-1 text-14">Film & TV</p>
                     </div>
 
                     <div class="flex flex-col gap-y-2">
@@ -208,7 +208,7 @@
                         <div class="btn-page-fourth-green"></div>
                         <div class="btn-page-fourth-green"></div>
                         <div class="btn-page-fourth-green"></div>
-                        <p class="mt-1">Geografi</p>
+                        <p class="mt-1 text-14">Geografi</p>
                     </div>
 
                     <div class="flex flex-col gap-y-2">
@@ -217,7 +217,7 @@
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-green"></div>
                         <div class="btn-page-fourth-green"></div>
-                        <p class="mt-1">Historia</p>
+                        <p class="mt-1 text-14">Historia</p>
                     </div>
 
                     <div class="flex flex-col gap-y-2">
@@ -226,7 +226,7 @@
                         <div class="btn-page-fourth-green"></div>
                         <div class="btn-page-fourth-green"></div>
                         <div class="btn-page-fourth-green"></div>
-                        <p class="mt-1">Musik</p>
+                        <p class="mt-1 text-14">Musik</p>
                     </div>
 
                     <div class="flex flex-col gap-y-2">
@@ -235,7 +235,7 @@
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-green"></div>
-                        <p class="mt-1">Övrigt</p>
+                        <p class="mt-1 text-14">Övrigt</p>
                     </div>
 
                     <div class="flex flex-col gap-y-2">
@@ -244,7 +244,7 @@
                         <div class="btn-page-fourth-green"></div>
                         <div class="btn-page-fourth-green"></div>
                         <div class="btn-page-fourth-green"></div>
-                        <p class="mt-1">Vetenskap</p>
+                        <p class="mt-1 text-14">Vetenskap</p>
                     </div>
 
                     <div class="flex flex-col gap-y-2">
@@ -253,7 +253,7 @@
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-green"></div>
                         <div class="btn-page-fourth-green"></div>
-                        <p class="mt-1">Sport</p>
+                        <p class="mt-1 text-14">Sport</p>
                     </div>
                 </div>
             
