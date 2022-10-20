@@ -17,7 +17,7 @@
                 <div>
                     <img 
                         src="/Image/Logo(3).svg"
-                        class="class= h-[150px] mt-[30px] mb-[228px] ml-14">  
+                        class="h-[150px] mt-[30px] mb-[228px] ml-14">  
                 </div>
                 <div>
                     <img 
@@ -30,8 +30,8 @@
 
 <!-- Page1/Column 2 Start -->          
             <div class=" startpage column-2 mt-[337px] mb-[327] w-full"> 
-                 <h1 class=" text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
-                    Svensk mästare i TP?</h1>
+                <h1 class=" text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
+                     Svensk mästare i TP?</h1>
                 
                 <p  id="startText"  class="popper text-20 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
                     Svara på 35 samtida frågor i 7 olika kategorier. </p>
@@ -44,7 +44,7 @@
          
 <!-- Page1/Column 3 Start -->
             <div class="column-3 startpage"> 
-                    <img 
+                <img 
                     src="/Image/blob-right.svg"
                     class=" w-[245px] mt-[80px] float-right">  
             </div>  
@@ -57,37 +57,36 @@
 <!-- Grid Container Start (grid-3-columns) -->
 <!-- Page2/Column 1 Start -->
         <div id="p2" class="hidden">
-            <div class=" questionpage column-1"> 
+            <div column-1"> 
                 <div>
                     <img 
                         src="/Image/Logo(3).svg"
-                        class=" questionPage h-[150px] mt-[30px] mb-[228px] ml-14">  
+                        h-[150px] mt-[30px] mb-[228px] ml-14">  
                 </div>
                 <div>
                     <img 
                         src="/Image/blob-left.svg"
-                        class=" questionPage  h-[415px] mb-[77px]">  
+                         h-[415px] mb-[77px]">  
                 </div>
             </div>
 <!-- Page2/Column 1 End --> 
 
 
 <!-- Page2/Column 2 Start -->   
-            <div id="questionpage" class="questionpage mt-[268px] mb-[165px] w-full"> 
-                <p id="category" class="questionPage text-ljusblå text-20 text-center mb-10">Film & TV</p>
-                <h1 id="question" class=" questionPage text-mörkblå font-poppins text-20  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
+            <div id="questionpage" class=" mt-[268px] mb-[165px] w-full"> 
+                <p id="category" class="text-ljusblå text-20 text-center mb-10">Film & TV</p>
+                <h1 id="question" class="text-mörkblå font-poppins text-20  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                     I vilken amerikansk delstat utspelar sig den populära Netflixserien Stranger Things?</h1>
                 
                 <div class="w-63 text-center mb-24">
-                        <button id="questionButton" class="questionPage border-2 border-ljusblå">Se svaret</button>
+                    <button id="questionButton" class="border-2 border-ljusblå">Se svaret</button>
                 </div>
         
-                 <div class=" progress-bar flex justify-center"> 
+                <div class="progress-bar flex justify-center"> 
                     <div class="progress-line absolute w-56 h-[2px] bg-ljusblå md:w-[420px] xl:w-[620px]">
                         <div id="progressButton" class="progress-button center-y"></div>
                     </div>
-                       
-                    <div id="questionCounter" class="questionPage text-center text-darkblue pt-3.5">
+                    <div id="questionCounter" class="text-center text-darkblue pt-3.5">
                         <p>Fråga 2 av 35</p>
                     </div>
                 </div> 
@@ -98,8 +97,8 @@
 <!-- Page2/Column 3 Start -->   
             <div class="questionpage column-3"> 
                 <img 
-                src="/Image/blob-right.svg"
-                class=" questionPage  w-[245px] mt-[80px] float-right">  
+                    src="/Image/blob-right.svg"
+                    class=" questionPage  w-[245px] mt-[80px] float-right">  
             </div>  
         </div>
 <!-- Page2/Column 3 End --> 
@@ -124,37 +123,32 @@
             </div>
 <!-- Page3/Column 1 End -->
 
-
 <!-- Page3/Column 2 Start -->
-  <div class="bg-ljusblå">
-            <div id="answerPage" class="column-2  mt-[346px] mb-[179px] w-full"> 
-                <p class="text-20 text-center text-white mb-10">Rätt svar: </p>
-                <h1 id="answer" class="text-green font-poppins text-48 font-semibold text-center mb-8"> 
-                    Indiana
-                </h1>
-                <p class="text-20 text-center text-white mb-10">Svarade du rätt? </p>
-                <div class="w-63 text-center mb-24">
-                    <button id="answerButtonYes" class="btn-page-third-yes border-2 border-white" onclick="myFunction()">Ja</button>
-                    <button id="answerButtonNo"  class="btn-page-third-no border-2 border-white" onclick="myFunction()">Nej</button>
-                </div>
+            <div class="bg-ljusblå">
+                <div id="answerPage" class="column-2  mt-[346px] mb-[179px] w-full"> 
+                    <p class="text-20 text-center text-white mb-10">Rätt svar: </p>
+                    <h1 id="answer" class="text-green font-poppins text-48 font-semibold text-center mb-8"> 
+                        Indiana</h1>
+                    <p class="text-20 text-center text-white mb-10">Svarade du rätt?</p>
+                    <div class="w-63 text-center mb-24">
+                        <button id="answerButtonYes" class="btn-page-third-yes border-2 border-white" onclick="myFunction()">Ja</button>
+                        <button id="answerButtonNo"  class="btn-page-third-no border-2 border-white" onclick="myFunction()">Nej</button>
+                    </div>
 
-                
-                
-                <div class=" progress-bar flex justify-center"> 
-                    <div class="progress-line absolute w-56 h-[2px] bg-white md:w-[420px] xl:w-[620px]">
-                        <div id="progressButtonWhite" class="progress-button-white center-y"></div>
-                    </div>
+                    <div class=" progress-bar flex justify-center"> 
+                        <div class="progress-line absolute w-56 h-[2px] bg-white md:w-[420px] xl:w-[620px]">
+                           <div id="progressButtonWhite" class="progress-button-white center-y"></div>
+                        </div>
                        
-                    <div id="questionCounter" class="questionPage text-center text-white pt-3.5">
-                        <p>Fråga 2 av 35</p>
-                    </div>
-                </div> 
+                        <div id="questionCounter" class="text-center text-white pt-3.5">
+                            <p>Fråga 2 av 35</p>
+                        </div>
+                    </div> 
+                </div>
             </div>
-    </div>
 <!-- Page3/Column 2 End -->
     
-    
-<!-- Page3/Column 3 Start -->
+    <!-- Page3/Column 3 Start -->
             <div class="column-3 bg-ljusblå"> 
                 <img 
                 src="/Image/blob-right-white.svg"
@@ -183,7 +177,6 @@
                 </div>
             </div>
 <!-- Page4/Column 1 End --> 
-
 
 <!-- Page4/ Column 2 Start -->
             <div  id="resultPage" class="column-2 mt-56 mb-36 w-full"> 
@@ -258,7 +251,7 @@
                 </div>
             
                 <div class="w-63 mt-16 text-center">
-                    <button id="playAgainButton" class="btn-page-fourth border-2 border-ljusblå" onclick="myFunction()">En runda till</button>
+                    <button id="playAgainButton" class="btn-page-fourth border-2 border-ljusblå">En runda till</button>
                 </div>
             </div> 
     <!-- Page4/Column 2 End --> 
@@ -268,8 +261,8 @@
     <!-- Page4/Column 3 Start -->
             <div class="column-3"> 
                 <img 
-                        src="/Image/blob-right.svg"
-                        class=" w-[245px] mt-[80px] float-right">  
+                    src="/Image/blob-right.svg"
+                    class=" w-[245px] mt-[80px] float-right">  
             </div>  
         </div>
     <!-- Page4/Column 3 End --> 

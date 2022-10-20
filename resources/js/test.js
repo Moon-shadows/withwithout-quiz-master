@@ -14,7 +14,7 @@ import { countBy } from 'lodash';
  window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 
-
+const body = document.getElementsByTagName("body");
 const p1= document.getElementById("p1");
 const p2= document.getElementById("p2");
 const p3= document.getElementById("p3");
@@ -27,7 +27,8 @@ const answer = document.getElementById("answer");
 
 let progressButton = document.getElementById("progressButton");
 let progressButtonWhite = document.getElementById("progressButtonWhite");
-let questionCounter = document.getElementById("questionCounter");
+let questionCounter1 = document.getElementById("questionCounter1");
+let questionCounter2 = document.getElementById("questionCounter2");
 let questions = [];
 
 const maxQuestions = 35;
@@ -53,9 +54,7 @@ questions=response.data
     question.innerHTML=questions[count-1]["question"]
     answer.innerHTML=questions[count-1]["answer"]
     
-    
-
-    questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;
+    questionCounter1.innerHTML = `Fråga ${count} av ${maxQuestions}`;
     
     progressButton.style.width = (count/maxQuestions) * 100 + "%";
     progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
@@ -75,7 +74,7 @@ const answerButtonYes = document.getElementById("answerButtonYes");
 answerButtonYes.onclick= function(){
   count++     
   correct++
-  questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
+  questionCounter2.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
   if(count<maxQuestions){
     p3.classList.add("hidden") 
     p3.classList.remove("grid-container")  
@@ -118,7 +117,8 @@ answerButtonNo.onclick= function(){
       p3.classList.add("hidden") 
       p3.classList.remove("grid-container")  
       p4.classList.add("grid-container")  
-      p4.classList.remove("hidden")    
+      p4.classList.remove("hidden")
+      questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;      
 }
 }
 
@@ -135,15 +135,7 @@ playAgainButton.onclick= function(){
 
 
 
-/***QuestionPage***/
 
-
-/***AnswerPage***/
-
- 
-
-
-/***ResultPage***/
  
 
 
