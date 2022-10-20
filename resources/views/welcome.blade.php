@@ -140,7 +140,7 @@
                            <div id="progressButtonWhite" class="progress-button-white center-y"></div>
                         </div>
                        
-                        <div id="questionCounter" class="text-center text-white pt-3.5">
+                        <div id="questionCounter2" class="text-center text-white pt-3.5">
                             <p>Fråga 2 av 35</p>
                         </div>
                     </div> 

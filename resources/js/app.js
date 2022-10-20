@@ -14,7 +14,6 @@ import { countBy } from 'lodash';
  window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 
-
 const p1= document.getElementById("p1");
 const p2= document.getElementById("p2");
 const p3= document.getElementById("p3");
@@ -23,16 +22,15 @@ const category = document.getElementById("category");
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
 
-
-
 let progressButton = document.getElementById("progressButton");
 let progressButtonWhite = document.getElementById("progressButtonWhite");
 let questionCounter = document.getElementById("questionCounter");
+let questionCounter2 = document.getElementById("questionCounter2");
 let questions = [];
 
 const maxQuestions = 35;
 let count = 0;
-let correct =0;
+let correct = 0;
 
 
 /***StartPage***/
@@ -68,7 +66,8 @@ questionButton.onclick= function(){
     p2.classList.add("hidden") 
     p2.classList.remove("grid-container")  
     p3.classList.add("grid-container")  //blir samma som display: block eftersom grid-containern, tar över och häver upp hidden
-    p3.classList.remove("hidden")  
+    p3.classList.remove("hidden")
+    questionCounter2.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
 }
 /***AnswerButtonYes***/
 const answerButtonYes = document.getElementById("answerButtonYes");
