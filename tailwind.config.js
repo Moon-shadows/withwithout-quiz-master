@@ -9,7 +9,10 @@ module.exports = {
     './resources/js/**/*.{vue, js, ts, jsx, tsx}',
     './resources/views/**/*.php'
   ],
-  safelist: [],
+
+  safelist: ["bg-green"],  //Tailwind raderar allt som ej används.
+
+
   theme: {
     screens: {
       sm: '640px',

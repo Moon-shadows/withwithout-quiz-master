@@ -28,9 +28,15 @@ let questionCounter = document.getElementById("questionCounter");
 let questionCounter2 = document.getElementById("questionCounter2");
 let questions = [];
 
-const maxQuestions = 35;
+const maxQuestions = 10;
 let count = 0;
 let correct = 0;
+
+let filmChildren = document.getElementById("film").children;
+
+let correctCategory = []
+
+
 
 
 /***StartPage***/
@@ -56,8 +62,16 @@ questions=response.data
     questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;
     
     progressButton.style.width = (count/maxQuestions) * 100 + "%";
-    progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
-  })
+    progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%";
+    
+    correctCategory['Film & TV'] = []  //Har döpt den nästlade arrayen till samma kategori som i den storas question arrayens kategorier.
+    correctCategory['Geografi'] = []
+    correctCategory['Historia'] = []
+    correctCategory['Musik'] = []
+    correctCategory['Övrigt'] = []
+    correctCategory['Vetenskap'] = []
+    correctCategory['Sport'] = []
+})
 }
 
 /***QuestionPage***/
@@ -69,11 +83,17 @@ questionButton.onclick= function(){
     p3.classList.remove("hidden")
     questionCounter2.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
 }
+
+
+
 /***AnswerButtonYes***/
-const answerButtonYes = document.getElementById("answerButtonYes");
-answerButtonYes.onclick= function(){
-  count++     
-  correct++
+    const answerButtonYes = document.getElementById("answerButtonYes");
+    answerButtonYes.onclick= function(){
+    count++     
+    correct++
+    correctCategory[category.textContent].push(1)
+    console.log(correctCategory);
+
   questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
   if(count<maxQuestions){
     p3.classList.add("hidden") 
@@ -86,13 +106,22 @@ answerButtonYes.onclick= function(){
     category.innerHTML=questions[count-1]["category"] // Inuti diven i html med id=category skriver jag in: questions[count-1]["category"] dvs. category (i arrayen för frågorna) minskar count med 1 (-1) eftersom jag ökade count med 1, 
     question.innerHTML=questions[count-1]["question"]
     answer.innerHTML=questions[count-1]["answer"]
- 
 
   }else if(count===maxQuestions){
       p3.classList.add("hidden") 
       p3.classList.remove("grid-container")  
       p4.classList.add("grid-container")  
-      p4.classList.remove("hidden")    
+      p4.classList.remove("hidden")
+
+      for(let i = 0; i < correctCategory["Film & TV"].length; i++){
+        filmChildren[i].classList.remove("bg-gray")
+        filmChildren[i].classList.add("bg-green")
+      }
+
+
+
+
+
   }
 }
 
@@ -159,6 +188,5 @@ playAgainButton.onclick= function(){
 
  
 
-_________________________________________________________
 
-_______________________________________________________
+

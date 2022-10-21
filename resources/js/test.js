@@ -8,7 +8,8 @@ import '../css/app.css'
  */
 
 import axios from 'axios';
-import { countBy } from 'lodash';
+import { add, countBy } from 'lodash';
+import { colors } from '@babel/standalone';
  window.axios = axios;
 
  window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
@@ -136,22 +137,25 @@ playAgainButton.onclick= function(){
 
 
 
- 
+
+for(let i = 0; i < question.length i++):
+return question.history.length
+if(correct === question.history)
+
+
+historyCollection.style.backgroundColor = "green";
 
 
 
  
- 
+function includes(questions, $correct) {
 
-
-
-
-
-
- 
-
- 
-
+for (let element of array)
+if(element === $correct && $correct === question.history)
+for(let i = 0; i < historyCollection.length i++):
+add.element(i)
+historyCollection.style.backgroundColor = "green";
+}
 _________________________________________________________
 
 _______________________________________________________

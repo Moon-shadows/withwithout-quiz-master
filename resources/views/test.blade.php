@@ -1,369 +1,194 @@
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Donkeyquiz - boilerplate</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
-    </head>
-    <body >
 
-<!-- First Page -->
-<!-- Grid Container Start (grid-3-columns) -->
-      <div id="startPage" class="grid-3-columns grid grid-cols-12 relative">
-          <div class="column-1"> <!-- Column 1 Start -->
-                <div>
-                    <img 
-                        src="/Image/Logo(3).svg"
-                        class=" h-[150px] mt-[30px] mb-[228px] ml-14">  <!-- Hover over Logo? -->
-                </div>
-                <div>
-                    <img 
-                        src="/Image/blob-left.png"
-                        class=" h-[415px] mb-[77px]">  <!-- Hover over Logo? -->
-                </div>
-          </div><!-- Column 1 End --> 
-     
-
-          
-          <div class="column-2 mx-auto col-start-4 col-end-9 mt-[337px] mb-[327] h-[236]"> <!-- Column 2 Start -->
-                <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
-                    Svensk mästare i TP?
-                </h1>
-                <p class="text-20 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
-                    Svara på 35 samtida frågor i 7 olika kategorier. </p>
-                <div class="w-63 text-center">
-                    <button class="btn-page-one border-2 border-ljusblå" onclick="myFunction()">Klicka här för att starta</button>
-                </div>
-          </div> <!-- Column 2 End --> 
-
-         
-         
-         
-          <div class="column-3 col-start-10 col-end-12"> <!-- Column 3 Start -->
-                <img 
-                  src="/Image/blob-right.png"
-                  class=" h-[573px] mt-[80px] absolute right-0" >  <!-- Hover over Logo? -->
-          </div> <!-- Column 3 End --> 
-      </div>
-<!-- Grid Container End (grid-3-columns) -->
-<!-- First page end -->
+<section>
+    <div class="blob">
 
 
+        <svg viewBox="0 0 200 200">
+            <defs>
+            <!-- Our gradient fill #gradient -->
+            <linearGradient id="gradient" gradientTransform="rotate(90)">
+                <!-- Use CSS custom properties for the start / stop colors of the gradient -->
+                <stop id="gradientStop1" offset="0%" stop-color="var(--startColor)" />
+                <stop id="gradientStop2 " offset="100%" stop-color="var(--stopColor)" />
+            </linearGradient>
+            </defs>
+            <path d="M-97.3443 36.9294C-70.5786 4.35944 -37.4777 -4.26202 
+            3.06685 1.80493C24.2894 4.99807 46.3039 10.5861 61.9832 
+            25.4341C76.5539 39.1646 83.5225 59.1217 93.9754 
+            76.2049C106.646 97.2796 124.859 114.842 136.104 136.715C171.105 
+            204.729 150.516 311.06 110.922 372.368C102.845 384.981 93.0251 
+            397.115 80.1966 404.778C52.3222 421.383 17.3208 414.198 -14.513 
+            407.971C-49.5144 401.266 -85.1493 395.997 -120.784 393.922C-149.292 
+            392.325 -173.365 385.779 -188.411 358.318C-200.923 335.647 -202.19 
+            308.505 -200.29 282.641C-194.113 196.905 -154.835 116.279 -104.63 
+            46.3491C-102.254 43.156 -99.8784 39.9629 -97.3443 36.9294Z"
+            fill="url('#7678ED')"></path>
+        </svg>
+    </div>
+</section>
 
-
-
-
-
-<!-- Second page start -->
-<!-- Grid Container Start (grid-3-columns) -->
-<div id="guestionPage" class="grid-3-columns grid grid-cols-12 relative">
-    <div class="column-1"> <!-- Column 1 Start -->
-        <div>
-            <img 
-                src="/Image/Logo(3).svg"
-                class=" h-[150px] mt-[30px] mb-[228px] ml-14">  <!-- Hover over Logo? -->
-        </div>
-        <div>
-            <img 
-                src="/Image/blob-left.png"
-                class=" h-[415px] mb-[77px]">  <!-- Hover over Logo? -->
-        </div>
-    </div><!-- Column 1 End --> 
-
-
-   
-    <div class="column-2 mx-auto col-start-4 col-end-9 mt-[268px] mb-[165px] h-[364px]"> <!-- Column 2 Start -->
-          <p class="text-20 text-center mb-10">Tv & film </p>
-          <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
-            I vilken amerikansk delstat utspelar sig den populära Netflixserien Stranger Things?
-          </h1>
-          
-          <div class="w-63 text-center mb-24">
-                <button id="btn-page-two" class="border-2 border-ljusblå">Se svaret</button>
-                <p id="demo">
-          </div>
+CSS:
+:root {
+    --startColor: hsl(0, 100%, 75%);
+    --stopColor: hsl(0, 100%, 75%);
+  }
   
-
-          <div class="progress-bar mx-auto mb-[55px] h-[48px] max-w-[620px]">
-                <div class="progress-slide"> 
-                    <div class="progress-line"></div>
-                    <div class="progress-button"></div>
-                </div>
-
-                <div class="text-center pt-3.5">
-                    <p>Fråga 2 av 35</p>
-                </div>
-          </div> 
-    </div> <!-- Column 2 End --> 
-
-    
-    
-    <div class="column-3 col-start-10 col-end-12"> <!-- Column 3 Start -->
-          <img 
-          src="/Image/blob-right.png"
-          class=" h-[573px] mt-[80px] absolute right-0" >
-    </div> <!-- Column 3 End --> 
-</div>
-<!-- Grid Container End (grid-3-columns) -->
-<!-- Second page end -->
-
-
-
-
-
-
-
-<!-- Third Page -->
-<!-- Grid Container Start (grid-3-columns) -->
-<div  id="answerPage" class="grid-3-columns bg-ljusblå grid grid-cols-12 relative">
-    <div class="column-1"> <!-- Column 1 Start -->
-        <div>
-            <img 
-                src="/Image/Logo(4).svg"
-                class=" h-[150px] mt-[30px] mb-[228px] ml-14">  <!-- Hover over Logo? -->
-        </div>
-        <div>
-            <img 
-                src="/Image/blob-left-white.png"
-                class=" h-[415px] mb-[77px]">  <!-- Hover over Logo? -->
-        </div>
-  </div><!-- Column 1 End --> 
-
-
-    <div class="column-2 mx-auto col-start-4 col-end-9 mt-80"> <!-- Column 2 Start -->
-        <p class="text-20 text-center text-white mb-10">Rätt svar: </p>
-          <h1 class="text-green font-poppins text-48 font-semibold text-center mb-8"> 
-              Indiana
-          </h1>
-          <p class="text-20 text-center text-white mb-10">Svarade du rätt? </p>
-          <div class="w-63 text-center">
-              <button class="btn-page-third-yes border-2 border-white" onclick="myFunction()">Ja</button>
-              <button class="btn-page-third-no border-2 border-white" onclick="myFunction()">Nej</button>
-            </div>
-
-            <div class="progress-bar mx-auto mb-[55px] h-[48px] max-w-[620px]">
-                <div class="progress-slide"> 
-                    <div class="progress-line-white"></div>
-                    <div class="progress-button-white"></div>
-                </div>
-
-                <div class="text-center pt-3.5">
-                    <p>Fråga 2 av 35</p>
-                </div>
-          </div>  
-    </div> <!-- Column 2 End -->
-    
-    
-
-    <div class="column-3 col-start-10 col-end-12"> <!-- Column 3 Start -->
-          <img 
-          src="/Image/blob-right-white.png"
-          class=" h-[573px] mt-[80px] absolute right-0" >
-    </div> <!-- Column 3 End --> 
-</div>
-<!-- Grid Container End (grid-3-columns) -->
-<!-- Third page end -->
-
-
-
-
-
-
-<!-- Fourth Page -->
-<!-- Grid Container Start (grid-3-columns) -->
-<div   id="resultPage" class="grid-3-columns grid grid-cols-12 relative">
-    <div class="column-1"> <!-- Column 1 Start -->
-        <div>
-            <img 
-                src="/Image/Logo(3).svg"
-                class=" h-[150px] mt-[30px] mb-[228px] ml-14">  <!-- Hover over Logo? -->
-        </div>
-        <div>
-            <img 
-                src="/Image/blob-left.png"
-                class=" h-[415px] mb-[77px]">  <!-- Hover over Logo? -->
-        </div>
-  </div><!-- Column 1 End --> 
-
-
-    <div class="column-2 mx-auto col-start-4 col-end-9 mt-56 mb-36"> <!-- Column 2 Start -->
-        <p class="text-20 text-center mb-10">Ditt resultat</p>
-          <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
-            21 av 35 rätt
-          </h1>
-
-        <div class="buttons flex items-center gap-2.5 gap-x-16">
-            <div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-green"></div>
-                <div class="btn-page-fourth-green"></div>
-                <div class="btn-page-fourth-green"></div>
-                <p class="mt-1">Film & TV</p>
-            </div>
-
-            <div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-green"></div>
-                <div class="btn-page-fourth-green"></div>
-                <div class="btn-page-fourth-green"></div>
-                <div class="btn-page-fourth-green"></div>
-                <p class="mt-1">Geografi</p>
-            </div>
-
-            <div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-green"></div>
-                <div class="btn-page-fourth-green"></div>
-                <p class="mt-1">Historia</p>
-            </div>
-
-            <div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-green"></div>
-                <div class="btn-page-fourth-green"></div>
-                <div class="btn-page-fourth-green"></div>
-                <p class="mt-1">Musik</p>
-            </div>
-
-            <div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-green"></div>
-                <p class="mt-1">Övrigt</p>
-            </div>
-
-            <div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-green"></div>
-                <div class="btn-page-fourth-green"></div>
-                <div class="btn-page-fourth-green"></div>
-                <p class="mt-1">Vetenskap</p>
-            </div>
-
-            <div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-gray"></div>
-                <div class="btn-page-fourth-green"></div>
-                <div class="btn-page-fourth-green"></div>
-                <p class="mt-1">Sport</p>
-            </div>
-        </div>
-          
-          <div class="w-63 mt-16 text-center">
-              <button class="btn-page-fourth border-2 border-ljusblå" onclick="myFunction()">En runda till</button>
-          </div>
-    </div> <!-- Column 2 End --> 
-
-
-
-
-    <div class="column-3 col-start-10 col-end-12"> <!-- Column 3 Start -->
-          <img 
-          src="/Image/blob-right.png"
-          class=" h-[573px] mt-[80px] absolute right-0" >
-    </div> <!-- Column 3 End --> 
-</div>
-<!-- Grid Container End (grid-3-columns) -->
-<!-- Fourth page end -->
-
-
-
-
-
-
-<!-- Detta ska va kvar-->
-        <script type="module" crossorigin src="http://localhost:3000/@@vite/client"></script>
-        <script type="module" crossorigin src="http://localhost:3000/resources/js/app.js"></script>
-        </section>
-    
-    </body>
-</html>
-
-
-
-.progress-bar{
-    position: relative;
-}
-
-.progress-slide{
-    position: absolute;
-}
-.progress-line{
-    position: absolute;
-    width: 620px;
-    height: 0px;
-    left: 36px;
-    top: 7px;
-    border: 2px solid #7678ED;
-}
-.progress-button{
-    position: absolute;
-    width: 116px;
-    height: 14px;
-    left: 0px;
-    top: 0px;
-    background: #000064;
-    border-radius: 10px;
-}
-
-.progress-line-white{
-    position: absolute;
-    width: 620px;
-    height: 0px;
-    left: 36px;
-    top: 7px;
-
-    /* Brand/Ljusblå */
-    border: 2px solid white;
-}
-
-.progress-button-white{
-    position: absolute;
-    width: 116px;
-    height: 14px;
-    left: 0px;
-    top: 0px;
-    background: white;
-    border-radius: 10px;
-}
-
-
-
-<div class="relative w-56 h-[2px] bg-ljusblå tablet:w-[420px] xl:w-[620px]">
-    <div id="progressbar" class="absolute h-3 w-[30%] center-y bg-mörkblå rounded-full"></div>
-</div>
-
-
-
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
   
+  body {
+    /* align our svg to the center of the viewport both horizontally and vertically */
+    height: 100vh;
+    display: grid;
+    place-items: center;
+  }
+  
+  svg {
+    /* a perfectly square <svg> element that will never overflow the viewport */
+    width: 90vmin;
+    height: 90vmin;
+  }
 
-  function changeText(){
-    let startPage = document.getElementsByClassName('startPage');
-    for(var i = 0; i < startPage.length; i++){  
-    startPage[i].style.backgroundColor = "blue";
-    }
+  path {
+    cursor: pointer;
   }
   
 
 
-  /***StartPage***/
-const startButton = document.getElementById("start-btn");
-startButton.addEventListener("click", changeStartPage);
-function changeStartPage(){
-startPage[0].style.display = "none";
-questionPage[0].style.display = "block";
-document.getElementById('questionCounter').innerHTML = `Fråga + ${questionCounter}  av ${maxQuestions}`;
-progressbar.style.width = (questionCounter/maxQuestions) * 100 + "%";
-progressbar.style.width = (questionCounter/maxQuestions) * 100 + "%";
+  Javascript:
+  // (our <path> element)
+    const path = document.querySelector('path');
+    // (used to set our custom property values)
+    const root = document.documentElement;
+
+    function createPoints() {
+        const points = [];
+        // how many points do we need
+        const numPoints = 6;
+        // used to equally space each point around the circle
+        const angleStep = (Math.PI * 2) / numPoints;
+        // the radius of the circle
+        const rad = 75;
+      
+        for (let i = 1; i <= numPoints; i++) {
+          // x & y coordinates of the current point
+
+          const theta = i * angleStep;
+      
+          const x = 100 + Math.cos(theta) * rad;
+
+          const y = 100 + Math.sin(theta) * rad;
+      
+          // store the point's position
+          points.push({
+            x: x,
+            y: y,
+            /* we need to keep a reference to the point's original {x, y} coordinates 
+            for when we modulate the values later */
+            originX: x,
+            originY: y,
+            // more on this in a moment!
+            noiseOffsetX: Math.random() * 1000,
+            noiseOffsetY: Math.random() * 1000,
+          });
+        }
+      
+        return points;
+      }
+
+
+      We can then initialise our blob points like so:
+      
+      const points = createPoints();
+
+
+      (function animate() {
+        requestAnimationFrame(animate);
+      })();
+
+      (function animate() {
+        // generate a smooth continuous curve based on points, using Bezier curves. spline() will return an SVG path-data string. The arguments are (points, tension, close). Play with tension and check out the effect!
+        path.setAttribute('d', spline(points, 1, true));
+      
+        requestAnimationFrame(animate);
+      })();
+
+
+
+      function map(n, start1, end1, start2, end2) {
+        return ((n - start1) / (end1 - start1)) * (end2 - start2) + start2;
+      }
+
+
+
+    const simplex = new SimplexNoise();
+
+// how fast we progress through "time"
+let noiseStep = 0.005;
+
+function noise(x, y) {
+  // return a value at {x point in time} {y point in time}
+  return simplex.noise2D(x, y);
 }
+
+
+(function animate() {
+    ...
+    // for every point...
+    for (let i = 0; i < points.length; i++) {
+      const point = points[i];
+  
+      // return a pseudo random value between -1 / 1 based on this point's current x, y positions in "time"
+      const nX = noise(point.noiseOffsetX, point.noiseOffsetX);
+      const nY = noise(point.noiseOffsetY, point.noiseOffsetY);
+      // map this noise value to a new value, somewhere between it's original location -20 and it's original location + 20
+      const x = map(nX, -1, 1, point.originX - 20, point.originX + 20);
+      const y = map(nY, -1, 1, point.originY - 20, point.originY + 20);
+  
+      // update the point's current coordinates
+      point.x = x;
+      point.y = y;
+  
+      // progress the point's x, y values through "time"
+      point.noiseOffsetX += noiseStep;
+      point.noiseOffsetY += noiseStep;
+    }
+  })();
+
+
+
+  let hueNoiseOffset = 0;
+
+  (function animate() {
+    ...
+    // we want the hue to move a little slower than the rest of the shape
+    hueNoiseOffset += noiseStep / 6;
+  })();
+
+
+  (function animate() {
+    ...
+    const hueNoise = noise(hueNoiseOffset, hueNoiseOffset);
+    const hue = map(hueNoise, -1, 1, 0, 360);
+  
+    root.style.setProperty("--startColor", `hsl(${hue}, 100%, 75%)`);
+    root.style.setProperty("--stopColor", `hsl(${hue + 60}, 100%, 75%)`);
+    document.body.style.background = `hsl(${hue + 60}, 75%, 5%)`;
+  })();
+
+
+
+
+//Bonus when hover over the blob!!
+  document.querySelector('path').addEventListener('mouseover', () => {
+    noiseStep = 0.01;
+  });
+  
+  document.querySelector('path').addEventListener('mouseleave', () => {
+    noiseStep = 0.005;
+  });
+
+  

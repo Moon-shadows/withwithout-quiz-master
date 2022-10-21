@@ -186,66 +186,66 @@
                 </h1>
 
                 <div class="buttons flex items-center gap-2.5 gap-x-16">
-                    <div class="flex flex-col gap-y-2 flex-wrap">
+                    <div id="film" class="flex flex-col gap-y-2 flex-wrap">
                         <div class="btn-page-fourth-gray"></div>
                         <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-green"></div>
-                        <div class="btn-page-fourth-green"></div>
-                        <div class="btn-page-fourth-green"></div>
+                        <div class="btn-page-fourth-gray"></div>
+                        <div class="btn-page-fourth-gray"></div>
+                        <div class="btn-page-fourth-gray"></div>
                         <p class="mt-1 text-14">Film & TV</p>
                     </div>
 
                     <div class="flex flex-col gap-y-2">
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-green"></div>
-                        <div class="btn-page-fourth-green"></div>
-                        <div class="btn-page-fourth-green"></div>
-                        <div class="btn-page-fourth-green"></div>
+                        <div class="geografi btn-page-fourth-gray"></div>
+                        <div class="geografi btn-page-fourth-gray"></div>
+                        <div class="geografi btn-page-fourth-gray"></div>
+                        <div class="geografi btn-page-fourth-gray"></div>
+                        <div class="geografi btn-page-fourth-gray"></div>
                         <p class="mt-1 text-14">Geografi</p>
                     </div>
 
                     <div class="flex flex-col gap-y-2">
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-green"></div>
-                        <div class="btn-page-fourth-green"></div>
+                        <div class="historia btn-page-fourth-gray"></div>
+                        <div class="historia btn-page-fourth-gray"></div>
+                        <div class="historia btn-page-fourth-gray"></div>
+                        <div class="historia btn-page-fourth-gray"></div>
+                        <div class="historia btn-page-fourth-gray"></div>
                         <p class="mt-1 text-14">Historia</p>
                     </div>
 
                     <div class="flex flex-col gap-y-2">
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-green"></div>
-                        <div class="btn-page-fourth-green"></div>
-                        <div class="btn-page-fourth-green"></div>
+                        <div class="musik btn-page-fourth-gray"></div>
+                        <div class="musik btn-page-fourth-gray"></div>
+                        <div class="musik btn-page-fourth-gray"></div>
+                        <div class="musik btn-page-fourth-gray"></div>
+                        <div class="musik btn-page-fourth-gray"></div>
                         <p class="mt-1 text-14">Musik</p>
                     </div>
 
                     <div class="flex flex-col gap-y-2">
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-green"></div>
+                        <div class="övrigt btn-page-fourth-gray"></div>
+                        <div class="övrigt btn-page-fourth-gray"></div>
+                        <div class="övrigt btn-page-fourth-gray"></div>
+                        <div class="övrigt btn-page-fourth-gray"></div>
+                        <div class="övrigt btn-page-fourth-gray"></div>
                         <p class="mt-1 text-14">Övrigt</p>
                     </div>
 
                     <div class="flex flex-col gap-y-2">
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-green"></div>
-                        <div class="btn-page-fourth-green"></div>
-                        <div class="btn-page-fourth-green"></div>
+                        <div class="vetenskap btn-page-fourth-gray"></div>
+                        <div class="vetenskap btn-page-fourth-gray"></div>
+                        <div class="vetenskap btn-page-fourth-gray"></div>
+                        <div class="vetenskap btn-page-fourth-gray"></div>
+                        <div class="vetenskap btn-page-fourth-gray"></div>
                         <p class="mt-1 text-14">Vetenskap</p>
                     </div>
 
                     <div class="flex flex-col gap-y-2">
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-green"></div>
-                        <div class="btn-page-fourth-green"></div>
+                        <div class="sport btn-page-fourth-gray"></div>
+                        <div class="sport btn-page-fourth-gray"></div>
+                        <div class="sport btn-page-fourth-gray"></div>
+                        <div class="sport btn-page-fourth-gray"></div>
+                        <div class="sport btn-page-fourth-gray"></div>
                         <p class="mt-1 text-14">Sport</p>
                     </div>
                 </div>

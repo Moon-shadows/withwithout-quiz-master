@@ -13,6 +13,8 @@
     tailwind classer och vanlig css för att använda vanliga css klasser.*/
 }
 
+
+
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 656px 1fr;
@@ -98,7 +100,6 @@
 .btn-page-fourth-gray{
     width: 40px;
     height: 32px;
-    background: #EEEEEE;
     border-radius: 100px;
 }
 
