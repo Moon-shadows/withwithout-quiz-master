@@ -33,6 +33,12 @@ let count = 0;
 let correct = 0;
 
 let filmChildren = document.getElementById("film").children;
+let geografiChildren = document.getElementById("geografi").children;
+let historiaChildren = document.getElementById("historia").children;
+let musikChildren = document.getElementById("musik").children;
+let övrigtChildren = document.getElementById("övrigt").children;
+let vetenskapChildren = document.getElementById("vetenskap").children;
+let sportChildren = document.getElementById("sport").children;
 
 let correctCategory = []
 
@@ -42,7 +48,7 @@ let correctCategory = []
 /***StartPage***/
 const startButton = document.getElementById("start-btn");
 startButton.onclick = function(){
-  axios.get("/questions").then(response=> {
+  axios.get("/questions").then(response=> {   //Inhämtar frågorna genom api:t i routen (med sökväg /question). Frågorna finns under storage {}questions.json
 questions=response.data
 
  
@@ -64,7 +70,7 @@ questions=response.data
     progressButton.style.width = (count/maxQuestions) * 100 + "%";
     progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%";
     
-    correctCategory['Film & TV'] = []  //Har döpt den nästlade arrayen till samma kategori som i den storas question arrayens kategorier.
+    correctCategory['Film & TV'] = []  //Har döpt den nästlade arrayen till samma kategori som i den storas question arrayens kategorier för att hamna på rätt plats.
     correctCategory['Geografi'] = []
     correctCategory['Historia'] = []
     correctCategory['Musik'] = []
@@ -117,6 +123,36 @@ questionButton.onclick= function(){
         filmChildren[i].classList.remove("bg-gray")
         filmChildren[i].classList.add("bg-green")
       }
+      for(let i = 0; i < correctCategory["Geografi"].length; i++){
+        geografiChildren[i].classList.remove("bg-gray")
+        geografiChildren[i].classList.add("bg-green")
+      }
+      for(let i = 0; i < correctCategory["Historia"].length; i++){
+        historiaChildren[i].classList.remove("bg-gray")
+        historiaChildren[i].classList.add("bg-green")
+      }
+      for(let i = 0; i < correctCategory["Musik"].length; i++){
+       musikChildren[i].classList.remove("bg-gray")
+       musikChildren[i].classList.add("bg-green")
+      }
+      for(let i = 0; i < correctCategory["Övrigt"].length; i++){
+       övrigtChildren[i].classList.remove("bg-gray")
+       övrigtChildren[i].classList.add("bg-green")
+      }
+      for(let i = 0; i < correctCategory["Vetenskap"].length; i++){
+        vetenskapChildren[i].classList.remove("bg-gray")
+        vetenskapChildren[i].classList.add("bg-green")
+      }
+      for(let i = 0; i < correctCategory["Sport"].length; i++){
+        sportChildren[i].classList.remove("bg-gray")
+        sportChildren[i].classList.add("bg-green")
+      }
+
+
+
+
+
+
 
 
 

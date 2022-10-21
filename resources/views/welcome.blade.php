@@ -186,66 +186,68 @@
                 </h1>
 
                 <div class="buttons flex items-center gap-2.5 gap-x-16">
-                    <div id="film" class="flex flex-col gap-y-2 flex-wrap">
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-gray"></div>
-                        <div class="btn-page-fourth-gray"></div>
-                        <p class="mt-1 text-14">Film & TV</p>
-                    </div>
+                    <div  class="flex flex-col gap-y-2 flex-wrap">
+                        <div id="film" class=" flex flex-col-reverse gap-y-2 ">
+                                <div class="btn-page-fourth-gray bg-gray"></div>
+                                <div class="btn-page-fourth-gray bg-gray"></div>
+                                <div class="btn-page-fourth-gray bg-gray"></div>
+                                <div class="btn-page-fourth-gray bg-gray"></div>
+                                <div class="btn-page-fourth-gray bg-gray"></div>
+                        </div>
+                    <p class="mt-1 text-14">Film & TV</p>
+                </div>
 
-                    <div class="flex flex-col gap-y-2">
-                        <div class="geografi btn-page-fourth-gray"></div>
-                        <div class="geografi btn-page-fourth-gray"></div>
-                        <div class="geografi btn-page-fourth-gray"></div>
-                        <div class="geografi btn-page-fourth-gray"></div>
-                        <div class="geografi btn-page-fourth-gray"></div>
+                    <div id="geografi" class="flex flex-col gap-y-2">
+                        <div class="geografi btn-page-fourth-gray bg-gray"></div>
+                        <div class="geografi btn-page-fourth-gray bg-gray"></div>
+                        <div class="geografi btn-page-fourth-gray bg-gray"></div>
+                        <div class="geografi btn-page-fourth-gray bg-gray"></div>
+                        <div class="geografi btn-page-fourth-gray bg-gray"></div>
                         <p class="mt-1 text-14">Geografi</p>
                     </div>
 
-                    <div class="flex flex-col gap-y-2">
-                        <div class="historia btn-page-fourth-gray"></div>
-                        <div class="historia btn-page-fourth-gray"></div>
-                        <div class="historia btn-page-fourth-gray"></div>
-                        <div class="historia btn-page-fourth-gray"></div>
-                        <div class="historia btn-page-fourth-gray"></div>
+                    <div id="historia" class="flex flex-col gap-y-2">
+                        <div class="historia btn-page-fourth-gray bg-gray"></div>
+                        <div class="historia btn-page-fourth-gray bg-gray"></div>
+                        <div class="historia btn-page-fourth-gray bg-gray"></div>
+                        <div class="historia btn-page-fourth-gray bg-gray"></div>
+                        <div class="historia btn-page-fourth-gray bg-gray"></div>
                         <p class="mt-1 text-14">Historia</p>
                     </div>
 
-                    <div class="flex flex-col gap-y-2">
-                        <div class="musik btn-page-fourth-gray"></div>
-                        <div class="musik btn-page-fourth-gray"></div>
-                        <div class="musik btn-page-fourth-gray"></div>
-                        <div class="musik btn-page-fourth-gray"></div>
-                        <div class="musik btn-page-fourth-gray"></div>
+                    <div id="musik" class="flex flex-col gap-y-2">
+                        <div class="musik btn-page-fourth-gray bg-gray"></div>
+                        <div class="musik btn-page-fourth-gray bg-gray"></div>
+                        <div class="musik btn-page-fourth-gray bg-gray"></div>
+                        <div class="musik btn-page-fourth-gray bg-gray"></div>
+                        <div class="musik btn-page-fourth-gray bg-gray"></div>
                         <p class="mt-1 text-14">Musik</p>
                     </div>
 
-                    <div class="flex flex-col gap-y-2">
-                        <div class="övrigt btn-page-fourth-gray"></div>
-                        <div class="övrigt btn-page-fourth-gray"></div>
-                        <div class="övrigt btn-page-fourth-gray"></div>
-                        <div class="övrigt btn-page-fourth-gray"></div>
-                        <div class="övrigt btn-page-fourth-gray"></div>
+                    <div id="övrigt" class="flex flex-col gap-y-2">
+                        <div class="övrigt btn-page-fourth-gray bg-gray"></div>
+                        <div class="övrigt btn-page-fourth-gray bg-gray"></div>
+                        <div class="övrigt btn-page-fourth-gray bg-gray"></div>
+                        <div class="övrigt btn-page-fourth-gray bg-gray"></div>
+                        <div class="övrigt btn-page-fourth-gray bg-gray"></div>
                         <p class="mt-1 text-14">Övrigt</p>
                     </div>
 
-                    <div class="flex flex-col gap-y-2">
-                        <div class="vetenskap btn-page-fourth-gray"></div>
-                        <div class="vetenskap btn-page-fourth-gray"></div>
-                        <div class="vetenskap btn-page-fourth-gray"></div>
-                        <div class="vetenskap btn-page-fourth-gray"></div>
-                        <div class="vetenskap btn-page-fourth-gray"></div>
+                    <div id="vetenskap" class="flex flex-col gap-y-2">
+                        <div class="vetenskap btn-page-fourth-gray bg-gray"></div>
+                        <div class="vetenskap btn-page-fourth-gray bg-gray"></div>
+                        <div class="vetenskap btn-page-fourth-gray bg-gray"></div>
+                        <div class="vetenskap btn-page-fourth-gray bg-gray"></div>
+                        <div class="vetenskap btn-page-fourth-gray bg-gray"></div>
                         <p class="mt-1 text-14">Vetenskap</p>
                     </div>
 
-                    <div class="flex flex-col gap-y-2">
-                        <div class="sport btn-page-fourth-gray"></div>
-                        <div class="sport btn-page-fourth-gray"></div>
-                        <div class="sport btn-page-fourth-gray"></div>
-                        <div class="sport btn-page-fourth-gray"></div>
-                        <div class="sport btn-page-fourth-gray"></div>
+                    <div id="sport"  class="flex flex-col gap-y-2">
+                        <div class="sport btn-page-fourth-gray bg-gray"></div>
+                        <div class="sport btn-page-fourth-gray bg-gray"></div>
+                        <div class="sport btn-page-fourth-gray bg-gray"></div>
+                        <div class="sport btn-page-fourth-gray bg-gray"></div>
+                        <div class="sport btn-page-fourth-gray bg-gray"></div>
                         <p class="mt-1 text-14">Sport</p>
                     </div>
                 </div>
