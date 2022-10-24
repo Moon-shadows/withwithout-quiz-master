@@ -29,7 +29,7 @@ let questionCounter2 = document.getElementById("questionCounter2");
 let correctQuestionCounter = document.getElementById("correctQuestionCounter");
 
 let questions = [];
-const maxQuestions = 2;
+const maxQuestions = 3;
 let count = 0;
 let correct = 0;
 
@@ -182,7 +182,7 @@ playAgainButton.onclick= function(){
     p1.classList.remove("hidden")
     count = 0;
     correct = 0; //Återställer räkneverket 
-    filmChildren[i].classList.remove("bg-green") //Återställer antal färgade rätt
+    filmChildren[i].classList.remove("bg-green") //Återställer färgade knappar
     filmChildren[i].classList.add("bg-gray")
     geografiChildren[i].classList.remove("bg-green")
     geografiChildren[i].classList.add("bg-gray")

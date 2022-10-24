@@ -58,7 +58,6 @@
     font-size: 16px;
     line-height: 22px;
     text-align: center;
-    color: #7678ED;
     border-radius: 1000px;
     }
 
@@ -72,7 +71,6 @@
     line-height: 22px;
     padding: 14px, 32px, 14px, 32px;
     border-radius: 1000px;
-    color: #7678ED;
     border: 2px solid #7678ED;
     text-align: center;
 }

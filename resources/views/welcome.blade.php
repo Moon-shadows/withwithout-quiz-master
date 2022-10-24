@@ -33,7 +33,7 @@
                 <p  id="startText"  class="popper text-20 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
                     Svara på 35 samtida frågor i 7 olika kategorier. </p>
                 <div class="w-63 text-center">
-                    <button id="start-btn" class="btn-page-one border-2 border-ljusblå">Klicka här för att starta</button>
+                    <button id="start-btn" class="btn-page-one border-2 border-ljusblå text-ljusblå hover:bg-mörkblå hover:text-white ">Klicka här för att starta</button>
                 </div>
             </div> 
 <!-- Page1/Column 2 End --> 
@@ -73,7 +73,7 @@
                     I vilken amerikansk delstat utspelar sig den populära Netflixserien Stranger Things?</h1>
                 
                 <div class="w-63 text-center mb-24">
-                    <button id="questionButton" class="border-2 border-ljusblå">Se svaret</button>
+                    <button id="questionButton" class="border-2 border-ljusblå text-ljusblå hover:bg-mörkblå hover:text-white ">Se svaret</button>
                 </div>
         
                 <div class="progress-bar flex justify-center"> 
