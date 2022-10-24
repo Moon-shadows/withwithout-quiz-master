@@ -9,7 +9,7 @@
     </head>
     <body class="font-poppins">
 
-<!-- Grid Container Start (grid-3-columns) -->
+<!-- Grid Container Start -->
 <!-- Page1/Column 1 Start -->
         <div id="p1" class="grid-container">
             <div class="column-1"> 
@@ -45,10 +45,10 @@
             </div>  
         </div>
 <!-- Page1/Column 3 End -->
-<!-- Grid Container End (grid-3-columns) -->
+<!-- Grid Container End -->
 
 
-<!-- Grid Container Start (grid-3-columns) -->
+<!-- Grid Container Start -->
 <!-- Page2/Column 1 Start -->
         <div id="p2" class="hidden">
             <div column-1"> 
@@ -94,11 +94,11 @@
             </div>  
         </div>
 <!-- Page2/Column 3 End --> 
-<!-- Grid Container End (grid-3-columns) -->
+<!-- Grid Container End -->
 
 
 
-<!-- Grid Container Start (grid-3-columns) -->
+<!-- Grid Container Start -->
 <!-- Page3/Column 1 Start -->
         <div id="p3" class="hidden">
             <div class="column-1 bg-ljusblå"> 
@@ -146,9 +146,9 @@
             </div>
         </div>             
 <!-- Page3/Column 3 End --> 
-<!-- Grid Container End (grid-3-columns) -->
+<!-- Grid Container End  -->
 
-<!-- Grid Container Start (grid-3-columns) -->
+<!-- Grid Container2 Start-->
 <!-- Page4/Column 1 Start -->
         <div id="p4" class="hidden">
             <div class="column-1"> 
@@ -171,8 +171,8 @@
                     21 av 35 rätt
                 </h1>
 
-                <div class="buttons flex items-center gap-2.5 gap-x-16">
-                    <div  class="flex flex-col gap-y-2 flex-wrap">
+                <div class="buttons flex items-center gap-7 flex-wrap">
+                    <div  class="flex flex-col">
                         <div id="film" class=" flex flex-col-reverse gap-y-2 ">
                                 <div class="btn-page-fourth-gray bg-gray"></div>
                                 <div class="btn-page-fourth-gray bg-gray"></div>

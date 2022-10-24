@@ -29,7 +29,7 @@ let questionCounter2 = document.getElementById("questionCounter2");
 let correctQuestionCounter = document.getElementById("correctQuestionCounter");
 
 let questions = [];
-const maxQuestions = 10;
+const maxQuestions = 2;
 let count = 0;
 let correct = 0;
 
@@ -111,7 +111,7 @@ questionButton.onclick= function(){
   }else if(count===maxQuestions){
       p3.classList.add("hidden") 
       p3.classList.remove("grid-container")  
-      p4.classList.add("grid-container")  
+      p4.classList.add("grid-container2")  
       p4.classList.remove("hidden")
 
       correctQuestionCounter.innerHTML = `${correct} av ${maxQuestions} rätt`;
@@ -167,7 +167,7 @@ answerButtonNo.onclick= function(){
   }else if(count===maxQuestions){
       p3.classList.add("hidden") 
       p3.classList.remove("grid-container")  
-      p4.classList.add("grid-container")  
+      p4.classList.add("grid-container2")  
       p4.classList.remove("hidden") 
       correctQuestionCounter.innerHTML = `${correct} av ${maxQuestions} rätt`;   
   }
@@ -177,7 +177,7 @@ answerButtonNo.onclick= function(){
 const playAgainButton = document.getElementById("playAgainButton");
 playAgainButton.onclick= function(){
     p4.classList.add("hidden")
-    p4.classList.remove("grid-container")
+    p4.classList.remove("grid-container2")
     p1.classList.add("grid-container")
     p1.classList.remove("hidden")
     count = 0;

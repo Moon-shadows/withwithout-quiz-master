@@ -18,14 +18,22 @@
 .grid-container{
     display: grid;
     grid-template-columns: 1fr 656px 1fr;
-   
 }
+.grid-container2{
+    display: grid;
+    grid-template-columns: 1fr 1000px 1fr;
+}
+
 
 @media only screen and (max-width: 1024px) {
 
     .column-2{
         padding-left: 100px;
         padding-right: 100px;
+    }
+    .grid-container2{
+        display: grid;
+        grid-template-columns: 1fr 600px 1fr;
     }
 } 
 @media only screen and (max-width: 640px) {
@@ -34,6 +42,10 @@
         display: grid;
         grid-template-columns: 1fr 556px 1fr;
         grid-template-rows: 900px 900px 900px auto;
+    }
+    .grid-container2{
+        display: grid;
+        grid-template-columns: 1fr 500px 1fr;
     }
 } 
 
