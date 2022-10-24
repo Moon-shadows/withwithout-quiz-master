@@ -167,7 +167,7 @@
 <!-- Page4/ Column 2 Start -->
             <div  id="resultPage" class="column-2 mt-56 mb-36 w-full"> 
                 <p class="text-14 text-mörkblå text-center mb-10">Ditt resultat</p>
-                <h1 class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
+                <h1 id="correctQuestionCounter" class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
                     21 av 35 rätt
                 </h1>
 

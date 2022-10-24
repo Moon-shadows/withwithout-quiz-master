@@ -26,8 +26,9 @@ let progressButton = document.getElementById("progressButton");
 let progressButtonWhite = document.getElementById("progressButtonWhite");
 let questionCounter = document.getElementById("questionCounter");
 let questionCounter2 = document.getElementById("questionCounter2");
-let questions = [];
+let correctQuestionCounter = document.getElementById("correctQuestionCounter");
 
+let questions = [];
 const maxQuestions = 10;
 let count = 0;
 let correct = 0;
@@ -51,7 +52,6 @@ startButton.onclick = function(){
   axios.get("/questions").then(response=> {   //Inhämtar frågorna genom api:t i routen (med sökväg /question). Frågorna finns under storage {}questions.json
 questions=response.data
 
- 
     p1.classList.add("hidden")
     p1.classList.remove("grid-container")
     p2.classList.add("grid-container")
@@ -59,12 +59,10 @@ questions=response.data
     
     count++
 
-    category.innerHTML=questions[count-1]["category"]  //Hämtar en kategori ur questions arrayen
-    question.innerHTML=questions[count-1]["question"]  //Hämtar en fråga ur questions array
-    answer.innerHTML=questions[count-1]["answer"]  //Hämtar ett svar ur questions array
+    category.innerHTML = questions[count-1]["category"]  //Hämtar en kategori ur questions arrayen
+    question.innerHTML = questions[count-1]["question"]  //Hämtar en fråga ur questions array
+    answer.innerHTML = questions[count-1]["answer"]  //Hämtar ett svar ur questions array
     
-    
-
     questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;
     
     progressButton.style.width = (count/maxQuestions) * 100 + "%";
@@ -90,17 +88,14 @@ questionButton.onclick= function(){
     questionCounter2.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
 }
 
-
-
 /***AnswerButtonYes***/
     const answerButtonYes = document.getElementById("answerButtonYes");
     answerButtonYes.onclick= function(){
     count++     
     correct++
     correctCategory[category.textContent].push(1)
-    console.log(correctCategory);
-
-  questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
+   
+    questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
   if(count<maxQuestions){
     p3.classList.add("hidden") 
     p3.classList.remove("grid-container")  
@@ -118,6 +113,8 @@ questionButton.onclick= function(){
       p3.classList.remove("grid-container")  
       p4.classList.add("grid-container")  
       p4.classList.remove("hidden")
+
+      correctQuestionCounter.innerHTML = `${correct} av ${maxQuestions} rätt`;
 
       for(let i = 0; i < correctCategory["Film & TV"].length; i++){
         filmChildren[i].classList.remove("bg-gray")
@@ -171,7 +168,8 @@ answerButtonNo.onclick= function(){
       p3.classList.add("hidden") 
       p3.classList.remove("grid-container")  
       p4.classList.add("grid-container")  
-      p4.classList.remove("hidden")    
+      p4.classList.remove("hidden") 
+      correctQuestionCounter.innerHTML = `${correct} av ${maxQuestions} rätt`;   
   }
 }
 
@@ -183,7 +181,21 @@ playAgainButton.onclick= function(){
     p1.classList.add("grid-container")
     p1.classList.remove("hidden")
     count = 0;
-    correct =0;  //Återställer räkneverket
+    correct = 0; //Återställer räkneverket 
+    filmChildren[i].classList.remove("bg-green") //Återställer antal färgade rätt
+    filmChildren[i].classList.add("bg-gray")
+    geografiChildren[i].classList.remove("bg-green")
+    geografiChildren[i].classList.add("bg-gray")
+    historiaChildren[i].classList.remove("bg-green")
+    historiaChildren[i].classList.add("bg-gray")
+    musikChildren[i].classList.remove("bg-green")
+    musikChildren[i].classList.add("bg-gray")
+    övrigtChildren[i].classList.remove("bg-green")
+    övrigtChildren[i].classList.add("bg-gray")
+    vetenskapChildren[i].classList.remove("bg-green")
+    vetenskapChildren[i].classList.add("bg-gray")
+    sportChildren[i].classList.remove("bg-green")
+    sportChildren[i].classList.add("bg-gray")
 }
 
 
