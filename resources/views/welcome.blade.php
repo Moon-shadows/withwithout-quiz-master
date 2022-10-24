@@ -9,11 +9,10 @@
     </head>
     <body class="font-poppins">
 
-<!-- Start-page -->
 <!-- Grid Container Start (grid-3-columns) -->
 <!-- Page1/Column 1 Start -->
         <div id="p1" class="grid-container">
-            <div class="column-1 startpage"> 
+            <div class="column-1"> 
                 <div>
                     <img 
                         src="/Image/Logo(3).svg"
@@ -26,10 +25,8 @@
                 </div>
             </div>
 <!-- Page1/Column 1 End --> 
-     
-
-<!-- Page1/Column 2 Start -->          
-            <div class=" startpage column-2 mt-[337px] mb-[327] w-full"> 
+     <!-- Page1/Column 2 Start -->          
+            <div class="column-2 mt-[337px] mb-[327] w-full"> 
                 <h1 class=" text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                      Svensk mästare i TP?</h1>
                 
@@ -40,20 +37,17 @@
                 </div>
             </div> 
 <!-- Page1/Column 2 End --> 
-
-         
 <!-- Page1/Column 3 Start -->
-            <div class="column-3 startpage"> 
+            <div class="column-3"> 
                 <img 
                     src="/Image/blob-right.svg"
                     class=" w-[245px] mt-[80px] float-right">  
             </div>  
         </div>
-<!-- Page1/Column 3 End --> 
+<!-- Page1/Column 3 End -->
 <!-- Grid Container End (grid-3-columns) -->
-<!-- Page1 end -->
 
-<!-- Page2 start -->
+
 <!-- Grid Container Start (grid-3-columns) -->
 <!-- Page2/Column 1 Start -->
         <div id="p2" class="hidden">
@@ -92,10 +86,8 @@
                 </div> 
             </div> 
 <!-- Page2/Column 2 End --> 
-
-    
 <!-- Page2/Column 3 Start -->   
-            <div class="questionpage column-3"> 
+            <div class="column-3"> 
                 <img 
                     src="/Image/blob-right.svg"
                     class=" questionPage  w-[245px] mt-[80px] float-right">  
@@ -103,9 +95,9 @@
         </div>
 <!-- Page2/Column 3 End --> 
 <!-- Grid Container End (grid-3-columns) -->
-<!-- Page2 end -->
 
-<!-- Page3 -->
+
+
 <!-- Grid Container Start (grid-3-columns) -->
 <!-- Page3/Column 1 Start -->
         <div id="p3" class="hidden">
@@ -122,7 +114,6 @@
                 </div>
             </div>
 <!-- Page3/Column 1 End -->
-
 <!-- Page3/Column 2 Start -->
             <div class="bg-ljusblå">
                 <div id="answerPage" class="column-2  mt-[346px] mb-[179px] w-full"> 
@@ -147,8 +138,7 @@
                 </div>
             </div>
 <!-- Page3/Column 2 End -->
-    
-    <!-- Page3/Column 3 Start -->
+<!-- Page3/Column 3 Start -->
             <div class="column-3 bg-ljusblå"> 
                 <img 
                 src="/Image/blob-right-white.svg"
@@ -157,10 +147,7 @@
         </div>             
 <!-- Page3/Column 3 End --> 
 <!-- Grid Container End (grid-3-columns) -->
-<!-- Page3 end -->
 
-
-<!-- Page4 -->
 <!-- Grid Container Start (grid-3-columns) -->
 <!-- Page4/Column 1 Start -->
         <div id="p4" class="hidden">
@@ -177,7 +164,6 @@
                 </div>
             </div>
 <!-- Page4/Column 1 End --> 
-
 <!-- Page4/ Column 2 Start -->
             <div  id="resultPage" class="column-2 mt-56 mb-36 w-full"> 
                 <p class="text-14 text-mörkblå text-center mb-10">Ditt resultat</p>
@@ -256,11 +242,8 @@
                     <button id="playAgainButton" class="btn-page-fourth border-2 border-ljusblå">En runda till</button>
                 </div>
             </div> 
-    <!-- Page4/Column 2 End --> 
-
-
-
-    <!-- Page4/Column 3 Start -->
+<!-- Page4/Column 2 End --> 
+<!-- Page4/Column 3 Start -->
             <div class="column-3"> 
                 <img 
                     src="/Image/blob-right.svg"
@@ -269,14 +252,11 @@
         </div>
     <!-- Page4/Column 3 End --> 
     <!-- Grid Container End (grid-3-columns) -->
-    <!-- Page4 end -->
-
-
+   
 
 <!-- Detta ska va kvar-->
         <script type="module" crossorigin src="http://localhost:3000/@@vite/client"></script>
         <script type="module" crossorigin src="http://localhost:3000/resources/js/app.js"></script>
         </section>
-    
     </body>
 </html>

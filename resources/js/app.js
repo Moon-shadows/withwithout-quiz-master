@@ -59,9 +59,9 @@ questions=response.data
     
     count++
 
-    category.innerHTML=questions[count-1]["category"]
-    question.innerHTML=questions[count-1]["question"]
-    answer.innerHTML=questions[count-1]["answer"]
+    category.innerHTML=questions[count-1]["category"]  //Hämtar en kategori ur questions arrayen
+    question.innerHTML=questions[count-1]["question"]  //Hämtar en fråga ur questions array
+    answer.innerHTML=questions[count-1]["answer"]  //Hämtar ett svar ur questions array
     
     
 
@@ -109,9 +109,9 @@ questionButton.onclick= function(){
     progressButton.style.width = (count/maxQuestions) * 100 + "%";
     progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
 
-    category.innerHTML=questions[count-1]["category"] // Inuti diven i html med id=category skriver jag in: questions[count-1]["category"] dvs. category (i arrayen för frågorna) minskar count med 1 (-1) eftersom jag ökade count med 1, 
-    question.innerHTML=questions[count-1]["question"]
-    answer.innerHTML=questions[count-1]["answer"]
+    category.innerHTML = questions[count-1]["category"] // Inuti diven i html med id=category skriver jag in: questions[count-1]["category"] dvs. category (i arrayen för frågorna) minskar count med 1 (-1) eftersom jag ökade count med 1, 
+    question.innerHTML = questions[count-1]["question"]
+    answer.innerHTML = questions[count-1]["answer"]
 
   }else if(count===maxQuestions){
       p3.classList.add("hidden") 
@@ -147,17 +147,6 @@ questionButton.onclick= function(){
         sportChildren[i].classList.remove("bg-gray")
         sportChildren[i].classList.add("bg-green")
       }
-
-
-
-
-
-
-
-
-
-
-
   }
 }
 
@@ -183,7 +172,7 @@ answerButtonNo.onclick= function(){
       p3.classList.remove("grid-container")  
       p4.classList.add("grid-container")  
       p4.classList.remove("hidden")    
-}
+  }
 }
 
 /***PlayAgainButton***/
@@ -194,20 +183,11 @@ playAgainButton.onclick= function(){
     p1.classList.add("grid-container")
     p1.classList.remove("hidden")
     count = 0;
-    correct =0;
+    correct =0;  //Återställer räkneverket
 }
 
 
 
-/***QuestionPage***/
-
-
-/***AnswerPage***/
-
- 
-
-
-/***ResultPage***/
  
 
 
