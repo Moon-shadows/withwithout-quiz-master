@@ -167,7 +167,7 @@ questionButton.onclick= function(){
     correctCategory[category.textContent].push(1)
    
     questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
-  if(count<maxQuestions){
+  if(count<=maxQuestions){
     p3.classList.add("hidden") 
     p3.classList.remove("grid-container")  
     p2.classList.add("grid-container")  
@@ -183,7 +183,7 @@ questionButton.onclick= function(){
     question.innerHTML = questions[count-1]["question"]
     answer.innerHTML = questions[count-1]["answer"]
 
-  }else if(count===maxQuestions){
+  }else if(count>=maxQuestions){
       p3.classList.add("hidden") 
       p3.classList.remove("grid-container")  
       p4.classList.add("grid-container2")  
@@ -231,7 +231,7 @@ const answerButtonNo = document.getElementById("answerButtonNo");
 answerButtonNo.onclick= function(){
   count++
   questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
-  if(count<maxQuestions){
+  if(count<=maxQuestions){
     p3.classList.add("hidden") 
     p3.classList.remove("grid-container")  
     p2.classList.add("grid-container")  
@@ -247,7 +247,7 @@ answerButtonNo.onclick= function(){
     question.innerHTML=questions[count-1]["question"]
     answer.innerHTML=questions[count-1]["answer"]
 
-  }else if(count===maxQuestions){
+  }else if(count>=maxQuestions){
       p3.classList.add("hidden") 
       p3.classList.remove("grid-container")  
       p4.classList.add("grid-container2")  
@@ -255,8 +255,38 @@ answerButtonNo.onclick= function(){
       blobleft.classList.remove("text-white")
       blobleft.classList.add("text-ljusblå")
       blobright.classList.remove("text-white")
-      blobright.classList.add("text-ljusblå") 
-      correctQuestionCounter.innerHTML = `${correct} av ${maxQuestions} rätt`;   
+      blobright.classList.add("text-ljusblå")
+
+      correctQuestionCounter.innerHTML = `${correct} av ${maxQuestions} rätt`;
+
+      for(let i = 0; i < correctCategory["Film & TV"].length; i++){
+        filmChildren[i].classList.remove("bg-gray")
+        filmChildren[i].classList.add("bg-green")
+      }
+      for(let i = 0; i < correctCategory["Geografi"].length; i++){
+        geografiChildren[i].classList.remove("bg-gray")
+        geografiChildren[i].classList.add("bg-green")
+      }
+      for(let i = 0; i < correctCategory["Historia"].length; i++){
+        historiaChildren[i].classList.remove("bg-gray")
+        historiaChildren[i].classList.add("bg-green")
+      }
+      for(let i = 0; i < correctCategory["Musik"].length; i++){
+       musikChildren[i].classList.remove("bg-gray")
+       musikChildren[i].classList.add("bg-green")
+      }
+      for(let i = 0; i < correctCategory["Övrigt"].length; i++){
+       övrigtChildren[i].classList.remove("bg-gray")
+       övrigtChildren[i].classList.add("bg-green")
+      }
+      for(let i = 0; i < correctCategory["Vetenskap"].length; i++){
+        vetenskapChildren[i].classList.remove("bg-gray")
+        vetenskapChildren[i].classList.add("bg-green")
+      }
+      for(let i = 0; i < correctCategory["Sport"].length; i++){
+        sportChildren[i].classList.remove("bg-gray")
+        sportChildren[i].classList.add("bg-green")
+      }
   }
 }
 
