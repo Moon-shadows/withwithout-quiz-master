@@ -10,6 +10,8 @@ import '../css/app.css'
 import axios from 'axios';
 import { countBy } from 'lodash';
  window.axios = axios;
+ import { spline } from '@georgedoescode/spline';
+import {createNoise2D} from 'simplex-noise';
 
  window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
@@ -33,16 +35,91 @@ const maxQuestions = 3;
 let count = 0;
 let correct = 0;
 
-let filmChildren = document.getElementById("film").children;
-let geografiChildren = document.getElementById("geografi").children;
-let historiaChildren = document.getElementById("historia").children;
-let musikChildren = document.getElementById("musik").children;
-let övrigtChildren = document.getElementById("övrigt").children;
-let vetenskapChildren = document.getElementById("vetenskap").children;
-let sportChildren = document.getElementById("sport").children;
+let filmChildren = Object.values(document.getElementById("film").children);
+let geografiChildren = Object.values(document.getElementById("geografi").children);
+let historiaChildren = Object.values(document.getElementById("historia").children);
+let musikChildren = Object.values(document.getElementById("musik").children);
+let övrigtChildren = Object.values(document.getElementById("övrigt").children);
+let vetenskapChildren = Object.values(document.getElementById("vetenskap").children);
+let sportChildren = Object.values(document.getElementById("sport").children);
+let blobs = filmChildren.concat(geografiChildren, historiaChildren, musikChildren, övrigtChildren, vetenskapChildren, sportChildren)
+console.log(blobs)
 
 let correctCategory = []
 
+// (our <path> element)
+const blobleft = document.getElementById("blobleft");
+//const blobright = document.getElementById("blobright");
+ const path = document.querySelector('path');
+ // (used to set our custom property values)
+ const root = document.documentElement;
+ function createPoints() {
+     const points = [];
+     // how many points do we need
+     const numPoints = 6;
+     // used to equally space each point around the circle
+     const angleStep = (Math.PI * 2) / numPoints;
+     // the radius of the circle
+     const rad = 75;
+     for (let i = 1; i <= numPoints; i++) {
+       // x & y coordinates of the current point
+       const theta = i * angleStep;
+       const x = 100 + Math.cos(theta) * rad;
+       const y = 100 + Math.sin(theta) * rad;
+       // store the point's position
+       points.push({
+         x: x,
+         y: y,
+         /* we need to keep a reference to the point's original {x, y} coordinates
+         for when we modulate the values later */
+         originX: x,
+         originY: y,
+         // more on this in a moment!
+         noiseOffsetX: Math.random() * 1000,
+         noiseOffsetY: Math.random() * 1000,
+       });
+     }
+     return points;
+   }
+  // We can then initialise our blob points like so:
+   const points = createPoints();
+    function map(n, start1, end1, start2, end2) {
+     return ((n - start1) / (end1 - start1)) * (end2 - start2) + start2;
+   }
+    const simplex = new createNoise2D();
+    // how fast we progress through "time"
+    let noiseStep = 0.005;
+    function noise(x, y) {
+    // return a value at {x point in time} {y point in time}
+    return simplex(x, y);
+    }
+    (function animate() {
+      blobleft.setAttribute('d', spline(points, 1, true));
+      //blobright.setAttribute('d', spline(points, 1, true));
+      //blobRight.setAttribute('d', spline(points, 1, true));
+      //blobRightWhite.setAttribute('d', spline(points, 1, true));
+      //blobLeftWhite.setAttribute('d', spline(points, 1, true));
+      requestAnimationFrame(animate);
+      for (let i = 0; i < points.length; i++) {
+          const point = points[i]
+          const nX= noise(point.noiseOffsetX, point.noiseOffsetX)
+          const nY= noise(point.noiseOffsetY, point.noiseOffsetY)
+          const x = map(nX, -1, 1, point.originX - 5, point.originX + 5)
+          const y = map(nY, -1, 1, point.originY - 10, point.originY + 10)
+          point.x = x
+          point.y = y
+          point.noiseOffsetX += noiseStep
+          point.noiseOffsetY += noiseStep
+      }
+    })();
+/*Bonus when hover over the blob!!
+document.querySelector('path').addEventListener('mouseover', () => {
+ noiseStep = 0.01;
+});
+document.querySelector('path').addEventListener('mouseleave', () => {
+ noiseStep = 0.005;
+});
+*/
 
 
 
@@ -182,20 +259,11 @@ playAgainButton.onclick= function(){
     p1.classList.remove("hidden")
     count = 0;
     correct = 0; //Återställer räkneverket 
-    filmChildren[i].classList.remove("bg-green") //Återställer färgade knappar
-    filmChildren[i].classList.add("bg-gray")
-    geografiChildren[i].classList.remove("bg-green")
-    geografiChildren[i].classList.add("bg-gray")
-    historiaChildren[i].classList.remove("bg-green")
-    historiaChildren[i].classList.add("bg-gray")
-    musikChildren[i].classList.remove("bg-green")
-    musikChildren[i].classList.add("bg-gray")
-    övrigtChildren[i].classList.remove("bg-green")
-    övrigtChildren[i].classList.add("bg-gray")
-    vetenskapChildren[i].classList.remove("bg-green")
-    vetenskapChildren[i].classList.add("bg-gray")
-    sportChildren[i].classList.remove("bg-green")
-    sportChildren[i].classList.add("bg-gray")
+    for (let i = 0; i < blobs.length; i++) {
+      blobs[i].classList.remove("bg-green") //Återställer färgade knappar
+      blobs[i].classList.add("bg-gray")
+    }
+    
 }
 
 
