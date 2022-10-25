@@ -9,10 +9,8 @@
     </head>
     <body class="font-poppins">
 
-<!-- Grid Container Start -->
-<!-- Page1/Column 1 Start -->
-<div id="p1" class="grid-container">
-    <div class="column-1 startpage">
+
+
         <div>
             <img
                 src="/Image/Logo(3).svg"
@@ -20,10 +18,20 @@
         </div>
         <div>
             <svg viewBox="100 0 100 200" class="w-64 absolute top-[300px]">
-               <path id="blobleft" d="" fill="#000064"></path>
+            <path id="blobleft" d="" fill="#7678ED"></path>
             </svg>
-                 <!-- class=" h-[415px] mb-[77px]">  -->
+                <!-- class=" h-[415px] mb-[77px]">  -->
         </div>
+
+
+        
+
+
+
+<!-- Grid Container Start -->
+<!-- Page1/Column 1 Start -->
+<div id="p1" class="grid-container">
+    <div class="column-1 startpage">
     </div>
 <!-- Page1/Column 1 End --> 
      <!-- Page1/Column 2 Start -->          
@@ -39,11 +47,7 @@
             </div> 
 <!-- Page1/Column 2 End --> 
 <!-- Page1/Column 3 Start -->
-            <div class="column-3"> 
-                <img 
-                    src="/Image/blob-right.svg"
-                    class=" w-[245px] mt-[80px] float-right">  
-            </div>  
+            
         </div>
 <!-- Page1/Column 3 End -->
 <!-- Grid Container End -->
@@ -58,11 +62,7 @@
                         src="/Image/Logo(3).svg"
                         h-[150px] mt-[30px] mb-[228px] ml-14">  
                 </div>
-                <div>
-                    <img 
-                        src="/Image/blob-left.svg"
-                         h-[415px] mb-[77px]">  
-                </div>
+                
             </div>
 <!-- Page2/Column 1 End --> 
 
@@ -108,11 +108,7 @@
                         src="/Image/Logo(white).svg"
                         class=" h-[150px] mt-[30px] mb-[228px] ml-14"> 
                 </div>
-                <div>
-                    <img 
-                        src="/Image/blob-left-white.svg"
-                        class=" h-[415px] mb-[77px]">  
-                </div>
+               
             </div>
 <!-- Page3/Column 1 End -->
 <!-- Page3/Column 2 Start -->
@@ -158,11 +154,7 @@
                         src="/Image/Logo(3).svg"
                         class=" h-[150px] mt-[30px] mb-[228px] ml-14">  
                 </div>
-                <div>
-                    <img 
-                        src="/Image/blob-left.svg"
-                        class=" h-[415px] mb-[77px]">  
-                </div>
+                
             </div>
 <!-- Page4/Column 1 End --> 
 <!-- Page4/ Column 2 Start -->
