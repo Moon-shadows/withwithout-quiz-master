@@ -96,9 +96,7 @@ const blobright = document.getElementById("blobright");
     (function animate() {
       blobleft.setAttribute('d', spline(points, 1, true));
       blobright.setAttribute('d', spline(points, 1, true));
-      //blobRight.setAttribute('d', spline(points, 1, true));
-      //blobRightWhite.setAttribute('d', spline(points, 1, true));
-      //blobLeftWhite.setAttribute('d', spline(points, 1, true));
+      
       requestAnimationFrame(animate);
       for (let i = 0; i < points.length; i++) {
           const point = points[i]
@@ -112,14 +110,6 @@ const blobright = document.getElementById("blobright");
           point.noiseOffsetY += noiseStep
       }
     })();
-/*Bonus when hover over the blob!!
-document.querySelector('path').addEventListener('mouseover', () => {
- noiseStep = 0.01;
-});
-document.querySelector('path').addEventListener('mouseleave', () => {
- noiseStep = 0.005;
-});
-*/
 
 
 
@@ -164,6 +154,8 @@ questionButton.onclick= function(){
     p3.classList.remove("hidden")
     blobleft.classList.remove("text-ljusblå")
     blobleft.classList.add("text-white")
+    blobright.classList.remove("text-ljusblå")
+    blobright.classList.add("text-white")
     questionCounter2.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
 }
 
@@ -180,6 +172,10 @@ questionButton.onclick= function(){
     p3.classList.remove("grid-container")  
     p2.classList.add("grid-container")  
     p2.classList.remove("hidden")
+    blobleft.classList.remove("text-white")
+    blobleft.classList.add("text-ljusblå")
+    blobright.classList.remove("text-white")
+    blobright.classList.add("text-ljusblå")
     progressButton.style.width = (count/maxQuestions) * 100 + "%";
     progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
 
@@ -192,6 +188,10 @@ questionButton.onclick= function(){
       p3.classList.remove("grid-container")  
       p4.classList.add("grid-container2")  
       p4.classList.remove("hidden")
+      blobleft.classList.remove("text-white")
+      blobleft.classList.add("text-ljusblå")
+      blobright.classList.remove("text-white")
+      blobright.classList.add("text-ljusblå")
 
       correctQuestionCounter.innerHTML = `${correct} av ${maxQuestions} rätt`;
 
@@ -235,7 +235,11 @@ answerButtonNo.onclick= function(){
     p3.classList.add("hidden") 
     p3.classList.remove("grid-container")  
     p2.classList.add("grid-container")  
-    p2.classList.remove("hidden") 
+    p2.classList.remove("hidden")
+    blobleft.classList.remove("text-white")
+    blobleft.classList.add("text-ljusblå")
+    blobright.classList.remove("text-white")
+    blobright.classList.add("text-ljusblå") 
     progressButton.style.width = (count/maxQuestions) * 100 + "%";
     progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
 
@@ -247,7 +251,11 @@ answerButtonNo.onclick= function(){
       p3.classList.add("hidden") 
       p3.classList.remove("grid-container")  
       p4.classList.add("grid-container2")  
-      p4.classList.remove("hidden") 
+      p4.classList.remove("hidden")
+      blobleft.classList.remove("text-white")
+      blobleft.classList.add("text-ljusblå")
+      blobright.classList.remove("text-white")
+      blobright.classList.add("text-ljusblå") 
       correctQuestionCounter.innerHTML = `${correct} av ${maxQuestions} rätt`;   
   }
 }

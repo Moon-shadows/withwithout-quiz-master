@@ -19,7 +19,7 @@
         </div>
         <div>
             <svg viewBox="100 0 100 200" class="w-64 absolute top-[300px]">
-            <path id="blobleft" d="" fill="currentColor"></path>
+            <path id="blobleft" class="text-ljusblå" d="" fill="currentColor"></path>
             </svg>
                 <!-- class=" h-[415px] mb-[77px]">  -->
         </div>
@@ -29,7 +29,7 @@
        
         <div>
             <svg viewBox="-10 0 100 200" class="w-64 absolute right-0  top-[300px]">
-            <path id="blobright" d="" fill="currentColor"></path>
+            <path id="blobright" class="text-ljusblå" d="" fill="currentColor"></path>
             </svg>
                 <!-- class=" h-[415px] mb-[77px]">  -->
         </div>
@@ -153,11 +153,6 @@
 <!-- Page4/Column 1 Start -->
         <div id="p4" class="hidden">
             <div class="column-1"> 
-                <div>
-                    <img 
-                        src="/Image/Logo(3).svg"
-                        class=" h-[150px] mt-[30px] mb-[228px] ml-14">  
-                </div>
                 
             </div>
 <!-- Page4/Column 1 End --> 
