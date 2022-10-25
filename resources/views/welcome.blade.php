@@ -11,7 +11,7 @@
 
 
 
-        <!-- Blobleft-->
+        <!-- blobleft-->
         <div>
             <img
                 src="/Image/Logo(3).svg"
@@ -25,7 +25,7 @@
         </div>
 
 
-        <!-- Blobright-->
+        <!-- blobright-->
        
         <div>
             <svg viewBox="-10 0 100 200" class="w-64 absolute right-0  top-[300px]">
@@ -99,11 +99,7 @@
             </div> 
 <!-- Page2/Column 2 End --> 
 <!-- Page2/Column 3 Start -->   
-            <div class="column-3"> 
-                <img 
-                    src="/Image/blob-right.svg"
-                    class=" questionPage  w-[245px] mt-[80px] float-right">  
-            </div>  
+            
         </div>
 <!-- Page2/Column 3 End --> 
 <!-- Grid Container End -->
@@ -112,8 +108,8 @@
 
 <!-- Grid Container Start -->
 <!-- Page3/Column 1 Start -->
-        <div id="p3" class="hidden">
-            <div class="column-1 bg-ljusblå"> 
+        <div id="p3" class="hidden  bg-ljusblå">
+            <div class="column-1"> 
                 <div>
                     <img 
                         src="/Image/Logo(white).svg"
@@ -123,7 +119,7 @@
             </div>
 <!-- Page3/Column 1 End -->
 <!-- Page3/Column 2 Start -->
-            <div class="bg-ljusblå">
+            <div>
                 <div id="answerPage" class="column-2  mt-[346px] mb-[179px] w-full"> 
                     <p class="text-20 text-center text-white mb-10">Rätt svar: </p>
                     <h1 id="answer" class="text-green font-poppins text-48 font-semibold text-center mb-8"> 
@@ -147,10 +143,7 @@
             </div>
 <!-- Page3/Column 2 End -->
 <!-- Page3/Column 3 Start -->
-            <div class="column-3 bg-ljusblå"> 
-                <img 
-                src="/Image/blob-right-white.svg"
-                class=" w-[245px] mt-[80px] float-right">  
+           
             </div>
         </div>             
 <!-- Page3/Column 3 End --> 
@@ -261,11 +254,7 @@
             </div> 
 <!-- Page4/Column 2 End --> 
 <!-- Page4/Column 3 Start -->
-            <div class="column-3"> 
-                <img 
-                    src="/Image/blob-right.svg"
-                    class=" w-[245px] mt-[80px] float-right">  
-            </div>  
+             
         </div>
     <!-- Page4/Column 3 End --> 
     <!-- Grid Container End (grid-3-columns) -->
