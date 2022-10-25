@@ -10,7 +10,7 @@ import '../css/app.css'
 import axios from 'axios';
 import { countBy } from 'lodash';
  window.axios = axios;
- import { spline } from '@georgedoescode/spline';
+import { spline } from '@georgedoescode/spline';
 import {createNoise2D} from 'simplex-noise';
 
  window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
@@ -49,7 +49,7 @@ let correctCategory = []
 
 // (our <path> element)
 const blobleft = document.getElementById("blobleft");
-//const blobright = document.getElementById("blobright");
+const blobright = document.getElementById("blobright");
  const path = document.querySelector('path');
  // (used to set our custom property values)
  const root = document.documentElement;
@@ -95,7 +95,7 @@ const blobleft = document.getElementById("blobleft");
     }
     (function animate() {
       blobleft.setAttribute('d', spline(points, 1, true));
-      //blobright.setAttribute('d', spline(points, 1, true));
+      blobright.setAttribute('d', spline(points, 1, true));
       //blobRight.setAttribute('d', spline(points, 1, true));
       //blobRightWhite.setAttribute('d', spline(points, 1, true));
       //blobLeftWhite.setAttribute('d', spline(points, 1, true));
@@ -162,6 +162,8 @@ questionButton.onclick= function(){
     p2.classList.remove("grid-container")  
     p3.classList.add("grid-container")  //blir samma som display: block eftersom grid-containern, tar över och häver upp hidden
     p3.classList.remove("hidden")
+    blobleft.classList.remove("text-ljusblå")
+    blobleft.classList.add("text-white")
     questionCounter2.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
 }
 

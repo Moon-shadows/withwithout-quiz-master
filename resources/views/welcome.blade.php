@@ -11,6 +11,7 @@
 
 
 
+        <!-- Blobleft-->
         <div>
             <img
                 src="/Image/Logo(3).svg"
@@ -18,7 +19,17 @@
         </div>
         <div>
             <svg viewBox="100 0 100 200" class="w-64 absolute top-[300px]">
-            <path id="blobleft" d="" fill="#7678ED"></path>
+            <path id="blobleft" d="" fill="currentColor"></path>
+            </svg>
+                <!-- class=" h-[415px] mb-[77px]">  -->
+        </div>
+
+
+        <!-- Blobright-->
+       
+        <div>
+            <svg viewBox="-10 0 100 200" class="w-64 absolute right-0  top-[300px]">
+            <path id="blobright" d="" fill="currentColor"></path>
             </svg>
                 <!-- class=" h-[415px] mb-[77px]">  -->
         </div>
