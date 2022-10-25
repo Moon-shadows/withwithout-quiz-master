@@ -122,8 +122,8 @@
                         Indiana</h1>
                     <p class="text-20 text-center text-white mb-10">Svarade du rätt?</p>
                     <div class="w-63 text-center mb-24">
-                        <button id="answerButtonYes" class="btn-page-third-yes border-2 border-white" onclick="myFunction()">Ja</button>
-                        <button id="answerButtonNo"  class="btn-page-third-no border-2 border-white" onclick="myFunction()">Nej</button>
+                        <button id="answerButtonYes" class="btn-page-third-yes border-2 border-white text-white hover:bg-white hover:text-ljusblå" ">Ja</button>
+                        <button id="answerButtonNo"  class="btn-page-third-no border-2 border-white text-white hover:bg-white hover:text-ljusblå">Nej</button>
                     </div>
 
                     <div class=" progress-bar flex justify-center"> 
@@ -239,7 +239,7 @@
                 </div>
             
                 <div class="w-63 mt-16 text-center">
-                    <button id="playAgainButton" class="btn-page-fourth border-2 border-ljusblå">En runda till</button>
+                    <button id="playAgainButton" class="btn-page-fourth border-2 border-ljusblå  text-ljusblå hover:bg-mörkblå hover:text-white">En runda till</button>
                 </div>
             </div> 
 <!-- Page4/Column 2 End --> 
