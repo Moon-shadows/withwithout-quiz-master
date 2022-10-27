@@ -12,14 +12,17 @@
 
 
 
-        <!-- blobleft-->
-        <div>
+        <!-- logoblue-->
+        <div id="logoBlue">
             <img
                 src="/Image/Logo(3).svg"
                 class="h-[150px] mt-[30px] mb-[228px] ml-14">
         </div>
+        
+
+        <!-- blobleft-->
         <div>
-            <svg viewBox="100 0 100 200" class="w-64 absolute top-[300px]">
+            <svg viewBox="100 0 100 200" class="w-20 md:w-32 lg:w-48 xl:w-64 absolute top-[300px]">
             <path id="blobleft" class="text-ljusblå" d="" fill="currentColor"></path>
             </svg>
                 <!-- class=" h-[415px] mb-[77px]">  -->
@@ -29,15 +32,11 @@
         <!-- blobright-->
        
         <div>
-            <svg viewBox="-10 0 100 200" class="w-64 absolute right-0  top-[300px]">
+            <svg viewBox="-10 0 100 200" class="w-20 md:w-32 lg:w-48 xl:w-64 absolute right-0  top-[300px]">
             <path id="blobright" class="text-ljusblå" d="" fill="currentColor"></path>
             </svg>
                 <!-- class=" h-[415px] mb-[77px]">  -->
         </div>
-
-
-        
-
 
 
 <!-- Grid Container Start -->
@@ -47,7 +46,7 @@
     </div>
 <!-- Page1/Column 1 End --> 
      <!-- Page1/Column 2 Start -->          
-            <div class="column-2 mt-[337px] mb-[327] w-full"> 
+            <div class="column-2 mt-48 lg:mt-[337px] mb-44 lg:mb-[327px] w-full"> 
                 <h1 class="huvudrubrik text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                      Svensk mästare i TP?</h1>
                 
@@ -111,12 +110,12 @@
 <!-- Page3/Column 1 Start -->
         <div id="p3" class="hidden  bg-ljusblå">
             <div class="column-1"> 
-                <div>
-                    <img 
+                 <!-- logowhite-->
+                <div id="logoWhite">
+                    <img
                         src="/Image/Logo(white).svg"
-                        class=" h-[150px] mt-[30px] mb-[228px] ml-14"> 
+                        class="h-[150px] mt-[30px] mb-[228px] ml-14">
                 </div>
-               
             </div>
 <!-- Page3/Column 1 End -->
 <!-- Page3/Column 2 Start -->

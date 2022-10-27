@@ -47,12 +47,13 @@ console.log(blobs)
 
 let correctCategory = []
 
-// (our <path> element)
+// (our <path> element (animated blob))
 const blobleft = document.getElementById("blobleft");
 const blobright = document.getElementById("blobright");
- const path = document.querySelector('path');
+const path = document.querySelector('path');
  // (used to set our custom property values)
- const root = document.documentElement;
+const root = document.documentElement; 
+
  function createPoints() {
      const points = [];
      // how many points do we need
@@ -126,7 +127,7 @@ questions=response.data
     
     count++
 
-    category.innerHTML = questions[count-1]["category"]  //Hämtar en kategori ur questions arrayen
+    category.innerHTML = questions[count-1]["category"]  //Hämtar en kategori ur questions arrayen och skriver den i html dokumentet under id=category
     question.innerHTML = questions[count-1]["question"]  //Hämtar en fråga ur questions array
     answer.innerHTML = questions[count-1]["answer"]  //Hämtar ett svar ur questions array
     

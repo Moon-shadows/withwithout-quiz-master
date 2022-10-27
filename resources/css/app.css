@@ -18,6 +18,7 @@
 .grid-container {
     display: grid;
     grid-template-columns: 1fr 656px 1fr;
+   
 }
 .grid-container2 {
     display: grid;
@@ -33,15 +34,15 @@
     }
     .grid-container2 {
         display: grid;
-        grid-template-columns: 1fr 600px 1fr;
+        grid-template-columns: 1fr 700px 1fr;
     }
 } 
 @media only screen and (max-width: 640px) {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr 556px 1fr;
-        grid-template-rows: 900px 900px 900px auto;
+        grid-template-columns: 1fr 400px 1fr;
+        grid-template-rows: 600px 600px 600px auto;
     }
     .grid-container2 {
         display: grid;
