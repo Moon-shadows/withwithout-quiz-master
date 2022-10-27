@@ -172,6 +172,8 @@ questionButton.onclick= function(){
     correctCategory[category.textContent].push(1)
     body.classList.remove("bg-ljusblå")
     body.classList.add("bg-white")
+    logoBlue.src = "/Image/Logo(3).svg"
+
    
     questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
   if(count<=maxQuestions){
@@ -183,6 +185,8 @@ questionButton.onclick= function(){
     blobleft.classList.add("text-ljusblå")
     blobright.classList.remove("text-white")
     blobright.classList.add("text-ljusblå")
+    logoBlue.src = "/Image/Logo(3).svg"
+
     
     progressButton.style.width = (count/maxQuestions) * 100 + "%";
     progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
@@ -251,6 +255,7 @@ answerButtonNo.onclick= function(){
     blobright.classList.add("text-ljusblå")
     body.classList.remove("bg-ljusblå")
     body.classList.add("bg-white")
+    logoBlue.src = "/Image/Logo(3).svg"
     
     progressButton.style.width = (count/maxQuestions) * 100 + "%";
     progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
@@ -266,9 +271,10 @@ answerButtonNo.onclick= function(){
       p4.classList.remove("hidden")
       blobleft.classList.remove("text-white")
       blobleft.classList.add("text-ljusblå")
-      blobright.classList.remove("text-white")
-      blobright.classList.add("text-ljusblå")
+      body.classList.remove("bg-ljusblå")
+      body.classList.add("bg-white")
       logoBlue.src = "/Image/Logo(3).svg"
+    
 
       correctQuestionCounter.innerHTML = `${correct} av ${maxQuestions} rätt`;
 
