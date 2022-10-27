@@ -15,7 +15,7 @@ import {createNoise2D} from 'simplex-noise';
 
  window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
-
+const body = document.body;
 const p1= document.getElementById("p1");
 const p2= document.getElementById("p2");
 const p3= document.getElementById("p3");
@@ -24,6 +24,7 @@ const category = document.getElementById("category");
 const question = document.getElementById("question");
 const answer = document.getElementById("answer");
 
+const logoBlue = document.getElementById("logoBlue");
 let progressButton = document.getElementById("progressButton");
 let progressButtonWhite = document.getElementById("progressButtonWhite");
 let questionCounter = document.getElementById("questionCounter");
@@ -157,6 +158,9 @@ questionButton.onclick= function(){
     blobleft.classList.add("text-white")
     blobright.classList.remove("text-ljusblå")
     blobright.classList.add("text-white")
+    logoBlue.src = "/Image/Logo(white).svg"
+    body.classList.remove("bg-white")
+    body.classList.add("bg-ljusblå")
     questionCounter2.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
 }
 
@@ -166,6 +170,8 @@ questionButton.onclick= function(){
     count++     
     correct++
     correctCategory[category.textContent].push(1)
+    body.classList.remove("bg-ljusblå")
+    body.classList.add("bg-white")
    
     questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
   if(count<=maxQuestions){
@@ -177,6 +183,7 @@ questionButton.onclick= function(){
     blobleft.classList.add("text-ljusblå")
     blobright.classList.remove("text-white")
     blobright.classList.add("text-ljusblå")
+    
     progressButton.style.width = (count/maxQuestions) * 100 + "%";
     progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
 
@@ -193,6 +200,7 @@ questionButton.onclick= function(){
       blobleft.classList.add("text-ljusblå")
       blobright.classList.remove("text-white")
       blobright.classList.add("text-ljusblå")
+      logoBlue.src = "/Image/Logo(3).svg"
 
       correctQuestionCounter.innerHTML = `${correct} av ${maxQuestions} rätt`;
 
@@ -240,7 +248,10 @@ answerButtonNo.onclick= function(){
     blobleft.classList.remove("text-white")
     blobleft.classList.add("text-ljusblå")
     blobright.classList.remove("text-white")
-    blobright.classList.add("text-ljusblå") 
+    blobright.classList.add("text-ljusblå")
+    body.classList.remove("bg-ljusblå")
+    body.classList.add("bg-white")
+    
     progressButton.style.width = (count/maxQuestions) * 100 + "%";
     progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
 
@@ -257,6 +268,7 @@ answerButtonNo.onclick= function(){
       blobleft.classList.add("text-ljusblå")
       blobright.classList.remove("text-white")
       blobright.classList.add("text-ljusblå")
+      logoBlue.src = "/Image/Logo(3).svg"
 
       correctQuestionCounter.innerHTML = `${correct} av ${maxQuestions} rätt`;
 

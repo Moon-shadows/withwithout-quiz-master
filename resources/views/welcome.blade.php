@@ -8,13 +8,12 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"> 
     </head>
-    <body class="w-full font-poppins">
+    <body class="bg-white w-full font-poppins">
 
 
-
-        <!-- logoblue-->
-        <div id="logoBlue">
-            <img
+        <!--logoblue-->
+        <div >
+            <img id="logoBlue"
                 src="/Image/Logo(3).svg"
                 class="h-[150px] mt-[30px] mb-[228px] ml-14">
         </div>
@@ -108,14 +107,9 @@
 
 <!-- Grid Container Start -->
 <!-- Page3/Column 1 Start -->
-        <div id="p3" class="hidden  bg-ljusblå">
+        <div id="p3" class="hidden">
             <div class="column-1"> 
-                 <!-- logowhite-->
-                <div id="logoWhite">
-                    <img
-                        src="/Image/Logo(white).svg"
-                        class="h-[150px] mt-[30px] mb-[228px] ml-14">
-                </div>
+                
             </div>
 <!-- Page3/Column 1 End -->
 <!-- Page3/Column 2 Start -->
