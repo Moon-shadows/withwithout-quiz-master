@@ -31,7 +31,7 @@
         <!-- blobright-->
        
         <div>
-            <svg viewBox="-10 0 100 200" class="w-20 md:w-32 lg:w-48 xl:w-64 absolute right-0  top-[300px]">
+            <svg viewBox="-10 0 100 200" class="w-20 md:w-32 lg:w-48 xl:w-64 absolute right-0 top-4 md:top-[300px]">
             <path id="blobright" class="text-ljusblå" d="" fill="currentColor"></path>
             </svg>
                 <!-- class=" h-[415px] mb-[77px]">  -->
@@ -48,12 +48,12 @@
 <!-- P1/Col1 End -->
 
 <!-- P1/Col2 Start -->          
-            <div class="column-2 mt-4 lg:mt-[337px] mb-24 lg:mb-[327px] w-full"> 
+            <div class="column-2 absolut top-1 mt-8 lg:mt-[337px] mb-24 lg:mb-[327px] w-full"> 
                 <h1 class="huvudrubrik text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                      Svensk mästare i TP?</h1>
                 <p  id="startText"  class="popper text-20 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
                     Svara på 35 samtida frågor i 7 olika kategorier.</p>
-                <div class="w-63 text-center">
+                <div class="w-full text-center">
                     <button id="start-btn" class="btn-page-one border-2 border-ljusblå text-ljusblå hover:bg-mörkblå hover:text-white ">Klicka här för att starta</button>
                 </div>
             </div> 
@@ -76,7 +76,7 @@
 <!-- P2/Col1 End --> 
 
 <!-- P2/Col2 Start -->   
-            <div id="questionpage" class=" mt-[268px] mb-[165px] w-full"> 
+            <div id="questionpage" class=" absolut top-1 lg:mt-[268px] mb-[165px] w-full"> 
                 <p id="category" class="text-ljusblå text-20 text-center mb-10">Film & TV</p>
                 <h1 id="question" class="text-mörkblå font-poppins text-20  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                     I vilken amerikansk delstat utspelar sig den populära Netflixserien Stranger Things?</h1>
@@ -114,9 +114,9 @@
 <!-- P3/Col1 End -->
 <!-- P3/Col2 Start -->
             <div>
-                <div id="answerPage" class="column-2  mt-[346px] mb-[179px] w-full"> 
+                <div id="answerPage" class="column-2 absolut top-1 lg:mt-[346px] mb-[179px] w-full"> 
                     <p class="text-20 text-center text-white mb-10">Rätt svar: </p>
-                    <h1 id="answer" class="text-green font-poppins text-48 font-semibold text-center mb-8"> 
+                    <h1 id="answer" class="text-green font-poppins text-20  lg:text-48  font-semibold text-center mb-8"> 
                         Indiana</h1>
                     <p class="text-20 text-center text-white mb-10">Svarade du rätt?</p>
                     <div class="w-63 text-center mb-24">
@@ -154,9 +154,9 @@
             </div>
 <!-- P4/Col1 End --> 
 <!-- P4/ Col2 Start -->
-            <div  id="resultPage" class="column-2 mt-56 mb-36 w-full"> 
+            <div  id="resultPage" class="column-2 absolut top-1 lg:mt-56 mb-36 w-full"> 
                 <p class="text-14 text-mörkblå text-center mb-10">Ditt resultat</p>
-                <h1 id="correctQuestionCounter" class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
+                <h1 id="correctQuestionCounter" class="text-mörkblå font-poppins text-20  lg:text-48  font-semibold text-center mb-8"> 
                     21 av 35 rätt
                 </h1>
 
@@ -253,7 +253,7 @@
         </div> 
    
 
-        
+
 
 <!-- Detta ska va kvar-->
         <script type="module" crossorigin src="http://localhost:3000/@@vite/client"></script>

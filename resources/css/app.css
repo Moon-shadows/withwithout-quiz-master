@@ -22,11 +22,11 @@
 }
 .grid-container2 {
     display: grid;
-    grid-template-columns: 1fr 400px 1fr;
+    grid-template-columns: 1fr 300px 1fr;
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 1024px) {
 
     .column-2 {
         padding-left: 100px;
@@ -36,12 +36,19 @@
         display: grid;
         grid-template-columns: 1fr 700px 1fr;
     }
+    
+    .btn-page-fourth-gray {
+        width: 40px;
+        height: 32px;
+        border-radius: 100px;
+    }
+    
 } 
-@media only screen and (max-width: 640px) {
+@media only screen and (min-width: 640px) {
 
     .grid-container {
         display: grid;
-        grid-template-columns: 1fr 400px 1fr;
+        grid-template-columns: 1fr 500px 1fr;
         grid-template-rows: 600px 600px 600px auto;
     }
     .grid-container2 {
@@ -107,8 +114,8 @@
 }
 
 .btn-page-fourth-gray {
-    width: 40px;
-    height: 32px;
+    width: 20px;
+    height: 16px;
     border-radius: 100px;
 }
 
