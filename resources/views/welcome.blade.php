@@ -15,7 +15,7 @@
         <div >
             <img id="logoBlue"
                 src="/Image/Logo(3).svg"
-                class="h-[150px] mt-[30px] mb-[228px] ml-14">
+                class="h-24 md:h-28 lg:h-36 xl:h-40 mt-[30px] mb-[228px] ml-14">
         </div>
         
 
@@ -38,34 +38,34 @@
         </div>
 
 
-<!-- Grid Container Start -->
-<!-- Page1/Column 1 Start -->
-<div id="p1" class="grid-container">
-    <div class="column-1 startpage">
-    </div>
-<!-- Page1/Column 1 End --> 
-     <!-- Page1/Column 2 Start -->          
-            <div class="column-2 mt-48 lg:mt-[337px] mb-44 lg:mb-[327px] w-full"> 
+<!-- GRID CONTAINER START -->
+        <div id="p1" class="grid-container">
+<!-- P1/Col1 Start -->
+            <div class="column-1 startpage">
+            </div>
+<!-- P1/Col1 End --> 
+<!-- P1/Col2 Start -->          
+            <div class="column-2 mt-4 lg:mt-[337px] mb-24 lg:mb-[327px] w-full"> 
                 <h1 class="huvudrubrik text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                      Svensk mästare i TP?</h1>
-                
                 <p  id="startText"  class="popper text-20 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
-                    Svara på 35 samtida frågor i 7 olika kategorier. </p>
+                    Svara på 35 samtida frågor i 7 olika kategorier.</p>
                 <div class="w-63 text-center">
                     <button id="start-btn" class="btn-page-one border-2 border-ljusblå text-ljusblå hover:bg-mörkblå hover:text-white ">Klicka här för att starta</button>
                 </div>
             </div> 
-<!-- Page1/Column 2 End --> 
-<!-- Page1/Column 3 Start -->
-            
-        </div>
-<!-- Page1/Column 3 End -->
+<!-- P1/Col2 End -->
+
+<!-- P1/Col3 Start -->
+<!-- P1/Col3 End -->
+
 <!-- Grid Container End -->
+        </div>
 
 
-<!-- Grid Container Start -->
-<!-- Page2/Column 1 Start -->
-        <div id="p2" class="hidden">
+<!-- GRID CONTAINER START -->
+<!-- P2/Col1 Start -->
+<div id="p2" class="hidden">
             <div column-1"> 
                 <div>
                     <img 
@@ -74,10 +74,10 @@
                 </div>
                 
             </div>
-<!-- Page2/Column 1 End --> 
+<!-- P2/Col1 End --> 
 
 
-<!-- Page2/Column 2 Start -->   
+<!-- P2/Col2 Start -->   
             <div id="questionpage" class=" mt-[268px] mb-[165px] w-full"> 
                 <p id="category" class="text-ljusblå text-20 text-center mb-10">Film & TV</p>
                 <h1 id="question" class="text-mörkblå font-poppins text-20  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
@@ -96,23 +96,23 @@
                     </div>
                 </div> 
             </div> 
-<!-- Page2/Column 2 End --> 
-<!-- Page2/Column 3 Start -->   
+<!-- P2/Col2 End --> 
+<!-- P2/Col3 Start -->   
             
         </div>
-<!-- Page2/Column 3 End --> 
-<!-- Grid Container End -->
+<!-- P2/Col3 End --> 
+<!-- GRID CONTAINER END -->
 
 
 
-<!-- Grid Container Start -->
-<!-- Page3/Column 1 Start -->
+<!-- GRID CONTAINER START -->
+<!-- P3/Col1 Start -->
         <div id="p3" class="hidden">
             <div class="column-1"> 
                 
             </div>
-<!-- Page3/Column 1 End -->
-<!-- Page3/Column 2 Start -->
+<!-- P3/Col1 End -->
+<!-- P3/Col2 Start -->
             <div>
                 <div id="answerPage" class="column-2  mt-[346px] mb-[179px] w-full"> 
                     <p class="text-20 text-center text-white mb-10">Rätt svar: </p>
@@ -135,22 +135,22 @@
                     </div> 
                 </div>
             </div>
-<!-- Page3/Column 2 End -->
-<!-- Page3/Column 3 Start -->
+<!-- P3/Col2 End -->
+<!-- P3/Col3 Start -->
            
             </div>
         </div>             
-<!-- Page3/Column 3 End --> 
-<!-- Grid Container End  -->
+<!-- P3/Col3 End --> 
+<!-- GRID CONTAINER END  -->
 
-<!-- Grid Container2 Start-->
-<!-- Page4/Column 1 Start -->
+<!-- GRID CONTAINER START-->
+<!-- P4/Col1 Start -->
         <div id="p4" class="hidden">
             <div class="column-1"> 
                 
             </div>
-<!-- Page4/Column 1 End --> 
-<!-- Page4/ Column 2 Start -->
+<!-- P4/Col1 End --> 
+<!-- P4/ Col2 Start -->
             <div  id="resultPage" class="column-2 mt-56 mb-36 w-full"> 
                 <p class="text-14 text-mörkblå text-center mb-10">Ditt resultat</p>
                 <h1 id="correctQuestionCounter" class="text-mörkblå font-poppins text-48 font-semibold text-center mb-8"> 
@@ -241,12 +241,12 @@
                     <button id="playAgainButton" class="btn-page-fourth border-2 border-ljusblå  text-ljusblå hover:bg-mörkblå hover:text-white">En runda till</button>
                 </div>
             </div> 
-<!-- Page4/Column 2 End --> 
-<!-- Page4/Column 3 Start -->
+<!-- P4/Col2 End --> 
+<!-- P4/Col3 Start -->
              
         </div>
-    <!-- Page4/Column 3 End --> 
-    <!-- Grid Container End (grid-3-columns) -->
+    <!-- P4/Col3 End --> 
+    <!-- GRID CONTAINER END -->
    
 
 <!-- Detta ska va kvar-->

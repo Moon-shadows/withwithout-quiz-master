@@ -271,6 +271,8 @@ answerButtonNo.onclick= function(){
       p4.classList.remove("hidden")
       blobleft.classList.remove("text-white")
       blobleft.classList.add("text-ljusblå")
+      blobright.classList.remove("text-white")
+      blobright.classList.add("text-ljusblå")
       body.classList.remove("bg-ljusblå")
       body.classList.add("bg-white")
       logoBlue.src = "/Image/Logo(3).svg"

@@ -17,12 +17,12 @@
 
 .grid-container {
     display: grid;
-    grid-template-columns: 1fr 656px 1fr;
+    grid-template-columns: 1fr 300px 1fr;
    
 }
 .grid-container2 {
     display: grid;
-    grid-template-columns: 1fr 1000px 1fr;
+    grid-template-columns: 1fr 400px 1fr;
 }
 
 
