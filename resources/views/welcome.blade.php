@@ -38,12 +38,15 @@
         </div>
 
 
+
+
 <!-- GRID CONTAINER START -->
         <div id="p1" class="grid-container">
 <!-- P1/Col1 Start -->
             <div class="column-1 startpage">
             </div>
-<!-- P1/Col1 End --> 
+<!-- P1/Col1 End -->
+
 <!-- P1/Col2 Start -->          
             <div class="column-2 mt-4 lg:mt-[337px] mb-24 lg:mb-[327px] w-full"> 
                 <h1 class="huvudrubrik text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
@@ -63,19 +66,14 @@
         </div>
 
 
+
+
 <!-- GRID CONTAINER START -->
 <!-- P2/Col1 Start -->
-<div id="p2" class="hidden">
+        <div id="p2" class="hidden">
             <div column-1"> 
-                <div>
-                    <img 
-                        src="/Image/Logo(3).svg"
-                        h-[150px] mt-[30px] mb-[228px] ml-14">  
-                </div>
-                
             </div>
 <!-- P2/Col1 End --> 
-
 
 <!-- P2/Col2 Start -->   
             <div id="questionpage" class=" mt-[268px] mb-[165px] w-full"> 
@@ -96,12 +94,15 @@
                     </div>
                 </div> 
             </div> 
-<!-- P2/Col2 End --> 
+<!-- P2/Col2 End -->
+
 <!-- P2/Col3 Start -->   
-            
-        </div>
-<!-- P2/Col3 End --> 
+<!-- P2/Col3 End -->
+
 <!-- GRID CONTAINER END -->
+        </div>
+
+
 
 
 
@@ -109,7 +110,6 @@
 <!-- P3/Col1 Start -->
         <div id="p3" class="hidden">
             <div class="column-1"> 
-                
             </div>
 <!-- P3/Col1 End -->
 <!-- P3/Col2 Start -->
@@ -136,18 +136,21 @@
                 </div>
             </div>
 <!-- P3/Col2 End -->
+
 <!-- P3/Col3 Start -->
-           
-            </div>
-        </div>             
-<!-- P3/Col3 End --> 
+<!-- P3/Col3 End -->
+
 <!-- GRID CONTAINER END  -->
+        </div> 
+
+
+
+
 
 <!-- GRID CONTAINER START-->
 <!-- P4/Col1 Start -->
         <div id="p4" class="hidden">
             <div class="column-1"> 
-                
             </div>
 <!-- P4/Col1 End --> 
 <!-- P4/ Col2 Start -->
@@ -241,13 +244,16 @@
                     <button id="playAgainButton" class="btn-page-fourth border-2 border-ljusblå  text-ljusblå hover:bg-mörkblå hover:text-white">En runda till</button>
                 </div>
             </div> 
-<!-- P4/Col2 End --> 
+<!-- P4/Col2 End -->
+
 <!-- P4/Col3 Start -->
-             
-        </div>
-    <!-- P4/Col3 End --> 
-    <!-- GRID CONTAINER END -->
+<!-- P4/Col3 End -->
+        
+<!-- GRID CONTAINER END -->
+        </div> 
    
+
+        
 
 <!-- Detta ska va kvar-->
         <script type="module" crossorigin src="http://localhost:3000/@@vite/client"></script>
