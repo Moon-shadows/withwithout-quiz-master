@@ -15,13 +15,13 @@
         <div >
             <img id="logoBlue"
                 src="/Image/Logo(3).svg"
-                class="h-24 md:h-28 lg:h-36 xl:h-40 mt-[30px] mb-[228px] ml-14">
+                class="h-16 md:h-24 lg:h-28 xl:h-36 mt-[30px]  ml-14">
         </div>
         
 
         <!-- blobleft-->
         <div>
-            <svg viewBox="100 0 100 200" class="w-20 md:w-32 lg:w-48 xl:w-64 absolute top-[300px]">
+            <svg viewBox="100 0 100 200" class="w-12 md:w-32 lg:w-48 xl:w-64 absolute top-[300px]">
             <path id="blobleft" class="text-ljusblå" d="" fill="currentColor"></path>
             </svg>
                 <!-- class=" h-[415px] mb-[77px]">  -->
@@ -31,7 +31,7 @@
         <!-- blobright-->
        
         <div>
-            <svg viewBox="-10 0 100 200" class="w-20 md:w-32 lg:w-48 xl:w-64 absolute right-0 top-4 md:top-[300px]">
+            <svg viewBox="-10 0 100 200" class="w-16 md:w-32 lg:w-48 xl:w-64 absolute right-0 top-4 md:top-[300px]">
             <path id="blobright" class="text-ljusblå" d="" fill="currentColor"></path>
             </svg>
                 <!-- class=" h-[415px] mb-[77px]">  -->
@@ -48,10 +48,10 @@
 <!-- P1/Col1 End -->
 
 <!-- P1/Col2 Start -->          
-            <div class="column-2 absolut top-1 mt-8 lg:mt-[337px] mb-24 lg:mb-[327px] w-full"> 
-                <h1 class="huvudrubrik text-mörkblå font-poppins text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
+            <div class="column-2 absolut mt-[100px] lg:mt-[337px] mb-24 lg:mb-[327px] w-full"> 
+                <h1 class="huvudrubrik text-mörkblå font-poppins text-32  mb:text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
                      Svensk mästare i TP?</h1>
-                <p  id="startText"  class="popper text-20 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
+                <p  id="startText"  class="popper text-16 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
                     Svara på 35 samtida frågor i 7 olika kategorier.</p>
                 <div class="w-full text-center">
                     <button id="start-btn" class="btn-page-one border-2 border-ljusblå text-ljusblå hover:bg-mörkblå hover:text-white ">Klicka här för att starta</button>
