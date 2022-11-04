@@ -154,26 +154,26 @@
             </div>
 <!-- P4/Col1 End --> 
 <!-- P4/ Col2 Start -->
-            <div  id="resultPage" class="column-2 absolut top-1 lg:mt-56 mb-36 w-full"> 
-                <p class="text-14 text-mörkblå text-center mb-10">Ditt resultat</p>
+            <div  id="resultPage" class="column-2 absolut top-1 lg:mt-56 w-full"> 
+                <p class="text-16 text-mörkblå text-center mb-10">Ditt resultat</p>
                 <h1 id="correctQuestionCounter" class="text-mörkblå font-poppins text-20  lg:text-48  font-semibold text-center mb-8"> 
                     21 av 35 rätt
                 </h1>
 
-                <div class="buttons flex items-center justify-center flex-wrap">
+                <div class="buttons flex flex-col md:flex-row items-center justify-center flex-wrap gap-x-6">
                     <div  class="flex flex-col items-center w-24">
-                        <div id="film" class=" flex flex-col-reverse gap-y-2 ">
+                        <div id="film" class="flex  flex-row md:flex-col-reverse gap-x-2 md:gap-y-2">
                                 <div class="btn-page-fourth-gray bg-gray"></div>
                                 <div class="btn-page-fourth-gray bg-gray"></div>
                                 <div class="btn-page-fourth-gray bg-gray"></div>
                                 <div class="btn-page-fourth-gray bg-gray"></div>
                                 <div class="btn-page-fourth-gray bg-gray"></div>
                         </div>
-                        <p class="mt-1 text-14">Film & TV</p>
+                        <p class="mt-1 text-14 pb-2">Film & TV</p>
                     </div>
 
                     <div  class="flex flex-col items-center w-24">
-                        <div id="geografi" class="flex flex-col-reverse gap-y-2">
+                        <div id="geografi" class=" flex  flex-row  md:flex-col-reverse gap-x-2 md:gap-y-2">
                             <div class="geografi btn-page-fourth-gray bg-gray"></div>
                             <div class="geografi btn-page-fourth-gray bg-gray"></div>
                             <div class="geografi btn-page-fourth-gray bg-gray"></div>
@@ -181,66 +181,66 @@
                             <div class="geografi btn-page-fourth-gray bg-gray"></div>
                             
                         </div>
-                        <p class="mt-1 text-14">Geografi</p>
+                        <p class="mt-1 text-14 pb-2">Geografi</p>
                     </div>
                     
                     <div  class="flex flex-col items-center w-24">
-                        <div id="historia" class="flex flex-col-reverse gap-y-2">
+                        <div id="historia" class=" flex  flex-row md:flex-col-reverse gap-x-2 md:gap-y-2">
                             <div class="historia btn-page-fourth-gray bg-gray"></div>
                             <div class="historia btn-page-fourth-gray bg-gray"></div>
                             <div class="historia btn-page-fourth-gray bg-gray"></div>
                             <div class="historia btn-page-fourth-gray bg-gray"></div>
                             <div class="historia btn-page-fourth-gray bg-gray"></div>
                         </div>
-                        <p class="mt-1 text-14">Historia</p>
+                        <p class="mt-1 text-14 pb-2">Historia</p>
                     </div>
 
                     <div  class="flex flex-col items-center w-24">
-                        <div id="musik" class="flex flex-col-reverse gap-y-2">
+                        <div id="musik" class=" flex  flex-row md:flex-col-reverse gap-x-2 md:gap-y-2">
                             <div class="musik btn-page-fourth-gray bg-gray"></div>
                             <div class="musik btn-page-fourth-gray bg-gray"></div>
                             <div class="musik btn-page-fourth-gray bg-gray"></div>
                             <div class="musik btn-page-fourth-gray bg-gray"></div>
                             <div class="musik btn-page-fourth-gray bg-gray"></div>
                         </div>
-                        <p class="mt-1 text-14">Musik</p>
+                        <p class="mt-1 text-14 pb-2">Musik</p>
                     </div>
 
                     <div  class="flex flex-col items-center w-24">
-                        <div id="övrigt" class="flex flex-col-reverse gap-y-2">
+                        <div id="övrigt" class=" flex  flex-row md:flex-col-reverse gap-x-2 md:gap-y-2">
                             <div class="övrigt btn-page-fourth-gray bg-gray"></div>
                             <div class="övrigt btn-page-fourth-gray bg-gray"></div>
                             <div class="övrigt btn-page-fourth-gray bg-gray"></div>
                             <div class="övrigt btn-page-fourth-gray bg-gray"></div>
                             <div class="övrigt btn-page-fourth-gray bg-gray"></div>
                         </div>
-                        <p class="mt-1 text-14">Övrigt</p>
+                        <p class="mt-1 text-14 pb-2">Övrigt</p>
                     </div>
 
                     <div  class="flex flex-col items-center w-24">
-                        <div id="vetenskap" class="flex flex-col-reverse gap-y-2">
+                        <div id="vetenskap" class=" flex  flex-row md:flex-col-reverse gap-x-2 md:gap-y-2">
                             <div class="vetenskap btn-page-fourth-gray bg-gray"></div>
                             <div class="vetenskap btn-page-fourth-gray bg-gray"></div>
                             <div class="vetenskap btn-page-fourth-gray bg-gray"></div>
                             <div class="vetenskap btn-page-fourth-gray bg-gray"></div>
                             <div class="vetenskap btn-page-fourth-gray bg-gray"></div>
                         </div>
-                        <p class="mt-1 text-14">Vetenskap</p>
+                        <p class="mt-1 text-14 pb-2">Vetenskap</p>
                     </div>
 
                     <div  class="flex flex-col items-center w-24">
-                        <div id="sport"  class="flex flex-col-reverse gap-y-2">
+                        <div id="sport" class=" flex  flex-row md:flex-col-reverse gap-x-2 md:gap-y-2">
                             <div class="sport btn-page-fourth-gray bg-gray"></div>
                             <div class="sport btn-page-fourth-gray bg-gray"></div>
                             <div class="sport btn-page-fourth-gray bg-gray"></div>
                             <div class="sport btn-page-fourth-gray bg-gray"></div>
                             <div class="sport btn-page-fourth-gray bg-gray"></div>
                         </div>
-                        <p class="mt-1 text-14">Sport</p>
+                        <p class="mt-1 text-14 pb-2">Sport</p>
                     </div>
                 </div>
             
-                <div class="w-63 mt-16 text-center">
+                <div class="w-63 mt-4 text-center">
                     <button id="playAgainButton" class="btn-page-fourth border-2 border-ljusblå  text-ljusblå hover:bg-mörkblå hover:text-white">En runda till</button>
                 </div>
             </div> 
