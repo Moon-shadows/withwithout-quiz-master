@@ -31,7 +31,7 @@
         <!-- blobright-->
        
         <div>
-            <svg viewBox="-10 0 100 200" class="w-16 md:w-32 lg:w-48 xl:w-64 absolute right-0 top-4 md:top-[300px]">
+            <svg viewBox="-10 0 100 200" class="w-16 md:w-32 lg:w-48 xl:w-64 absolute right-0 md:top-[150px]">
             <path id="blobright" class="text-ljusblå" d="" fill="currentColor"></path>
             </svg>
                 <!-- class=" h-[415px] mb-[77px]">  -->
@@ -41,17 +41,17 @@
 
 
 <!-- GRID CONTAINER START -->
-        <div id="p1" class="grid-container">
+        <div id="p1" class="grid-container transition-scale duration-300 scale-100">
 <!-- P1/Col1 Start -->
             <div class="column-1 startpage">
             </div>
 <!-- P1/Col1 End -->
 
 <!-- P1/Col2 Start -->          
-            <div class="column-2 absolut mt-[100px] lg:mt-[337px] mb-24 lg:mb-[327px] w-full"> 
-                <h1 class="huvudrubrik text-mörkblå font-poppins text-32  mb:text-32  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
+            <div class="column-2 absolut mt-[100px] md:mt-[250px] mb-24 lg:mb-[327px] w-full"> 
+                <h1 class="huvudrubrik text-mörkblå font-poppins text-32 md:text-48 mb:text-32  font-semibold text-center mb-8"> 
                      Svensk mästare i TP?</h1>
-                <p  id="startText"  class="popper text-16 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
+                <p  id="startText"  class="popper text-16 md:text-32 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
                     Svara på 35 samtida frågor i 7 olika kategorier.</p>
                 <div class="w-full text-center">
                     <button id="start-btn" class="btn-page-one border-2 border-ljusblå text-ljusblå hover:bg-mörkblå hover:text-white ">Klicka här för att starta</button>
@@ -70,15 +70,15 @@
 
 <!-- GRID CONTAINER START -->
 <!-- P2/Col1 Start -->
-        <div id="p2" class="hidden">
+        <div id="p2" class="hidden transition-scale duration-300 scale-0">
             <div column-1"> 
             </div>
 <!-- P2/Col1 End --> 
 
 <!-- P2/Col2 Start -->   
-            <div id="questionpage" class=" absolut top-1 lg:mt-[268px] mb-[165px] w-full"> 
-                <p id="category" class="text-ljusblå text-20 text-center mb-10">Film & TV</p>
-                <h1 id="question" class="text-mörkblå font-poppins text-20  lg:text-48  font-semibold lg:font-semibold text-center mb-8"> 
+            <div id="questionpage" class=" absolut top-1 md:mt-[250px] mb-[165px] w-full"> 
+                <p id="category" class="text-ljusblå text-20 md:text-32 text-center mb-10">Film & TV</p>
+                <h1 id="question" class="text-mörkblå font-poppins text-20 font-semibold text-center mb-8"> 
                     I vilken amerikansk delstat utspelar sig den populära Netflixserien Stranger Things?</h1>
                 
                 <div class="w-63 text-center mb-24">
@@ -108,17 +108,17 @@
 
 <!-- GRID CONTAINER START -->
 <!-- P3/Col1 Start -->
-        <div id="p3" class="hidden">
+        <div id="p3" class="hidden transition-scale duration-300 scale-0">
             <div class="column-1"> 
             </div>
 <!-- P3/Col1 End -->
 <!-- P3/Col2 Start -->
             <div>
-                <div id="answerPage" class="column-2 absolut top-1 lg:mt-[346px] mb-[179px] w-full"> 
-                    <p class="text-20 text-center text-white mb-10">Rätt svar: </p>
-                    <h1 id="answer" class="text-green font-poppins text-20  lg:text-48  font-semibold text-center mb-8"> 
+                <div id="answerPage" class="column-2 absolut top-1 md:mt-[250px] mb-[179px] w-full"> 
+                    <p class="text-20  text-center text-white mb-10">Rätt svar: </p>
+                    <h1 id="answer" class="text-green font-poppins text-20 md:text-32 lg:text-48  font-semibold text-center mb-8"> 
                         Indiana</h1>
-                    <p class="text-20 text-center text-white mb-10">Svarade du rätt?</p>
+                    <p class="text-20  text-center text-white mb-10">Svarade du rätt?</p>
                     <div class="w-63 text-center mb-24">
                         <button id="answerButtonYes" class="btn-page-third-yes border-2 border-white text-white hover:bg-white hover:text-ljusblå" ">Ja</button>
                         <button id="answerButtonNo"  class="btn-page-third-no border-2 border-white text-white hover:bg-white hover:text-ljusblå">Nej</button>
@@ -149,7 +149,7 @@
 
 <!-- GRID CONTAINER START-->
 <!-- P4/Col1 Start -->
-        <div id="p4" class="hidden">
+        <div id="p4" class="hidden transition-scale duration-300 scale-0">
             <div class="column-1"> 
             </div>
 <!-- P4/Col1 End --> 
@@ -161,7 +161,7 @@
                 </h1>
 
                 <div class="buttons flex flex-col md:flex-row items-center justify-center flex-wrap gap-x-6">
-                    <div  class="flex flex-col items-center w-24">
+                    <div  class="flex flex-col items-center w-24 md:w-">
                         <div id="film" class="flex  flex-row md:flex-col-reverse gap-x-2 md:gap-y-2">
                                 <div class="btn-page-fourth-gray bg-gray"></div>
                                 <div class="btn-page-fourth-gray bg-gray"></div>

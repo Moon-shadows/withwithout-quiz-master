@@ -25,12 +25,36 @@
     grid-template-columns: 1fr 300px 1fr;
 }
 
+@media only screen and (min-width: 640px) {
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 500px 1fr;
+        grid-template-rows: 600px 600px 600px auto;
+    }
+    .grid-container2 {
+        display: grid;
+        grid-template-columns: 1fr 500px 1fr;
+    }
+    .btn-page-fourth-gray {
+        width: 50px;
+        height: 32px;
+        border-radius: 100px;
+    }
+} 
+
 
 @media only screen and (min-width: 1024px) {
 
     .column-2 {
         padding-left: 100px;
         padding-right: 100px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 700px 1fr;
+        grid-template-rows: 600px 600px 600px auto;
     }
     .grid-container2 {
         display: grid;
@@ -44,18 +68,7 @@
     }
     
 } 
-@media only screen and (min-width: 640px) {
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: 1fr 500px 1fr;
-        grid-template-rows: 600px 600px 600px auto;
-    }
-    .grid-container2 {
-        display: grid;
-        grid-template-columns: 1fr 500px 1fr;
-    }
-} 
 
 .btn-page-one {
     width: 220px;
@@ -168,23 +181,24 @@
 }
 
 .huvudrubrik {
-    animation: textzoom 800ms linear 1s ease-in;
+    animation: textzoom 5000ms 1  ease;
+    animation-fill-mode: forwards;
+ 
 }
 
 @keyframes textzoom {
 
     0%{
       color: rgb(138, 25, 142);
+      font-size: 10px;
    
     }
     30%{
-        letter-spacing: 25px;
+        letter-spacing: 5px;
+        font-size: 30px;
      
     }
-    85%{
-        letter-spacing: 8px;
-      
-    }
+    
 }
 
 

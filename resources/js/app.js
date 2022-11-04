@@ -8,7 +8,7 @@ import '../css/app.css'
  */
 
 import axios from 'axios';
-import { countBy } from 'lodash';
+import { countBy, set } from 'lodash';
  window.axios = axios;
 import { spline } from '@georgedoescode/spline';
 import {createNoise2D} from 'simplex-noise';
@@ -144,6 +144,12 @@ questions=response.data
     correctCategory['Övrigt'] = []
     correctCategory['Vetenskap'] = []
     correctCategory['Sport'] = []
+
+    setTimeout(()=>{
+    p2.classList.remove("scale-0")
+    p2.classList.add("scale-100")
+
+    },250);
 })
 }
 
@@ -161,8 +167,17 @@ questionButton.onclick= function(){
     logoBlue.src = "/Image/Logo(white).svg"
     body.classList.remove("bg-white")
     body.classList.add("bg-ljusblå")
+
+    setTimeout(()=>{
+      p3.classList.remove("scale-0")
+      p3.classList.add("scale-100")
+  
+      },250); 
+
     questionCounter2.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
 }
+
+
 
 /***AnswerButtonYes***/
     const answerButtonYes = document.getElementById("answerButtonYes");
@@ -194,6 +209,21 @@ questionButton.onclick= function(){
     category.innerHTML = questions[count-1]["category"] // Inuti diven i html med id=category skriver jag in: questions[count-1]["category"] dvs. category (i arrayen för frågorna) minskar count med 1 (-1) eftersom jag ökade count med 1, 
     question.innerHTML = questions[count-1]["question"]
     answer.innerHTML = questions[count-1]["answer"]
+
+    setTimeout(()=>{
+      p3.classList.remove("scale-100")
+      p3.classList.add("scale-0")
+  
+      },250); 
+
+    setTimeout(()=>{
+      p2.classList.remove("scale-0")
+      p2.classList.add("scale-100")
+  
+      },250);
+       
+
+    
 
   }else if(count>=maxQuestions){
       p3.classList.add("hidden") 
@@ -236,6 +266,20 @@ questionButton.onclick= function(){
         sportChildren[i].classList.remove("bg-gray")
         sportChildren[i].classList.add("bg-green")
       }
+
+      setTimeout(()=>{
+        p3.classList.remove("scale-100")
+        p3.classList.add("scale-0")
+    
+        },250); 
+
+      setTimeout(()=>{
+        p4.classList.remove("scale-0")
+        p4.classList.add("scale-100")
+    
+        },250); 
+
+      
   }
 }
 
@@ -308,6 +352,19 @@ answerButtonNo.onclick= function(){
         sportChildren[i].classList.remove("bg-gray")
         sportChildren[i].classList.add("bg-green")
       }
+
+      setTimeout(()=>{
+        p3.classList.remove("scale-100")
+        p3.classList.add("scale-0")
+    
+        },250); 
+
+      setTimeout(()=>{
+        p4.classList.remove("scale-0")
+        p4.classList.add("scale-100")
+    
+        },250); 
+
   }
 }
 
@@ -324,6 +381,7 @@ playAgainButton.onclick= function(){
       blobs[i].classList.remove("bg-green") //Återställer färgade knappar
       blobs[i].classList.add("bg-gray")
     }
+    
     
 }
 
