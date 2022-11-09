@@ -180,8 +180,8 @@
     transform: translateY(-50%);
 }
 
-.huvudrubrik {
-    animation: textzoom 5000ms 1  ease;
+.headline {
+    animation: textzoom 1000ms 1  ease-in-out;
     animation-fill-mode: forwards;
  
 }
@@ -189,25 +189,12 @@
 @keyframes textzoom {
 
     0%{
-      color: rgb(138, 25, 142);
-      font-size: 10px;
+      color: rgb(236, 175, 22);
+      font-size: 5px;
    
     }
-    30%{
-        letter-spacing: 5px;
-        font-size: 30px;
-     
-    }
+   
     
 }
 
 
-/*
-0%{
-    font-size: 10px;
-}
-100%{
-    font-size: 50px;
-
-}
-*/

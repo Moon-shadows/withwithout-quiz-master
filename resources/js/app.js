@@ -125,6 +125,12 @@ questions=response.data
     p1.classList.remove("grid-container")
     p2.classList.add("grid-container")
     p2.classList.remove("hidden")
+
+    setTimeout(()=>{
+      p2.classList.remove("scale-0")
+      p2.classList.add("scale-100")
+  
+      },250);
     
     count++
 
@@ -145,11 +151,7 @@ questions=response.data
     correctCategory['Vetenskap'] = []
     correctCategory['Sport'] = []
 
-    setTimeout(()=>{
-    p2.classList.remove("scale-0")
-    p2.classList.add("scale-100")
-
-    },250);
+    
 })
 }
 
@@ -190,94 +192,92 @@ questionButton.onclick= function(){
     logoBlue.src = "/Image/Logo(3).svg"
 
    
-    questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
-  if(count<=maxQuestions){
-    p3.classList.add("hidden") 
-    p3.classList.remove("grid-container")  
-    p2.classList.add("grid-container")  
-    p2.classList.remove("hidden")
-    blobleft.classList.remove("text-white")
-    blobleft.classList.add("text-ljusblå")
-    blobright.classList.remove("text-white")
-    blobright.classList.add("text-ljusblå")
-    logoBlue.src = "/Image/Logo(3).svg"
+        questionCounter.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
+      if(count<=maxQuestions){
+        p3.classList.add("hidden") 
+        p3.classList.remove("grid-container")  
+        p2.classList.add("grid-container")  
+        p2.classList.remove("hidden")
 
-    
-    progressButton.style.width = (count/maxQuestions) * 100 + "%";
-    progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
+        setTimeout(()=>{
+          p3.classList.remove("scale-100")
+          p3.classList.add("scale-0")
+        
+          },250); 
 
-    category.innerHTML = questions[count-1]["category"] // Inuti diven i html med id=category skriver jag in: questions[count-1]["category"] dvs. category (i arrayen för frågorna) minskar count med 1 (-1) eftersom jag ökade count med 1, 
-    question.innerHTML = questions[count-1]["question"]
-    answer.innerHTML = questions[count-1]["answer"]
+        setTimeout(()=>{
+          p2.classList.remove("scale-0")
+          p2.classList.add("scale-100")
+      
+          },250);
 
-    setTimeout(()=>{
-      p3.classList.remove("scale-100")
-      p3.classList.add("scale-0")
-  
-      },250); 
+        blobleft.classList.remove("text-white")
+        blobleft.classList.add("text-ljusblå")
+        blobright.classList.remove("text-white")
+        blobright.classList.add("text-ljusblå")
+        logoBlue.src = "/Image/Logo(3).svg"
 
-    setTimeout(()=>{
-      p2.classList.remove("scale-0")
-      p2.classList.add("scale-100")
-  
-      },250);
-       
+        
+        progressButton.style.width = (count/maxQuestions) * 100 + "%";
+        progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
 
-    
+        category.innerHTML = questions[count-1]["category"] // Inuti diven i html med id=category skriver jag in: questions[count-1]["category"] dvs. category (i arrayen för frågorna) minskar count med 1 (-1) eftersom jag ökade count med 1, 
+        question.innerHTML = questions[count-1]["question"]
+        answer.innerHTML = questions[count-1]["answer"]
 
-  }else if(count>=maxQuestions){
-      p3.classList.add("hidden") 
-      p3.classList.remove("grid-container")  
-      p4.classList.add("grid-container2")  
-      p4.classList.remove("hidden")
-      blobleft.classList.remove("text-white")
-      blobleft.classList.add("text-ljusblå")
-      blobright.classList.remove("text-white")
-      blobright.classList.add("text-ljusblå")
-      logoBlue.src = "/Image/Logo(3).svg"
+      }else if(count>=maxQuestions){
+          p3.classList.add("hidden") 
+          p3.classList.remove("grid-container")  
+          p4.classList.add("grid-container2")  
+          p4.classList.remove("hidden")
+          blobleft.classList.remove("text-white")
+          blobleft.classList.add("text-ljusblå")
+          blobright.classList.remove("text-white")
+          blobright.classList.add("text-ljusblå")
+          logoBlue.src = "/Image/Logo(3).svg"
 
-      correctQuestionCounter.innerHTML = `${correct} av ${maxQuestions} rätt`;
+          correctQuestionCounter.innerHTML = `${correct} av ${maxQuestions} rätt`;
 
-      for(let i = 0; i < correctCategory["Film & TV"].length; i++){
-        filmChildren[i].classList.remove("bg-gray")
-        filmChildren[i].classList.add("bg-green")
-      }
-      for(let i = 0; i < correctCategory["Geografi"].length; i++){
-        geografiChildren[i].classList.remove("bg-gray")
-        geografiChildren[i].classList.add("bg-green")
-      }
-      for(let i = 0; i < correctCategory["Historia"].length; i++){
-        historiaChildren[i].classList.remove("bg-gray")
-        historiaChildren[i].classList.add("bg-green")
-      }
-      for(let i = 0; i < correctCategory["Musik"].length; i++){
-       musikChildren[i].classList.remove("bg-gray")
-       musikChildren[i].classList.add("bg-green")
-      }
-      for(let i = 0; i < correctCategory["Övrigt"].length; i++){
-       övrigtChildren[i].classList.remove("bg-gray")
-       övrigtChildren[i].classList.add("bg-green")
-      }
-      for(let i = 0; i < correctCategory["Vetenskap"].length; i++){
-        vetenskapChildren[i].classList.remove("bg-gray")
-        vetenskapChildren[i].classList.add("bg-green")
-      }
-      for(let i = 0; i < correctCategory["Sport"].length; i++){
-        sportChildren[i].classList.remove("bg-gray")
-        sportChildren[i].classList.add("bg-green")
-      }
+          for(let i = 0; i < correctCategory["Film & TV"].length; i++){
+            filmChildren[i].classList.remove("bg-gray")
+            filmChildren[i].classList.add("bg-green")
+          }
+          for(let i = 0; i < correctCategory["Geografi"].length; i++){
+            geografiChildren[i].classList.remove("bg-gray")
+            geografiChildren[i].classList.add("bg-green")
+          }
+          for(let i = 0; i < correctCategory["Historia"].length; i++){
+            historiaChildren[i].classList.remove("bg-gray")
+            historiaChildren[i].classList.add("bg-green")
+          }
+          for(let i = 0; i < correctCategory["Musik"].length; i++){
+          musikChildren[i].classList.remove("bg-gray")
+          musikChildren[i].classList.add("bg-green")
+          }
+          for(let i = 0; i < correctCategory["Övrigt"].length; i++){
+          övrigtChildren[i].classList.remove("bg-gray")
+          övrigtChildren[i].classList.add("bg-green")
+          }
+          for(let i = 0; i < correctCategory["Vetenskap"].length; i++){
+            vetenskapChildren[i].classList.remove("bg-gray")
+            vetenskapChildren[i].classList.add("bg-green")
+          }
+          for(let i = 0; i < correctCategory["Sport"].length; i++){
+            sportChildren[i].classList.remove("bg-gray")
+            sportChildren[i].classList.add("bg-green")
+          }
 
-      setTimeout(()=>{
-        p3.classList.remove("scale-100")
-        p3.classList.add("scale-0")
-    
-        },250); 
+          setTimeout(()=>{
+            p3.classList.remove("scale-100")
+            p3.classList.add("scale-0")
+        
+            },250); 
 
-      setTimeout(()=>{
-        p4.classList.remove("scale-0")
-        p4.classList.add("scale-100")
-    
-        },250); 
+          setTimeout(()=>{
+            p4.classList.remove("scale-0")
+            p4.classList.add("scale-100")
+        
+            },250); 
 
       
   }
@@ -300,6 +300,18 @@ answerButtonNo.onclick= function(){
     body.classList.remove("bg-ljusblå")
     body.classList.add("bg-white")
     logoBlue.src = "/Image/Logo(3).svg"
+
+    setTimeout(()=>{
+      p3.classList.remove("scale-100")
+      p3.classList.add("scale-0")
+  
+      },250); 
+
+    setTimeout(()=>{
+      p2.classList.remove("scale-0")
+      p2.classList.add("scale-100")
+  
+      },250);
     
     progressButton.style.width = (count/maxQuestions) * 100 + "%";
     progressButtonWhite.style.width = (count/maxQuestions) * 100 + "%"; 
@@ -381,7 +393,6 @@ playAgainButton.onclick= function(){
       blobs[i].classList.remove("bg-green") //Återställer färgade knappar
       blobs[i].classList.add("bg-gray")
     }
-    
     
 }
 

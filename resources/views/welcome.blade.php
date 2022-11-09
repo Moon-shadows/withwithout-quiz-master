@@ -49,7 +49,7 @@
 
 <!-- P1/Col2 Start -->          
             <div class="column-2 absolut mt-[100px] md:mt-[250px] mb-24 lg:mb-[327px] w-full"> 
-                <h1 class="huvudrubrik text-mörkblå font-poppins text-32 md:text-48 mb:text-32  font-semibold text-center mb-8"> 
+                <h1 class="headline text-mörkblå font-poppins text-20 md:text-32 xl:text-48  font-semibold text-center mb-8"> 
                      Svensk mästare i TP?</h1>
                 <p  id="startText"  class="popper text-16 md:text-32 text-center mb-10"> Utmana vänner, kollegor och familj på frågesport. 
                     Svara på 35 samtida frågor i 7 olika kategorier.</p>
