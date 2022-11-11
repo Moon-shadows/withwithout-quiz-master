@@ -32,7 +32,7 @@ let questionCounter2 = document.getElementById("questionCounter2");
 let correctQuestionCounter = document.getElementById("correctQuestionCounter");
 
 let questions = [];
-const maxQuestions = 3;
+const maxQuestions = 35;
 let count = 0;
 let correct = 0;
 
@@ -174,7 +174,14 @@ questionButton.onclick= function(){
       p3.classList.remove("scale-0")
       p3.classList.add("scale-100")
   
-      },250); 
+      },250);
+      
+      setTimeout(()=>{
+        p2.classList.remove("scale-100")
+        p2.classList.add("scale-0")
+      
+        },250); 
+
 
     questionCounter2.innerHTML = `Fråga ${count} av ${maxQuestions}`;  
 }
@@ -393,6 +400,13 @@ playAgainButton.onclick= function(){
       blobs[i].classList.remove("bg-green") //Återställer färgade knappar
       blobs[i].classList.add("bg-gray")
     }
+
+    setTimeout(()=>{
+      p4.classList.remove("scale-100")
+      p4.classList.add("scale-0")
+  
+      },250); 
+
     
 }
 
